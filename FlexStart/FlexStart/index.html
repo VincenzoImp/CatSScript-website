@@ -4,15 +4,51 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <!-- viewport indica la porzione visibile dall'utente della pagina web.
+    Il duo controllo permette di creare una pagina web responsivness per cui
+    la dua dimensione cambia a seconda della dimensione della pagina in cui il
+    documento viene aperto.
+    Per prendere il controllo del viewport si usa il tag <meta> con la seguente
+    sintassi
+    <meta name="viewport" content="width=larghezza_della_pagina", initial-scale=zoom_iniziale_della_pagina>
+    Generalmente si ha che:
+    - width=device-width -> ciò permette di avere la larghezza della pagina
+    che segue la larghezza dello schermo del device su cui si visualizza la pagina
+    - initial-scale=1.0 -> ciò permette di far vedere la pagina a dimensioni
+    reali (ossia con uno zoom 1x)
+  -->
 
   <title>FlexStart Bootstrap Template - Index</title>
+  <!-- nome che esce sulla tab -->
   <meta content="" name="description">
-
+  <!-- definisce una descrizione della pagina web -->
   <meta content="" name="keywords">
+  <!-- definisce le keyword con cui viene visualizzata la pagina a seguito
+  di una ricerca su un motore di ricerca.
+  Ad esempio se il content di questo campo viene riempito con le parole
+  "gatti, daje, impara"
+  se una qualsiasi persona effettua una ricerca comprendente le parole sopra
+  elencate c'è una buona probabilità che il sito compaia come risultato della
+  ricerca.
+  Se non mi ricordo male la sola presenza delle parole non basta perché tipo 
+  ci stanno le aziende che pagano per promuovere alcune parole chiave più
+  di altre quindi sicuramente quelle sono tenute più in considerazione o una
+  cosa del genere ma vabbè comunque il tag ha questo funzionamento
+  -->
 
+  <!-- Qui di seguito vengono linkate tutte risorse che verranno usate in seguito
+  nel documento; la cosa importante da notare è che oltre al riferimento 
+  della risorsa che si sta linkando passata tramite URL è sempre richiesto un
+  secondo attributo che è il rel: questo specifica la relazione tra il documento
+  corrente e il documento linkato.
+  Seguono esempi -->
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
+  <!-- icon: è l'icona che appare a sinistra nella tab -->
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- apple-touch-icon: è l'cona che appare sullo schermo di un dispositivo
+  apple se si crea un collegamento alla pagina accessibile dalla home screen
+  del dispositivo -->
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -27,6 +63,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
+  <!-- tutti quelli sopra elencati sono fogli di stile usati per rendere carina
+  graficamente la pagina web -->
 
   <!-- =======================================================
   * Template Name: FlexStart - v1.2.0
@@ -38,24 +76,81 @@
 
 <body>
 
+  <!-- Per ogni tag che ne fa uso si ha che: 
+  - id: il valore dell'attributo rappresenta un nome univoco per quell'elemento
+  
+  - class: il valore dell'attributo rappresenta uno o più nomi per la classe ossia
+  indica tutte le classi cui l'elemento si riferisce in un foglio di stile
+  
+  - data-*: viene usato per salvare dati privati personalizzati nella pagina
+  o nell'applicazione ossia dà la possibilità di legare dati personalizzati a 
+  qualsiasi elemento HTML -> i dati salvati nell'elemento possono poi essere
+  utilizzati con JavaScript.
+  L'attributo consiste in due parti:
+    1) il nome dell'attributo che non deve contenere nessuno lettera maiuscola
+    e deve essere lungo almeno un carattere dopo il prefisso data-
+    2) il valore dell'attributo che può essere quello che te pare
+  Gli attributi custom preceduti dal prefisso data- vengono ignorati dall'user
+  aget
+  Non ho ancora ben capito però dove stanno i dati che vengono linkati devo ancora
+  indagare un pochino
+
+  - style: serve ad indicare una modifica CSS "inline" per quel solo elemento
+  -->
+
+  <!-- Inoltre è utile notare che qualsiasi blocco logico di elementi nella pagina
+  deve essere raggruppato all'interno di un contenitore 
+  n.b.
+  i contenitori possono essere annidati
+  -->
+
   <!-- ======= Header ======= -->
   <header id="header" class="header fixed-top">
+    <!-- l'elemento header rappresenta un contenitore per contenuti di introduzione
+    o per un insieme di link di navigazione -->
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
-
+      <!-- il tag div serve a creare un contenitore, "stilizzato" tramite
+        CSS o manipolato tramite JavaScript, per elementi HTML -->
       <a href="index.html" class="logo d-flex align-items-center">
         <img src="assets/img/logo.png" alt="">
         <span>FlexStart</span>
+        <!-- il tag span viene usato per creare un contenitore per marcare una
+          parte di testo o una parte di un documento, il suo uso è quindi simile
+          a quello di <div> con l'unica differenza che div crea un contenitore a
+          blocco, invece span crea un contenitore inline -->
       </a>
+      <!-- tutto questo tag <a> serve essenzialmente per linkare la pagina di
+        index al logo che si trova in alto a sinistra nella pagina così che
+      cliccando lì sopra si ritorni alla pagina iniziale -->
 
       <nav id="navbar" class="navbar">
+        <!-- Definisce una navbar ossia un insieme di link di navigazione;
+        nella pagina è tutta la roba che va da "home" a "get started"
+        Nel tag nav possono andare solo i link principali di navigazione
+        ossia ci vanno i link alle pagine più importanti del sito -->
         <ul>
+          <!-- da notare che la roba dopo # serve ad indicare l'id dell'elemento
+          che si sta linkando.
+          Seguono esempi -->
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <!-- link alla sezione con id="hero" del documento-->
           <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <!-- link alla sezione con id="about" del documento-->
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <!-- link alla sezione con id="services" del documento-->
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
+          <!-- link alla sezione con id="portfolio" del documento-->
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- link alla sezione con id="team" del documento-->
+          <!-- tutti questi sono i bottoni che rimandano alle varie sezioni del sito
+          Ci sono i tag <a> proprio perché ognuno di questi rimanda ad una data
+          risorsa presente nello stesso documento -->
           <li><a href="blog.html">Blog</a></li>
+          <!-- il funzionamento è uguale a quello descritto sopra ma questa risorsa
+          non è presente nel documento corrente -->
           <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <!-- il tag i serve a scrivere in italic ciò che è scritto nel tag ossia
+            <i>questo testo viene scritto in corsivo</i>-->
             <ul>
               <li><a href="#">Drop Down 1</a></li>
               <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
@@ -72,34 +167,60 @@
               <li><a href="#">Drop Down 4</a></li>
             </ul>
           </li>
+          <!-- tutto questo papocchio è usato per creare il menu a tendina
+          credo sia il tecnicismo giusto per definirlo comunque quella roba
+          che sia ha nella pagina passando con il mouse su "drop down"-->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <!-- link alla sezione con id="contact" del documento-->
           <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <!-- link alla sezione con id="about" del documento-->
+          <!-- come sopra -->
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
+        <!-- questa è roba che ha a che fare con la visualizzazione mobile quindi
+        non ho avuto modo di capi a che corrisponde nella pagina-->
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
   <!-- ======= Hero Section ======= -->
+  <!-- ossia la sezione grande corredata di immagini e testo che si trova in
+  alto sulla pagina, praticamente tutto il papocchio dove ci sta scritto siamo
+  bomber e abbiamo la soluzione per te -->
   <section id="hero" class="hero d-flex align-items-center">
+    <!-- il tag section definisce una sezione del documento -->
 
     <div class="container">
       <div class="row">
+        <!-- tipo qua sta a divide la pagina in due colonne una per il testo
+        e una per l'immagine -->
         <div class="col-lg-6 d-flex flex-column justify-content-center">
+          <!-- h seguito dal numero indica la rilevanza che si vuole dare a ciò
+          che è scritto nel tag, più è grande il numero meno rilevanza ha ciò che
+          viene scritto -->
+
           <h1 data-aos="fade-up">We offer modern solutions for growing your business</h1>
           <h2 data-aos="fade-up" data-aos-delay="400">We are team of talented designers making websites with Bootstrap</h2>
           <div data-aos="fade-up" data-aos-delay="600">
+            <!-- tipo qua tutti i data-aos servono a fa quell'animazioncina per
+            cui le cose arrivano che prima non c'erano e i delay so messi perché
+            così arrivano i blocchi di testo per ordine di importanza -->
             <div class="text-center text-lg-start">
               <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Get Started</span>
+                <!-- come prima questo è un bottone che linka un'altra risorsa nel documento -->
                 <i class="bi bi-arrow-right"></i>
+                <!-- questa è precisa la cosina che si riferisce alla freccia
+                infatti pazzesco se ci si passa sopra ha un'anaimazione incredibile -->
               </a>
             </div>
           </div>
         </div>
         <div class="col-lg-6 hero-img" data-aos="zoom-out" data-aos-delay="200">
           <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+          <!-- come prima questo serve a fa l'animazione con la roba che appare ma
+          è per l'immagine che sta a destra del testo -->
         </div>
       </div>
     </div>
@@ -107,11 +228,20 @@
   </section><!-- End Hero -->
 
   <main id="main">
+    <!-- il tag <main> specifica il contenuto principale del documento
+    Il contenuto del main deve essere unico nel documento e non deve avere contenuto
+    che si ripete nel documento come ad esempio sidebars, link di navigazione, informazioni
+    sul copyright, loghi del sito o form di ricerca.
+    Inoltre ci può essere un solo main nell'intero documento e il main NON può
+    essere figlio (nell'albero gerarchico del DOM) di <article>, <aside>, <header>
+    <nav> -->
     <!-- ======= About Section ======= -->
     <section id="about" class="about">
 
       <div class="container" data-aos="fade-up">
         <div class="row gx-0">
+          <!-- qua pure usa una divisione per colonne però non so che cambia con
+          quella prima perché ancora non ho visto i fogli di stile -->
 
           <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
             <div class="content">
@@ -120,6 +250,8 @@
               <p>
                 Quisquam vel ut sint cum eos hic dolores aperiam. Sed deserunt et. Inventore et et dolor consequatur itaque ut voluptate sed et. Magnam nam ipsum tenetur suscipit voluptatum nam et est corrupti.
               </p>
+              <!-- il tag <p> serve a definire un paragrafo nella pagina: i browser
+              aggiungono automaticamente una riga bianca prima e dopo ogni elemento <p> -->
               <div class="text-center text-lg-start">
                 <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
                   <span>Read More</span>
@@ -191,6 +323,8 @@
               <i class="bi bi-emoji-smile"></i>
               <div>
                 <span data-purecounter-start="0" data-purecounter-end="232" data-purecounter-duration="1" class="purecounter"></span>
+                <!-- tipo questa è l'animazione che fa andare veloci i numeri da 0 a 232 in un secondo 
+                Le animazioni successive sono uguali a questa ma con numeri diversi quindi non le scrivo che mi pesa il cu -->
                 <p>Happy Clients</p>
               </div>
             </div>
@@ -1218,6 +1352,20 @@
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">
+    <!-- crea un piè di pagina per il documento; tipicamente contiene:
+    - informazioni sugli autori
+    - informazioni sul copyright
+    - contatti
+    - sitemap ossia un file che contiene tutti gli URL di un sito elencati secondo
+    una gerarchia impostata in fase di creazione -> è importante sia perché
+    permette di agevolare la navigazione agli utenti, sia perché viene usata
+    per la scansione e l'indicizzazione da parte dei crawler dei motori di ricerca
+    (ossia un software che analizza i contenuti di una rete o di un database per
+    conto di un motore di ricerca)
+    - un link back to top
+    - documenti correlati
+    Ci possono essere più di un footer in un documento, tipo qua infatti ce ne stanno due
+    -->
 
     <div class="footer-newsletter">
       <div class="container">
@@ -1228,6 +1376,9 @@
           </div>
           <div class="col-lg-6">
             <form action="" method="post">
+              <!-- la form per iscriversi alla newsletter composta da un campo per inserire
+              testo che deve essere una email e da un bottone per iscriversi che è il bottone di
+              submit della form -->
               <input type="email" name="email"><input type="submit" value="Subscribe">
             </form>
           </div>
@@ -1243,6 +1394,8 @@
               <img src="assets/img/logo.png" alt="">
               <span>FlexStart</span>
             </a>
+            <!-- questo tag <a> è uno dei due back to top, l'altro è la freccia
+            ma mi sa che me la so persa nel documento perché so tonta -->
             <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
             <div class="social-links mt-3">
               <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
@@ -1306,6 +1459,8 @@
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+  <!-- Qua sono linkati tutti gli script usati nel sito ma ancora non li ho
+  guardati per bene quinid non so sinceramente cosa facciano -->
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
