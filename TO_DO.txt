@@ -1,0 +1,3 @@
+- cambiare la favicon con una di un gatto
+- cambiare la apple-touch-icon con una di un gatto (anche la stessa favicon ma piuù grande)
+- creare una cartella in img con tutti i pusheen
