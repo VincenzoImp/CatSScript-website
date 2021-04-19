@@ -85,6 +85,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 #hero {
   margin-top: 10vh;
   height: 70vh;
-  background: #fef8f5;
-  border: 1px solid;
+  background: #f6fef5;
+}
+
+.hero-img{
+  height:70vh;
 }
