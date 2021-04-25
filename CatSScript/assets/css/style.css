@@ -81,16 +81,82 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.1);
 }
 
+/*--------------------------------------------------------------
+# General Section
+--------------------------------------------------------------*/
+section{
+  height: 70vh;
+  background: #f5e6f3;
+}
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  margin-top: 10vh;
-  height: 70vh;
-  background: #f5e6f3;
+  margin-top: 9vh;
 }
 
-.hero-img{
-  height:70vh;
+
+@media (max-width: 991px) {
+  #hero {
+    height: calc(100vh - 72px);
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  #hero {
+    height: calc(120vh);
+  }
+}
+
+/*--------------------------------------------------------------
+# Learn Section
+--------------------------------------------------------------*/
+.img-card{
+  width: auto;
+  height: 250px;
+}
+
+.btn-primary-custom {
+  color: #fff;
+  background-color: #b10dfd;
+  border-color: #fd0dfd;
+}
+.btn-primary-custom:hover {
+  color: #fff;
+  background-color: #d70bc6;
+  border-color: #c40aca;
+}
+
+/*--------------------------------------------------------------
+# Placeholder Section
+--------------------------------------------------------------*/
+#placeholder{
+  background: #9e298f;
 }
