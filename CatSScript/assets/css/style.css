@@ -81,7 +81,14 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 --------------------------------------------------------------*/
 section{
   height: 70vh;
+}
+
+#hero, #learn{
   background: #f5e6f3;
+}
+
+#play, #about_us{
+  background: #dd6ecc;
 }
 
 /*--------------------------------------------------------------
@@ -90,7 +97,6 @@ section{
 #hero {
   margin-top: 9vh;
 }
-
 
 @media (max-width: 991px) {
   #hero {
@@ -126,6 +132,51 @@ section{
 
 @media (max-height: 600px) {
   #hero {
+    height: calc(120vh);
+  }
+}
+
+/*--------------------------------------------------------------
+# Play Section
+--------------------------------------------------------------*/
+#play h1, #play h4{
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  #play {
+    height: calc(100vh - 72px);
+  }
+  #play .play-img {
+    text-align: center;
+  }
+  #play .play-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #play h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #play h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #play .play-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #play .play-img img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  #play {
     height: calc(120vh);
   }
 }
