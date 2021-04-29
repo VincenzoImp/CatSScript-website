@@ -2,7 +2,7 @@
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #212529;
 }
 
@@ -17,29 +17,11 @@ a:hover {
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 *{
   margin: 0;
-}
-
-/*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-  height: 10vh;
-  background: #fff;
-  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.1);
-}
-
-#logo h1 {
-  line-height: 1;
-  font-weight: 400;
-}
-
-#logo h1 a, #logo h1 a:hover {
-  color: #7a6960;
 }
 
 /*--------------------------------------------------------------
@@ -48,7 +30,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .navbar-brand-custom{
   font-size: 2.25em;
-  color:#d85ac3ee
+  color:#d85ac3ee;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
 .navbar-light .nav-item .signin{
@@ -59,7 +43,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .navbar-light .nav-item .signin:hover {
   color: #fff;
-  background: #84f884;
+  background: #f54dd1;
 }
 
 .navbar-light .nav-item .signup{
@@ -70,7 +54,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .navbar-light .nav-item .signup:hover {
   color: #fff;
-  background: #6ead6c;
+  background: #aa719b;
 }
 
 .navbar-shadow{

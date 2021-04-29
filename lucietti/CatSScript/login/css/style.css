@@ -30,16 +30,16 @@ body{
     transform: translate(-50%, -50%);
 }
 
-.myLeftCtn{
+.myRightCtn{
     position: relative;
     background: #fff;
     border-radius: 25px;
     height: 100%;
     padding: 25px;
-    padding-left: 50px;
+    padding-left: 0px;
 }
 
-.myLeftCtn header{
+.myRightCtn header{
     color: blueviolet;
     font-size: 24px;
     font-weight: 700;
@@ -51,7 +51,7 @@ body{
     margin-top: 50px;
 }
 
-.myLeftCtn .myInput{
+.myRightCtn .myInput{
     width: 230px;
     border-radius: 25px;
     padding: 10px;
@@ -60,17 +60,17 @@ body{
     box-shadow: 0px 10px 49 px -14px rgba(0,0,0,0.7);
 }
 
-.myLeftCtn .myInput:focus{
+.myRightCtn .myInput:focus{
     outline: none;
 }
 
-.myLeftCtn .fas{
+.myRightCtn .fas{
     position: relative;
     color: #bb36fd;
     left: 36px;
 }
 
-.myLeftCtn .butt{
+.myRightCtn .butt{
     background: linear-gradient(45deg, #bb36fd, #9b00e8);
     color: #fff;
     width: 230px;
@@ -80,15 +80,15 @@ body{
     box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
 }
 
-.myLeftCtn .butt:hover{
+.myRightCtn .butt:hover{
     background: linear-gradient(45deg, #c85bff, #b726ff);
 }
 
-.myLeftCtn .butt:focus{
+.myRightCtn .butt:focus{
     outline:none;
 }
 
-.myRightCtn{
+.myLeftCtn{
     position: relative;
     background-image: linear-gradient(45deg, #f046ff, #9b00e8);
     border-radius: 25px;
@@ -96,11 +96,6 @@ body{
     padding: 25px;
     color: rgb(192,192,192);
     font-size: 12px;
-}
-
-.myRightCtn header{
-    color: #fff;
-    font-size: 44px;
 }
 
 .box{
@@ -130,8 +125,4 @@ body{
 a, a:hover{
     text-decoration: none;
     color: #fff;
-}
-
-#account{
-    margin-left: 35px;
 }

@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+
+    <script src="js/main.js" type="text/javascript" lang="javascript"></script>
 </head>
 
 <body>
@@ -15,30 +17,28 @@
         <div class="myCard">
             <div class="row">
                 <div class="col-md-6">
-                    <div class="myLeftCtn">
-                        <form action="" class="myForm text-center">
+                    <div class="myLeftCtn d-flex justify-content-center align-items-center">
+                        <img src="../assets/img/pusheen/F4.png">
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="myRightCtn">
+                        <form action="../index.html" method="POST" class="myForm text-center" name="login" onsubmit="return validateLogin()">
                             <header>Sign in into your account</header>
                             <div class="form-control">
-                                <i class="fas fa-user"></i>
-                                <input type="text" id="username" placeholder="Username or Email" class="myInput" required>
+                                <i class="fas fa-cat"></i>
+                                <input type="text" id="username" placeholder="Username or Email" class="myInput">
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-lock"></i>
-                                <input class="myInput" type="password" id="password" placeholder="Password" required>
+                                <input type="password" id="password" placeholder="Password" class="myInput">
                             </div>
                             <br/>
                             <input type="submit" value="LOG IN" class="butt">
                             <br/>
                             <br/>
+                            <button class="butt"><a href="../registrazione/index.html">I don't have an account</a></button>
                         </form>
-                        <div class="col-md-6">
-                            <button id="account" class="butt"><a href="../registrazione/index.html">I don't have an account</a></button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="myRightCtn d-flex justify-content-center align-items-center">
-                        <img src="../assets/img/pusheen/carino.png" alt="">
                     </div>
                 </div>
             </div>
