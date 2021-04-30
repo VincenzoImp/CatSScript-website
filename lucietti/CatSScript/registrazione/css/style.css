@@ -1,7 +1,5 @@
 *{
     margin:0;
-    padding:0;
-    box-sizing: border-box;
 }
 
 body{
@@ -20,9 +18,9 @@ body{
     height:100%;
 }
 
-.container{
+.container-custom{
     position:absolute;
-    max-width: 800px;
+    width: 800px;
     height: 500px;
     margin: auto;
     top: 50%;
@@ -103,12 +101,6 @@ body{
     font-size: 44px;
 }
 
-.box{
-    position: relative;
-    margin: 20px;
-    margin-bottom: 100px;
-}
-
 .butt_out{
     background: transparent;
     color: #fff;
@@ -131,3 +123,55 @@ a, a:hover{
     text-decoration: none;
     color: #fff;
 }
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  
+  .navbar-brand-custom{
+    font-size: 2.25em;
+    color:#d85ac3ee;
+    font-family: 'Comfortaa', cursive;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  .navbar-light .nav-item .signin{
+    background: #f56fd8;
+    color: #fff;
+    border-radius: 50em;
+  }
+  
+  .navbar-light .nav-item .signin:hover {
+    color: #fff;
+    background: #f54dd1;
+  }
+  
+  .navbar-light .nav-item .signup{
+    background: #ad5e98;
+    color: #fff;
+    border-radius: 50em;
+  }
+  
+  .navbar-light .nav-item .signup:hover {
+    color: #fff;
+    background: #aa719b;
+  }
+  
+  .navbar-shadow{
+    box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
+  }
+
+  nav a, nav a:hover{
+    color: #ef4de7e5;
+    text-decoration: none;
+  }
+
+
+  h1, h2, h3, h4, h5, h6, .font-primary {
+    font-family: 'Nanum Gothic', sans-serif;
+  }
+  
+  body {
+    font-family: 'Nanum Gothic', sans-serif;
+    color: #212529;
+  }
