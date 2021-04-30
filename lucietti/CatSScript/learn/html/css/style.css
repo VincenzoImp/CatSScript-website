@@ -2,71 +2,101 @@
 # General
 --------------------------------------------------------------*/
 body {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #212529;
-  }
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #212529;
+}
   
-  a {
-    color: #770e54;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    color: #ef4de7e5;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6, .font-primary {
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  
-  *{
-    margin: 0;
-  }
-  
+a {
+  color: #770e54;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ef4de7e5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
+*{
+  margin: 0;
+}
+
+.margin-top-custom {
+  margin-top: 15vh;
+}
+
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #f56fd8, #9505dd);
+}
 
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
 .navbar-brand-custom{
-    font-size: 2.25em;
-    color:#d85ac3ee;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .navbar-light .nav-item .signin{
-    background: #f56fd8;
-    color: #fff;
-    border-radius: 50em;
-  }
-  
-  .navbar-light .nav-item .signin:hover {
-    color: #fff;
-    background: #f54dd1;
-  }
-  
-  .navbar-light .nav-item .signup{
-    background: #ad5e98;
-    color: #fff;
-    border-radius: 50em;
-  }
-  
-  .navbar-light .nav-item .signup:hover {
-    color: #fff;
-    background: #aa719b;
-  }
-  
-  .navbar-shadow{
-    box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
-  }
+  font-size: 2.25em;
+  color:#d85ac3ee;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Quicksand', sans-serif;
+}
+
+.navbar-light .nav-item .signin{
+  background: #f56fd8;
+  color: #fff;
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signin:hover {
+  color: #fff;
+  background: #f54dd1;
+}
+
+.navbar-light .nav-item .signup{
+  background: #ad5e98;
+  color: #fff;
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signup:hover {
+  color: #fff;
+  background: #aa719b;
+}
+
+.navbar-shadow{
+  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
+}
 
 
-  .sidebar li .submenu{ 
+/*--------------------------------------------------------------
+# Sidebar
+--------------------------------------------------------------*/
+
+.sidebar li .submenu{ 
 	list-style: none; 
 	margin: 0; 
 	padding: 0; 
 	padding-left: 1rem; 
 	padding-right: 1rem;
 }
+
+.sidebar li {
+  padding-left: 15px;
+}
+
+.make-me-sticky {
+  position: -webkit-sticky;
+	position: sticky;
+  top: 15vh;
+}
+
+/*--------------------------------------------------------------
+# Text area
+--------------------------------------------------------------*/
