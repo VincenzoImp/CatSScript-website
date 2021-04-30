@@ -1,24 +1,23 @@
-
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
 body {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
   color: #212529;
 }
 
 a {
-  color: #eb5d1e;
+  color: #770e54;
   text-decoration: none;
 }
 
 a:hover {
-  color: #ef7f4d;
+  color: #ef4de7e5;
   text-decoration: none;
 }
 
 h1, h2, h3, h4, h5, h6, .font-primary {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Nanum Gothic', sans-serif;
 }
 
 *{
@@ -26,66 +25,168 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 /*--------------------------------------------------------------
-# Header
---------------------------------------------------------------*/
-#header {
-  height: 10vh;
-  background: #fff;
-  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.1);
-}
-
-#logo h1 {
-  line-height: 1;
-  font-weight: 400;
-}
-
-#logo h1 a, #logo h1 a:hover {
-  color: #7a6960;
-}
-
-/*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
-#navbar a {
-  color: #793d20;
+
+.navbar-brand-custom{
+  font-size: 2.25em;
+  color:#d85ac3ee;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Quicksand', sans-serif;
 }
 
-#navbar a:hover, #navbar .active, li:hover > a {
-  color: #eb991e;
-}
-
-#navbar .signup {
-  background: #7e716b;
+.navbar-light .nav-item .signin{
+  background: #f56fd8;
   color: #fff;
-  padding: 0.5em 0.75em;
   border-radius: 50em;
-  margin: 0em 0.25em 0em 0.5em;
 }
 
-#navbar .signup:hover {
+.navbar-light .nav-item .signin:hover {
   color: #fff;
-  background: #49423f;
+  background: #f54dd1;
 }
 
-#navbar .signin {
-  background: #ee7843;
+.navbar-light .nav-item .signup{
+  background: #ad5e98;
   color: #fff;
-  padding: 0.5em 0.75em;
   border-radius: 50em;
-  margin: 0em 0.5em 0em 0.25em;
 }
 
-#navbar .signin:hover {
+.navbar-light .nav-item .signup:hover {
   color: #fff;
-  background: #c25c2d;
+  background: #aa719b;
+}
+
+.navbar-shadow{
+  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
+}
+/*--------------------------------------------------------------
+# General Section
+--------------------------------------------------------------*/
+section{
+  height: 70vh;
+}
+
+#hero, #learn{
+  background: #f5e6f3;
+}
+
+#play, #about_us{
+  background: #dd6ecc;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  margin-top: 10vh;
-  height: 70vh;
-  background: #fef8f5;
-  border: 1px solid;
+  margin-top: 9vh;
+}
+
+@media (max-width: 991px) {
+  #hero {
+    height: calc(100vh - 72px);
+  }
+  #hero .hero-img {
+    text-align: center;
+  }
+  #hero .hero-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #hero h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #hero .hero-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #hero .hero-img img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  #hero {
+    height: calc(120vh);
+  }
+}
+
+/*--------------------------------------------------------------
+# Play Section
+--------------------------------------------------------------*/
+#play h1, #play h4{
+  text-align: right;
+}
+
+@media (max-width: 991px) {
+  #play {
+    height: calc(100vh - 72px);
+  }
+  #play .play-img {
+    text-align: center;
+  }
+  #play .play-img img {
+    width: 50%;
+  }
+}
+
+@media (max-width: 768px) {
+  #play h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  #play h2 {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  #play .play-img img {
+    width: 70%;
+  }
+}
+
+@media (max-width: 575px) {
+  #play .play-img img {
+    width: 80%;
+  }
+}
+
+@media (max-height: 600px) {
+  #play {
+    height: calc(120vh);
+  }
+}
+
+/*--------------------------------------------------------------
+# Learn Section
+--------------------------------------------------------------*/
+.img-card{
+  width: auto;
+  height: 225px;
+}
+
+.btn-primary-custom {
+  color: #fff;
+  background-color: #b10dfd;
+  border-color: #fd0dfd;
+}
+.btn-primary-custom:hover {
+  color: #fff;
+  background-color: #d70bc6;
+  border-color: #c40aca;
+}
+
+/*--------------------------------------------------------------
+# Placeholder Section
+--------------------------------------------------------------*/
+#placeholder{
+  background: #9e298f;
 }
