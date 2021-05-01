@@ -28,6 +28,17 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 9vh;
 }
 
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -64,6 +75,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 .navbar-shadow{
   box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
 }
+
 /*--------------------------------------------------------------
 # General Section
 --------------------------------------------------------------*/
@@ -72,18 +84,18 @@ section{
 }
 
 #hero, #learn{
-  background: #f5e6f3;
+  background: #ffeeed;
 }
 
-#play, #about_us{
-  background: #dd6ecc;
+#play, #about-us{
+  background: #e9f8f5;
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
 
-@media (max-width: 991px) {
+@media (max-width: 991px) { 
   #hero {
     height: calc(100vh - 72px);
   }
@@ -100,7 +112,7 @@ section{
     font-size: 28px;
     line-height: 36px;
   }
-  #hero h2 {
+  #hero h4 {
     font-size: 18px;
     line-height: 24px;
   }
@@ -145,7 +157,7 @@ section{
     font-size: 28px;
     line-height: 36px;
   }
-  #play h2 {
+  #play h4 {
     font-size: 18px;
     line-height: 24px;
   }
@@ -185,13 +197,56 @@ section{
   border-color: #c40aca;
 }
 
+
 /*--------------------------------------------------------------
-# Placeholder Section
+# About-us Section
 --------------------------------------------------------------*/
-#placeholder{
-  background: #9e298f;
+.circle-img {
+  background:#bfd9dc;
+  align-self: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
+.about-us-position {
+  align-self: center;
+}
+
+@media (max-width: 991px) { 
+  #about-us {
+    height: calc(100vh - 72px);
+  }
+  #about-us img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 575px) {
+  #about-us img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-height: 600px) {
+  #about-us {
+    height: calc(120vh);
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
@@ -200,3 +255,4 @@ section{
   border-radius: 100%;
   background: linear-gradient(45deg, #f56fd8, #9505dd);
 }
+
