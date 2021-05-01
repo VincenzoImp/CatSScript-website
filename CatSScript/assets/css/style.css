@@ -51,25 +51,25 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .navbar-light .nav-item .signin{
-  background: #f56fd8;
-  color: #fff;
+  background: linear-gradient(45deg, #5fdfa7, #31e697);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signin:hover {
-  color: #fff;
-  background: #f54dd1;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #80ddb5, #50e4a4);
 }
 
 .navbar-light .nav-item .signup{
-  background: #ad5e98;
-  color: #fff;
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signup:hover {
-  color: #fff;
-  background: #aa719b;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
 }
 
 .navbar-shadow{
@@ -84,18 +84,19 @@ section{
 }
 
 #hero, #learn{
-  /* background: linear-gradient(#e1d3ed, #def5eb); */
   background: linear-gradient(#c69aec, #9ef8d1);
 }
 
 #play, #about-us{
-  /* background: linear-gradient(#def5eb, #e1d3ed); */
   background: linear-gradient(#9ef8d1, #c69aec);
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero-img{
+  width: 550px;
+}
 
 @media (max-width: 991px) { 
   #hero {
@@ -105,27 +106,19 @@ section{
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 500px;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
   #hero .hero-img img {
-    width: 70%;
+    width: 450px;
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
+    width: 275px;
   }
 }
 
@@ -155,14 +148,6 @@ section{
 }
 
 @media (max-width: 768px) {
-  #play h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #play h4 {
-    font-size: 18px;
-    line-height: 24px;
-  }
   #play .play-img img {
     width: 70%;
   }
@@ -204,7 +189,8 @@ section{
 # About-us Section
 --------------------------------------------------------------*/
 .circle-img {
-  background:#bfd9dc;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid white;
   align-self: center;
   border-radius: 50%;
   width: 200px;
@@ -213,6 +199,15 @@ section{
 
 .about-us-position {
   align-self: center;
+}
+
+.card-custom {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: none;
 }
 
 @media (max-width: 991px) { 
