@@ -63,3 +63,20 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+
+/*--------------------------------------------------------------
+# Text area
+--------------------------------------------------------------*/
+function loadText(id){
+  var httpRequest = new XMLHttpRequest();
+  httpRequest.onreadystatechange = function(id){
+    if(this.readyState == 4 && this.status == 200){
+      document.getElementById("text-area").innerHTML = 
+      this.responseText;
+    }
+  };
+  httpRequest.open("GET", "../"+id+".html", true);
+  httpRequest.send();
+}
