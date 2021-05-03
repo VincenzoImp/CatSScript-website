@@ -28,42 +28,75 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 9vh;
 }
 
+@media (max-width: 991px){
+  section{
+    height: calc(100vh - 72px);
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
+@media (max-height: 600px) {
+  section {
+    height: calc(120vh);
+  }
+}
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
 
 .navbar-brand-custom{
   font-size: 2.25em;
+  /*background: -webkit-linear-gradient(#c69aec, #9ef8d1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;*/
+  /*color:#c69aec;*/
   color:#d85ac3ee;
   font-family: 'Comfortaa', cursive;
   font-family: 'Quicksand', sans-serif;
+  
 }
 
+/*.navbar-brand-custom:hover{
+  color:#9ef8d1;
+}*/
+
 .navbar-light .nav-item .signin{
-  background: #f56fd8;
-  color: #fff;
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signin:hover {
-  color: #fff;
-  background: #f54dd1;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
 }
 
 .navbar-light .nav-item .signup{
-  background: #ad5e98;
-  color: #fff;
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signup:hover {
-  color: #fff;
-  background: #aa719b;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
 }
 
 .navbar-shadow{
   box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
 }
+
 /*--------------------------------------------------------------
 # General Section
 --------------------------------------------------------------*/
@@ -72,52 +105,38 @@ section{
 }
 
 #hero, #learn{
-  background: #f5e6f3;
+  background: linear-gradient(#c69aec, #9ef8d1);
 }
 
-#play, #about_us{
-  background: #dd6ecc;
+#play, #about-us{
+  background: linear-gradient(#9ef8d1, #c69aec);
 }
 
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+.hero-img{
+  width: 550px;
+}
 
-@media (max-width: 991px) {
-  #hero {
-    height: calc(100vh - 72px);
-  }
+@media (max-width: 991px) { 
   #hero .hero-img {
     text-align: center;
   }
   #hero .hero-img img {
-    width: 50%;
+    width: 500px;
   }
 }
 
 @media (max-width: 768px) {
-  #hero h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #hero h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
   #hero .hero-img img {
-    width: 70%;
+    width: 450px;
   }
 }
 
 @media (max-width: 575px) {
   #hero .hero-img img {
-    width: 80%;
-  }
-}
-
-@media (max-height: 600px) {
-  #hero {
-    height: calc(120vh);
+    width: 275px;
   }
 }
 
@@ -129,40 +148,23 @@ section{
 }
 
 @media (max-width: 991px) {
-  #play {
-    height: calc(100vh - 72px);
-  }
   #play .play-img {
     text-align: center;
   }
   #play .play-img img {
-    width: 50%;
+    width: 500px;
   }
 }
 
 @media (max-width: 768px) {
-  #play h1 {
-    font-size: 28px;
-    line-height: 36px;
-  }
-  #play h2 {
-    font-size: 18px;
-    line-height: 24px;
-  }
   #play .play-img img {
-    width: 70%;
+    width: 450px;
   }
 }
 
 @media (max-width: 575px) {
   #play .play-img img {
-    width: 80%;
-  }
-}
-
-@media (max-height: 600px) {
-  #play {
-    height: calc(120vh);
+    width: 275px;
   }
 }
 
@@ -185,18 +187,55 @@ section{
   border-color: #c40aca;
 }
 
+
+
 /*--------------------------------------------------------------
-# Placeholder Section
+# About-us Section
 --------------------------------------------------------------*/
-#placeholder{
-  background: #9e298f;
+.circle-img {
+  background: rgba(255,255,255,0.15);
+  border: 2px solid white;
+  align-self: center;
+  border-radius: 50%;
+  width: 200px;
+  height: 200px;
 }
 
+.about-us-position {
+  align-self: center;
+}
+
+@media (max-width: 991px) { 
+  #about-us img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (max-width: 768px) {
+  #about-us img {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media (max-width: 575px) {
+  #about-us img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   display: none;
   border-radius: 100%;
-  background: linear-gradient(45deg, #f56fd8, #9505dd);
+  background: linear-gradient(45deg, #c69aec, #9ef8d1);
 }
+
