@@ -45,7 +45,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
 }
 
-@media (max-height: 600px) {
+@media (max-height: 650px) {
   section {
     height: calc(120vh);
   }
@@ -104,7 +104,7 @@ section{
   height: 70vh;
 }
 
-#hero, #learn{
+#hero, #learn, #footer{
   background: linear-gradient(#c69aec, #9ef8d1);
 }
 
@@ -187,7 +187,23 @@ section{
   border-color: #c40aca;
 }
 
+/*@media (max-width: 991px) {
+  section{
+    height: 125vh;
+  }
+}*/
 
+@media (max-width: 768px) {
+  section{
+    height: 150vh;
+  }
+}
+
+@media (max-width: 575px) {
+  section{
+    height: 180vh;
+  }
+}
 
 /*--------------------------------------------------------------
 # About-us Section
@@ -239,3 +255,25 @@ section{
   background: linear-gradient(45deg, #c69aec, #9ef8d1);
 }
 
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer{
+  height: 24vh;
+}
+
+footer{
+  background: rgba(255,255,255,0.15);
+  border-top: 2px solid white;
+}
+
+/*footer a{
+  color: white;
+  
+}
+
+footer a:hover{
+  color: whitesmoke;
+  
+}*/
