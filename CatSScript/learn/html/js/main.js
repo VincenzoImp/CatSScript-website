@@ -69,63 +69,17 @@ function backToTop() {
 /*--------------------------------------------------------------
 # Text area
 --------------------------------------------------------------*/
-/*function loadText(id){
-  var httpRequest = new XMLHttpRequest();
-  httpRequest.onreadystatechange = function(id){
-    if(this.readyState == 4 && this.status == 200){
-      document.getElementById("text-area").innerHTML = 
-      this.responseText;
-    }
-  };
-  httpRequest.open("GET", "../"+id+".html", true);
-  httpRequest.send();
-}*/
-
-
 /* Default */
 $(document).ready(function(){
   $('#text-area').load('./text-area/introduction.html');
 });
 
-/* Links */
-$('#introduction').click(() => {
-  $('#text-area').load('./text-area/introduction.html');
-});
-
-$('#tag_1').click(() => {
-  $('#text-area').load('./text-area/tag_1.html');
-});
-
-$('#tag_2').click(() => {
-  $('#text-area').load('./text-area/tag_2.html');
-});
-
-$('#tag_3').click(() => {
-  $('#text-area').load('./text-area/tag_3.html');
-});
-
-$('#forms').click(() => {
-  $('#text-area').load('./text-area/forms.html');
-});
-
-$('#example_1').click(() => {
-  $('#text-area').load('./text-area/example_1.html');
-});
-
-$('#example_2').click(() => {
-  $('#text-area').load('./text-area/example_2.html');
-});
-
-$('#example_3').click(() => {
-  $('#text-area').load('./text-area/example_3.html');
+/*Links*/
+$(document).ready(function(){
+  $(".learn-link").click(function(){
+    $("#text-area").load("./text-area/"+this.id+".html");
+  });
 });
 
 
-/*$(document).ready(function(){
-  var documenti = document.getElementsByClassName("learn-link");
-  for(var i = 0; i<documenti.length; i++){
-    $(documenti[i]).click(function(){
-      $("text-area").load("./text-area/tag_1.html");
-    })
-  }
-});*/
+
