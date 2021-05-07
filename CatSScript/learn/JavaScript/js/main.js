@@ -69,14 +69,17 @@ function backToTop() {
 /*--------------------------------------------------------------
 # Text area
 --------------------------------------------------------------*/
-function loadText(id){
-  var httpRequest = new XMLHttpRequest();
-  httpRequest.onreadystatechange = function(id){
-    if(this.readyState == 4 && this.status == 200){
-      document.getElementById("text-area").innerHTML = 
-      this.responseText;
-    }
-  };
-  httpRequest.open("GET", "../"+id+".html", true);
-  httpRequest.send();
-}
+/* Default */
+$(document).ready(function(){
+  $('#text-area').load('./text-area/introduction.html');
+});
+
+/*Links*/
+$(document).ready(function(){
+  $(".learn-link").click(function(){
+    $("#text-area").load("./text-area/"+this.id+".html");
+  });
+});
+
+
+

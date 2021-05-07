@@ -6,18 +6,19 @@
         <meta name="description"content="">
         <meta name="keywords" content="">
 
-        <title>Learn CSS</title>
+        <title>Learn HTML</title>
         <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/style.css">
 
         <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
         <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
     </head>
 
-    <body onload="loadText('introduction')">
+    <body>
     <!-- ======= Navbar/Header ======= -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
         <div class="container">
@@ -67,30 +68,29 @@
                     <nav class="sidebar card py-2 mb-4">
                         <ul class="nav flex-column" id="nav_accordion">
                             <li class="nav-item">
-                                <a class="nav-link" onclick="loadText('introduction')"> Introduction and first steps </a>
+                                <a class="nav-link learn-link" id="introduction"> Introduction and first steps </a>
                             </li>
                             <li class="nav-item has-submenu">
                                 <a class="nav-link" > Tags </a>
                                 <ul class="submenu collapse">
-                                    <li><a class="nav-link" onclick="loadText('tag_1')">tag 1 </a></li>
-                                    <li><a class="nav-link" onclick="loadText('tag_2')">tag 2 </a></li>
-                                    <li><a class="nav-link" onclick="loadText('tag_3')">tag 3 </a> </li>
+                                    <li><a class="nav-link learn-link" id="headings">headings </a></li>
+                                    <li><a class="nav-link learn-link" id="tag_2">tag 2 </a></li>
+                                    <li><a class="nav-link learn-link" id="tag_3">tag 3 </a> </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" onclick="loadText('forms')"> Forms </a>
+                                <a class="nav-link learn-link" id="forms"> Forms </a>
                             </li>
                             <li class="nav-item has-submenu">
                                 <a class="nav-link" > Examples  </a>
                                 <ul class="submenu collapse">
-                                    <li><a class="nav-link" onclick="loadText('example_1')">Example 1 </a></li>
-                                    <li><a class="nav-link" onclick="loadText('example_2')">Example 2 </a></li>
-                                    <li><a class="nav-link" onclick="loadText('example_3')">Example 3 </a></li>
-                                    <li><a class="nav-link" onclick="loadText('example_4')">Example 4 </a></li>
+                                    <li><a class="nav-link learn-link" id="example_1">Example 1 </a></li>
+                                    <li><a class="nav-link learn-link" id="example_2">Example 2 </a></li>
+                                    <li><a class="nav-link learn-link" id="example_3">Example 3 </a></li>
                                 </ul>
                             </li>
-                            <div class="card mb-4 border-0">
-                                <img src="../../assets/img/learnCSS-img.svg" class="card-img-custom">
+                            <div class="card mb-5 border-0">
+                                <img src="../../assets/img/learnHTML-img.svg" class="card-img-custom" id="pushtml">
                             </div>
                         </ul>
                     </nav>
@@ -98,26 +98,6 @@
             </div>
             <div class="col-lg-8">
                 <div id="text-area">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, illum. Sunt atque porro amet voluptatum facere odio vel corporis, quam dolore veniam laborum nobis maxime in exercitationem illum voluptates enim.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, impedit. Ipsam eius ea, itaque, inventore sed nesciunt voluptas qui consequuntur exercitationem, quibusdam placeat minima a ut reiciendis nemo suscipit beatae!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, repellat deleniti a impedit quaerat placeat facere, iste possimus corrupti totam harum exercitationem porro veritatis nostrum mollitia ad? Sit, enim neque?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore ipsum, voluptatem alias explicabo laboriosam libero, et assumenda maxime inventore nulla quaerat nobis molestiae sit impedit velit quibusdam necessitatibus doloremque. Rerum?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio perferendis, architecto sint veniam cumque laudantium ex nulla, magni pariatur officia officiis hic? Nobis facere atque tempore, ipsum eligendi vel nulla?
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatum consequuntur repudiandae nisi voluptatibus repellat autem ipsum nam, sint corrupti magnam nihil deleniti et nemo molestias modi libero quo quia earum!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora animi, dolore, asperiores repellat necessitatibus inventore enim non incidunt voluptatum quos laudantium eveniet? Debitis, error ducimus non unde similique libero sit.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda quo vero voluptas eligendi delectus omnis esse, distinctio ut. Quam necessitatibus magni nostrum libero ullam! Beatae eos illo iste nihil nesciunt!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae iste labore, nesciunt deleniti cum animi ipsa iure totam qui nisi nobis dicta temporibus sequi maxime modi sunt dolorum aliquid quam!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint sapiente quaerat minima repudiandae fugiat aliquam cumque dolorum accusantium. Iste eius impedit placeat quis earum accusantium voluptatem corrupti doloribus dignissimos necessitatibus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quasi minus impedit quia. Minima nihil harum, molestiae quod blanditiis commodi eum odio aliquam est repellat architecto error temporibus! Nulla, quam.
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. A qui eaque cum officia veritatis tempore aliquam incidunt adipisci quod laborum mollitia nulla amet repellat optio porro exercitationem, illum nam doloribus?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum dicta similique alias tenetur cum velit consequuntur dolor eaque unde distinctio eveniet nostrum asperiores, odit ratione, quos aperiam sint, iure odio?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium ullam perspiciatis impedit vero excepturi quod velit explicabo quas illo est, natus aspernatur non dolore quidem, consequatur iusto amet officiis odit.
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum distinctio ullam sint, laborum ipsam iure, dolorem repudiandae voluptas ipsum dolores suscipit aspernatur beatae? Laborum, iusto natus consequatur obcaecati laboriosam doloribus.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum iste quibusdam labore officia ipsum commodi ullam facere laborum mollitia. Earum, explicabo nam sed quam possimus hic recusandae eaque ipsum sunt?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo sit corrupti, nobis eos quibusdam, aspernatur consequuntur soluta corporis pariatur architecto consectetur? Vel veniam delectus eligendi itaque fuga! Fugiat, voluptatibus!
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. A neque totam veritatis, commodi rerum perferendis! Distinctio quaerat id amet iusto dolorum. Libero repellat ex nostrum impedit? Dolor blanditiis unde repellat.
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto eveniet repellendus quasi repellat cum vero, hic et suscipit rem natus nostrum nesciunt maxime autem totam praesentium, commodi dicta recusandae facilis?
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam maxime neque quibusdam, fugit blanditiis provident, repellendus unde necessitatibus, eos non tempora culpa ipsum distinctio in minima officiis consequuntur aut error.
                 </div>
             </div>
         </div>
