@@ -3,7 +3,7 @@
 --------------------------------------------------------------*/
 body {
   font-family: 'Nanum Gothic', sans-serif;
-  color: #212529;
+  background: linear-gradient(#c69aec, #9ef8d1);
 }
   
 a {
@@ -78,6 +78,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Sidebar
 --------------------------------------------------------------*/
+.sidebar{
+  background: linear-gradient(#9ef8d1, #c69aec);
+  border: 2px solid white;
+}
 
 .sidebar li .submenu{ 
 	list-style: none; 
@@ -106,3 +110,19 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 /*--------------------------------------------------------------
 # Text area
 --------------------------------------------------------------*/
+#text-area{
+  background: rgba(255,255,255,0.5);
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer{
+  border-top: 2px solid white;
+  background: linear-gradient(#9ef8d1, #c69aec);
+}
+
+.background {
+  background: rgba(255,255,255,0.3);
+}
