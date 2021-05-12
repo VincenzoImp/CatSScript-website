@@ -89,6 +89,7 @@ $(document).ready(function(){
     if(counter <= 5) $("#play-area").load("./play-area/question"+counter+"_"+get_type()+".html");
     else {
       document.getElementById("confirm-btn").style.display = "none";
+      document.getElementById("back-btn").style.display = "flex";
       $("#play-area").load("./play-area/end-game.html");
     }
   });

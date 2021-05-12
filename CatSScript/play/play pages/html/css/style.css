@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 10vh;
 }
 
+#back-btn {
+  display: none;
+}
+
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
