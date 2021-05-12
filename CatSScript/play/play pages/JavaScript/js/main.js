@@ -69,17 +69,24 @@ function backToTop() {
 /*--------------------------------------------------------------
 # Play area
 --------------------------------------------------------------*/
+function get_type() {
+  var random = Math.random();
+  if(random <= 0.5) return 1;
+  else return 2;
+}
+
 var counter = 1;
+
 /* Default */
 $(document).ready(function(){
-  $("#play-area").load("./play-area/form1.html");
+  $("#play-area").load("./play-area/question"+counter+"_"+get_type()+".html");
 });
 
 /*Links*/
 $(document).ready(function(){
   $(".play-link").click(function(){
     counter++;
-    if(counter <= 3) $("#play-area").load("./play-area/form"+counter+".html");
+    if(counter <= 5) $("#play-area").load("./play-area/question"+counter+"_"+get_type()+".html");
     else {
       document.getElementById("confirm-btn").style.display = "none";
       $("#play-area").load("./play-area/end-game.html");
