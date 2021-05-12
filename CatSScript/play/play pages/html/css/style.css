@@ -24,8 +24,8 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin: 0;
 }
 
-.margin-top-custom {
-  margin-top: 15vh;
+.space {
+  height: 10vh;
 }
 
 #btn-back-to-top {
@@ -75,44 +75,21 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 
-/*--------------------------------------------------------------
-# Sidebar
---------------------------------------------------------------*/
-.sidebar{
-  background: linear-gradient(#9ef8d1, #c69aec);
-  border: 2px solid white;
-}
 
-.sidebar li .submenu{ 
-	list-style: none; 
-	margin: 0; 
-	padding: 0; 
-	padding-left: 1rem; 
-	padding-right: 1rem;
-}
 
-.sidebar li {
-  padding-left: 15px;
-}
 
-.make-me-sticky {
-  position: -webkit-sticky;
-	position: sticky;
-  top: 15vh;
-}
 
-@media (max-width: 991px) {
-  .card-img-custom{
-    align-self: center;
-  }
-}
 
-/*--------------------------------------------------------------
-# Text area
---------------------------------------------------------------*/
-#text-area{
-  background: rgba(255,255,255,0.5);
-}
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------

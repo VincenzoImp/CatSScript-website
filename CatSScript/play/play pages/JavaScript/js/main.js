@@ -67,19 +67,22 @@ function backToTop() {
 
 
 /*--------------------------------------------------------------
-# Text area
+# Play area
 --------------------------------------------------------------*/
+var counter = 1;
 /* Default */
 $(document).ready(function(){
-  $('#text-area').load('./text-area/introduction.html');
+  $("#play-area").load("./play-area/form1.html");
 });
 
 /*Links*/
 $(document).ready(function(){
-  $(".learn-link").click(function(){
-    $("#text-area").load("./text-area/"+this.id+".html");
+  $(".play-link").click(function(){
+    counter++;
+    if(counter <= 3) $("#play-area").load("./play-area/form"+counter+".html");
+    else {
+      document.getElementById("confirm-btn").style.display = "none";
+      $("#play-area").load("./play-area/end-game.html");
+    }
   });
 });
-
-
-

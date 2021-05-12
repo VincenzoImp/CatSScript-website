@@ -64,22 +64,3 @@ function backToTop() {
   document.documentElement.scrollTop = 0;
 }
 
-
-
-/*--------------------------------------------------------------
-# Text area
---------------------------------------------------------------*/
-/* Default */
-$(document).ready(function(){
-  $('#text-area').load('./text-area/introduction.html');
-});
-
-/*Links*/
-$(document).ready(function(){
-  $(".learn-link").click(function(){
-    $("#text-area").load("./text-area/"+this.id+".html");
-  });
-});
-
-
-
