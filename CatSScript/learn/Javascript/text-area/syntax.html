@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"content="">
+        <meta name="keywords" content="">
+
+        <title>Syntax</title>
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>JavaScript Syntax</h1>
+        <br/>
+        <h3>JavaScript Values</h3>
+        <p class="indent-1">
+            The JavaScript syntax defines two types of values:
+            <ul>
+                <li>Fixed values</li>
+                <li>Variable values</li>
+            </ul>
+            Fixed values are called <b>Literals</b>. <br/>
+            Variable values are called <b>Variables</b>
+        </p>
+        <br/>
+        <h3>JavaScript Literals</h3>
+        <p class="indent-1">
+            The two most important syntax rules for fixed values are:
+            <ol>
+                <li>
+                    <b>Numbers</b> are written with or without decimals
+                </li>
+                <li>
+                    <b>Strings</b> are text, written within double or single quotes
+                </li>
+            </ol>
+        </p>
+        <br/>
+        <h3>JavaScript Variables</h3>
+        <p class="indent-1">
+            Variables are used to <b>store</b> data values. <br/>
+            JavaScript uses the <code>var</code> keyword to declare variables. <br/>
+            An <b>equal sign</b> is used to <b>assign values</b> to variables. <br/>
+            For example: <br/>
+        </p>
+        <!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">var</span> x;
+x <span style="color: #666666">=</span> <span style="color: #40a070">6</span>;
+</pre></div>
+        <p class="indent-1">
+            In the code above the value 6 is assigne to the variable <code>x</code>. <br/>
+            <br/>
+            Note that you can use the keyword <code>const</code> to define a variable that <b>cannot be reassigne</b>, 
+            and the keyword <code>let</code> to define a variable with <b>restricted scope</b>. <br/>
+            <br/>
+            You <b>must not provide a type</b> when you declare a variable. <br/>
+        </p>
+        <br/>
+        <h3>JavaScript Operators</h3>
+        <p class="indent-1">
+            JavaScript uses <b>arithmentic operators</b> (<code>+</code> <code>-</code> <code>*</code> <code>/</code>) to <b>compute</b> values. <br/>
+            <br/>
+            JavaScript uses an <b>assignment operator</b> (<code>=</code>) to <b>assign</b> values to variables. <br/>
+        </p>
+        <h4 class="indent-2">Arithmetic Opeartors</h4>
+        <p class="indent-3">
+            Arithmetic operators are used to perform arithmetic on numbers. <br/>
+            Here's a list of all arithmetic operators supported by JavaScript <br/>
+            <table style="width:100%;">
+                <tr style="border: 1px solid black;">
+                  <th style="border: 1px solid black;">Operator</th>
+                  <th style="border: 1px solid black;">Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                  <td style="border: 1px solid black;">+</td>
+                  <td style="border: 1px solid black;">Addition</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">-</td>
+                    <td style="border: 1px solid black;">Subtraction</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">*</td>
+                    <td style="border: 1px solid black;">Multiplication</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">**</td>
+                    <td style="border: 1px solid black;">Exponentiation</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">/</td>
+                    <td style="border: 1px solid black;">Division</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">%</td>
+                    <td style="border: 1px solid black;">Modulus (Division Remainder)</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">++</td>
+                    <td style="border: 1px solid black;">Increment</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">--</td>
+                    <td style="border: 1px solid black;">Decrement</td>
+                </tr>
+              </table>
+        </p>
+        <br/>
+        <h4 class="indent-2">Comparison Opeartors</h4>
+        <p class="indent-3">
+            Here's a list of all comparison operators supported by JavaScript <br/>
+            <table style="width:100%;">
+                <tr style="border: 1px solid black;">
+                  <th style="border: 1px solid black;">Operator</th>
+                  <th style="border: 1px solid black;">Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                  <td style="border: 1px solid black;">==</td>
+                  <td style="border: 1px solid black;">Equal to</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">===</td>
+                    <td style="border: 1px solid black;">Equal value and equal type</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">!=</td>
+                    <td style="border: 1px solid black;">Not equal</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">!==</td>
+                    <td style="border: 1px solid black;">Not equal value or not equal type</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&gt;</td>
+                    <td style="border: 1px solid black;">Greater than</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&lt;></td>
+                    <td style="border: 1px solid black;">Less than</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&gt;=</td>
+                    <td style="border: 1px solid black;">Greater than or equal to</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&lt;=</td>
+                    <td style="border: 1px solid black;">Less than or equal to</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">?</td>
+                    <td style="border: 1px solid black;">Ternary operator</td>
+                </tr>
+              </table>
+        </p>
+        <br/>
+        <h4 class="indent-2">Logical Opeartors</h4>
+        <p class="indent-3">
+            Here's a list of all logical operators supported by JavaScript <br/>
+            <table style="width:100%;">
+                <tr style="border: 1px solid black;">
+                  <th style="border: 1px solid black;">Operator</th>
+                  <th style="border: 1px solid black;">Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                  <td style="border: 1px solid black;">&&</td>
+                  <td style="border: 1px solid black;">Logical and</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">||</td>
+                    <td style="border: 1px solid black;">Logical or</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">!</td>
+                    <td style="border: 1px solid black;">Logical not</td>
+                </tr>
+              </table>
+        </p>
+        <br/>
+        <h4 class="indent-2">Type Opeartors</h4>
+        <p class="indent-3">
+            Here's a list of all type operators supported by JavaScript <br/>
+            <table style="width:100%;">
+                <tr style="border: 1px solid black;">
+                  <th style="border: 1px solid black;">Operator</th>
+                  <th style="border: 1px solid black;">Description</th>
+                </tr>
+                <tr style="border: 1px solid black;">
+                  <td style="border: 1px solid black;">typeof</td>
+                  <td style="border: 1px solid black;">Returns the type of a Variables</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">instanceof</td>
+                    <td style="border: 1px solid black;">Returns true if an object is an instance of an object type</td>
+                </tr>
+              </table>
+        </p>
+        <br/>
+        <h3>JavaScript Statements</h3>
+        <p class="indent-1">
+           JavaScript statements are composed of <b>Values</b>, <b>Operators</b>, <b>Expressions</b>, <b>Keywords</b> and <b>Comments</b>. <br/>
+           <br/>
+           The statements are executed, one by one, in the same order as they are written. <br/>
+           <b>Semicolons</b> separate JavaScript statements, this means that you must add a semicolon at the end of each executable statement. <br/>
+           When separated by semicolons, multiple statements on one line are allowed. <br/>
+           <br/>
+           JavaScript <b>ignores multiple spaces</b>.
+        </p>
+        <br/>
+    </body>
+</html>
+
