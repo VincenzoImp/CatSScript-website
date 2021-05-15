@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"content="">
+        <meta name="keywords" content="">
+
+        <title>CSS Properties</title>
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>CSS Properties</h1>
+        <p class="indent-1">
+            Here are listed some of the most important CSS properties:
+            <ul class="indent-2">
+                <li>
+                    <code>color</code> <br/>
+                    This property is used to style the color of a text
+                </li>
+                <li>
+                    <code>background-color</code> <br/>
+                    This property specifies the background color of an element
+                </li>
+                <li>
+                    <code>background-image</code> <br/>
+                    This property specifies an image to use as the background of an element. <br/>
+                    By default, the image is repeated so it covers the enitre element.
+                </li>
+                <li>
+                    <code>border: border-width border-style border-color</code> <br/>
+                    This property is used to set a border with a thickness equal to <code>border-width</code>, with the style choosen by <code>border-style</code> whose color is set by <code>border-color</code>. <br/>
+                    The thickness of the line can be expressed in pixel. <br/>
+                    The <code>border-style</code> property specifies what kind of border to display; these are the style allowed:
+                    <ul>
+                        <li>
+                            <code>dotted</code> - Defines a dotted border
+                            <div style="border-style: dotted;">A dotted border</div> <br/>
+                        </li>
+                        <li>
+                            <code>dashed</code> - Defines a dashed border 
+                            <div style="border-style:dashed;">A dashed border</div> <br/>
+                        </li>
+                        <li>
+                            <code>solid</code> - Defines a solid border
+                            <div style="border-style: solid;">A solid border</div> <br/>
+                        </li>
+                        <li>
+                            <code>double</code> - Defines a double border
+                            <div style="border-style: double;">A double border</div> <br/>
+                        </li>
+                        <li>
+                            <code>groove</code> - Defines a 3D grooved border. The effect depends on the <code>border-color</code> value
+                            <div style="border-style: groove;">A groove border</div> <br/>
+                        </li>
+                        <li>
+                            <code>ridge</code> - Defines a 3D ridged border. The effect depends on the <code>border-color</code> value
+                            <div style="border-style: ridge;">A ridge border</div> <br/>
+                        </li>
+                        <li>
+                            <code>inset</code> - Defines a 3D inset border. The effect depends on the <code>border-color</code> value
+                            <div style="border-style: inset;">An inset border</div> <br/>
+                        </li>
+                        <li>
+                            <code>outset</code> - Defines a 3D outset border. The effect depends on the <code>border-color</code> value
+                            <div style="border-style: outset;">An outset border</div> <br/>
+                        </li>
+                        <li>
+                            <code>none</code> - Defines no border
+                            <div style="border-style: none;">No border</div> <br/>
+                        </li>
+                        <li>
+                            <code>hidden</code> - Defines a hidden border
+                            <div style="border-style: hidden;">A hidden border</div> <br/>
+                        </li>
+                    </ul>
+                    Note that borders can also be mixed
+                    <div style="border-style: dotted dashed solid double;">A mixed border</div>
+                    Also note that is possible to specify a style for each border (top, right, bottom and left)
+                </li>
+                <li>
+                    <code>border-radius</code> <br/>
+                    This property is used to add rounded borders to an element
+                </li>
+                <li>
+                    <code>margin</code> <br/>
+                    This property is used to create space around elements, outside of any defined borders. <br/>
+                    There are proeprties for setting the margin of each side of an element (<code>margin-top</code>,
+                    <code>margin-right</code>, <code>margin-bottom</code>, <code>margin-left</code>). <br/>
+                    Note that all margin properties can have the following values:
+                    <ul>
+                        <li>auto - the browser calculates the margin</li>
+                        <li>length - specifies a margin in px, pt, cm, etc.</li>
+                        <li>% - specifies a margin in % of the width of the containing element</li>
+                        <li>inherit - specifies that the margin should be inherited from the parent element</li>
+                    </ul>
+                    Also note that negative values are allowed
+                </li>
+                <li>
+                    <code>padding</code> <br/>
+                    This property is used to generate space around an element's content, inside of any defined borders. <br/>
+                    Ther are properties for setting the padding of eache side of an element (<code>padding-top</code>,
+                    <code>padding-right</code>, <code>padding-bottom</code>, <code>padding-left</code>). <br/>
+                    Note that all padding properties can have the following values:
+                    <ul>
+                        <li>auto - the browser calculates the padding</li>
+                        <li>length - specifies a padding in px, pt, cm, etc.</li>
+                        <li>% - specifies a padding in % of the width of the containing element</li>
+                        <li>inherit - specifies that the padding should be inherited from the parent element</li>
+                    </ul>
+                    Also note that negative values are allowed
+                </li>
+                <li>
+                    <code>height</code> and <code>width</code>
+                    This property is used to set the height or the width of an element. <br/>
+                    The <code>height</code> and the <code>width</code> properties may have the following values:
+                    <ul>
+                        <li>
+                            <code>auto</code> - This is default. The browser calculates the height/width
+                        </li>
+                        <li>
+                            <code>length</code> - Defines the height/width in px, cm, etc.
+                        </li>
+                        <li>
+                            <code>%</code> - Defines the height/width in percent of the containing block
+                        </li>
+                        <li>
+                            <code>initial</code> - Sets the height/width to its default value
+                        </li>
+                        <li>
+                            <code>inherit</code> - The height/width will be inherited from its parent value
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <code>text-align</code>
+                    This property is used to set the horizontal alignment of a text. <br/>
+                    A text can be left or right aligned, centered or justified.
+                </li>
+                <li>
+                    <code>text-decoration</code>
+                    This property is used to set or remove decorations form text. <br/>
+                    The value <code>text-decoration: none</code> is often used to remove underlines from links
+                </li>
+            </ul>
+        </p>
+        <p class="indent-1">
+            Note that colors in CSS can be specified by a <b>valid color name</b>, a <b>HEX value</b> or an <b>RGB value</b>.
+        </p>
+    </body>
+</html>
+
