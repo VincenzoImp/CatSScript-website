@@ -74,6 +74,28 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
 }
 
+.navbar-light .nav-item .signin{
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signin:hover {
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
+}
+
+.navbar-light .nav-item .signup{
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signup:hover {
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
+}
+
 
 /*--------------------------------------------------------------
 # Sidebar
@@ -116,6 +138,20 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 
 /*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 100%;
+  background: linear-gradient(45deg, #c69aec, #9ef8d1);
+}
+
+
+
+/*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
 #footer{
@@ -125,4 +161,21 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 .background {
   background: rgba(255,255,255,0.3);
+}
+
+
+/*--------------------------------------------------------------
+# Text Area
+--------------------------------------------------------------*/
+
+.indent-1{
+  margin-left: 3%;
+}
+
+.indent-2{
+  margin-left: 6%;
+}
+
+.indent-3{
+  margin-left: 9%;
 }

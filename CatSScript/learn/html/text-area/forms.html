@@ -22,38 +22,38 @@
             An HTML form is used to <b>collect user input</b>. The user input is most often sent to a server for processing. <br/>
         </p>
         <h3>The <code>&lt;form&gt;</code> Element</h3>
-        <p style="margin-left: 3%">
+        <p class="indent-1">
             The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input. <br/>
             The syntax for the element is the following: <br/>
         </p>
-        <p style="margin-left: 6%"> 
+        <p class="indent-2"> 
             <code>&lt;form action="<i>action to do</i>" method="<i>POST or GET</i>" name="<i>form name</i>" onsubmit="return <i>validityFunction()</i>"&gt;</code><br/>
-            <i style="margin-left: 3%">form elements</i><br/>
+            <i class="indent-1">form elements</i><br/>
             <code>&lt;/form&gt;</code>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             The <code>&lt;form&gt;</code> element is a container for different types of <b>input elements</b>, such as:
             text fields, checkboxes, radio buttons, submit buttons, etc.
         </p>
         <h3>HTML Form Elements</h3>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             These are some of the form elements that the HTML <code>&lt;form&gt;</code> element can contain: <br/>
         </p>
-        <ul style="margin-left: 3%;">
+        <ul class="indent-1">
             <li><code>&lt;input&gt;</code></li>
             <li><code>&lt;select&gt;</code></li>
             <li><code>&lt;textarea&gt;</code></li>
             <li><code>&lt;datalist&gt;</code></li>
         </ul>
-        <h4 style="margin-left: 6%;">The <code>&lt;input&gt;</code> Element</h4>
-        <p style="margin-left: 6%;">
+        <h4 class="indent-2">The <code>&lt;input&gt;</code> Element</h4>
+        <p class="indent-2">
             One of the most used form element is the <code>&lt;input&gt;</code> element. <br/>
             The <code>&lt;input&gt;</code> element can be displayed in several ways, depending on the <code>type</code> attribute. <br/>
             <br/>
             These are some of the different values of the <code>type</code> attribute (the <b>default value</b> of the <code>type</code>
             attribute is <b>"text"</b>:<br/>
         </p>
-        <ul style="margin-left: 6%;">
+        <ul class="indent-2">
             <li>
                 <code>&lt;input type="text"&gt;</code>: <br/>
                 This type of input defines a <b>single-line text input field</b>. <br/>
@@ -210,15 +210,15 @@
             </li>
         </ul>
         <br/>
-        <h4 style="margin-left: 6%;">The <code>&lt;select&gt;</code> Element</h4>
-        <p style="margin-left: 6%;">
+        <h4 class="indent-2">The <code>&lt;select&gt;</code> Element</h4>
+        <p class="indent-2">
             The <code>&lt;select&gt;</code> element defines a <b>drop-down list</b>. <br/>
             The <code>&lt;option&gt;</code> elements defines an <b>option</b> that can be selected. <br/>
             By default the <b>first item</b> in the drop-down list is selected; to define a pre-selected option, add the <code>selected</code> attribute to the option. <br/>
             For example, the following HTML code: <br/>
         </p>
         <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">Choose a car:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">select</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;volvo&quot;</span> selected&gt;</span>Volvo<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;saab&quot;</span>&gt;</span>Saab<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fiat&quot;</span>&gt;</span>Fiat<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;audi&quot;</span>&gt;</span>Audi<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">select</span>&gt;</span></div></li></ol></pre>
-        <p style="margin-left: 6%;">
+        <p class="indent-2">
             will produce: <br/>
             Choose a car:
             <select id="cars" name="cars">
@@ -229,30 +229,30 @@
             </select>
         </p>
         <br/>
-        <h4 style="margin-left: 6%;">The <code>&lt;textarea&gt;</code> Element</h4>
-        <p style="margin-left: 6%;">
+        <h4 class="indent-2">The <code>&lt;textarea&gt;</code> Element</h4>
+        <p class="indent-2">
             The <code>&lt;textarea&gt;</code> element defines a <b>multi-line</b> input field. <br/>
             The <code>rows</code> attribute specifies the <b>visible numbers of lines</b> in a text area. <br/>
             The <code>cols</code> attribute specifies the visible width of a text-area. <br/>
             For example this HTML code: <br/>
         </p>
         <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">textarea</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;message&quot;</span> <span style="color: #000066;">rows</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;10&quot;</span> <span style="color: #000066;">cols</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;30&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">The cat was playing in the garden.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">textarea</span>&gt;</span></div></li></ol></pre>
-        <p style="margin-left: 6%;">
+        <p class="indent-2">
             will produce this: <br/>
             <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
         </p>
         <br/>
-        <h4 style="margin-left: 6%;">The <code>&lt;datalist&gt;</code> Element</h4>
-        <p style="margin-left: 6%;">
+        <h4 class="indent-2">The <code>&lt;datalist&gt;</code> Element</h4>
+        <p class="indent-2">
             The <code>&lt;datalist&gt;</code> element specifies a <b>list of pre-defined options</b> for an <code>&lt;input&gt;</code> element. <br/>
             Users will see a drop-down list of the pre-defined options as they input data. <br/>
             The <code>list</code> attribute of the <code>&lt;input&gt;</code> element, must refer to the <code>id</code> attribute of the <code>&lt;datalist&gt;</code> element. <br/>
             For example, this HTML code: <br/>
         </p>
         <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> list<span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">datalist</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Internet Explorer&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Firefox&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Chrome&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Opera&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Safari&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">datalist</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-        <p style="margin-left: 6%;">
+        <p class="indent-2">
             will produce this: <br/>
-            <form action="" style="margin-left: 6%;">
+            <form action="" class="indent-2">
                 <input list="browsers">
                 <datalist id="browsers">
                   <option value="Internet Explorer">

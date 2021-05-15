@@ -8,7 +8,7 @@
 
         <title>Headings and paragraphs</title>
         <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
 
         <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
 
@@ -20,7 +20,7 @@
         <h1>Headings and paragraphs</h1>
         <br/>
         <h3>HTML Headings</h3>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             Headings are titles or subtitles that you want to display on a webpage. <br/>
             <br/>
             HTML headings are defined with the <code>&lt;h1&gt;</code> to the <code>&lt;h6&gt;</code> tags.
@@ -28,43 +28,43 @@
             Note that browsers automatically add some white space before and after a heading. <br/>
             <br/>
             Here's an example of what each heading shows: <br/>
-            <ul class="list-unstyled" style="margin-left: 3%;">
-                <li style="margin-left: 6%;"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code> will produce<br/>
-                    <h1 style="margin-left: 9%;">Heading 1</h1>
+            <ul class="list-unstyled" class="indent-1">
+                <li class="indent-2"><code>&lt;h1&gt;Heading 1&lt;/h1&gt;</code> will produce<br/>
+                    <h1 class="indent-3">Heading 1</h1>
                 </li>
-                <li style="margin-left: 6%;"><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code> will produce<br/>
-                    <h2 style="margin-left: 9%;">Heading 2</h2>
+                <li class="indent-2"><code>&lt;h2&gt;Heading 2&lt;/h2&gt;</code> will produce<br/>
+                    <h2 class="indent-3">Heading 2</h2>
                 </li>
-                <li style="margin-left: 6%;"><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code> will produce<br/>
-                    <h3 style="margin-left: 9%;">Heading 3</h3>
+                <li class="indent-2"><code>&lt;h3&gt;Heading 3&lt;/h3&gt;</code> will produce<br/>
+                    <h3 class="indent-3">Heading 3</h3>
                 </li>
-                <li style="margin-left: 6%;"><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code> will produce<br/>
-                    <h4 style="margin-left: 9%;">Heading 4</h4>
+                <li class="indent-2"><code>&lt;h4&gt;Heading 4&lt;/h4&gt;</code> will produce<br/>
+                    <h4 class="indent-3">Heading 4</h4>
                 </li>
-                <li style="margin-left: 6%;"><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code> will produce<br/>
-                    <h5 style="margin-left: 9%;">Heading 5</h5>
+                <li class="indent-2"><code>&lt;h5&gt;Heading 5&lt;/h5&gt;</code> will produce<br/>
+                    <h5 class="indent-3">Heading 5</h5>
                 </li>
-                <li style="margin-left: 6%;"><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code> will produce<br/>
-                    <h6 style="margin-left: 9%;">Heading 6</h6>
+                <li class="indent-2"><code>&lt;h6&gt;Heading 6&lt;/h6&gt;</code> will produce<br/>
+                    <h6 class="indent-3">Heading 6</h6>
                 </li>
             </ul>
         </p>
         <br/>
-        <p style="margin-left: 3%;">Headings are really important because search engines use them to index the structure of web pages (they are
+        <p class="indent-1">Headings are really important because search engines use them to index the structure of web pages (they are
         also important because they help the user to understand the structure of a page).</p>
         <br/>
         <br/>
         <h3>HTML Paragraphs</h3>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             The <code>&lt;p&gt;</code> element defines a paragraph. <br/>
             A paragraph <b>always</b> starts with a new line and browsers automatically add some white space before and after it. <br/>
             <br/>
             The browser will automatically <b>remove</b> any extra spaces and lines when the page is displayed, so the following code: <br/>
             <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">This paragraph</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">contains         a lot of spaces</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">in the source         code,</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">but the        browser</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">ignores it.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li></ol></pre>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             will actually produce: <br/>
-            <span style="margin-left: 6%;">This paragraph contains a lot of spaces in the source code but the browser ignores it.</span>
+            <span class="indent-2">This paragraph contains a lot of spaces in the source code but the browser ignores it.</span>
             <br/>
             <br/>
             To display breaks to separate content you can use either <code>&lt;hr&gt;</code> or <code>&lt;br&gt;</code> tags.
@@ -72,48 +72,48 @@
         <br/>
         <br/>
         <h3>HTML Breaks</h3>
-        <h4 style="margin-left: 3%;">The <code>&lt;hr&gt;</code> tag</h4>
-        <p style="margin-left: 3%;">
+        <h4 class="indent-1">The <code>&lt;hr&gt;</code> tag</h4>
+        <p class="indent-1">
             The <code>&lt;hr&gt;</code> tag defines a <b>thematic break</b> in an HTML page and is displayed as an horizontal line.
             For example the following code: <br/>
             <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">h1</span>&gt;</span>This is heading 1<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">h1</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>This is some text.<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">h2</span>&gt;</span>This is heading 2<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">h2</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>This is some other text.<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">hr</span>&gt;</span></div></li></ol></pre>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             will produce:
-            <h1 style="margin-left: 6%;">This is heading 1</h1>
-            <p style="margin-left: 6%;">This is some text.</p>
-            <hr style="margin-left: 6%;">
-            <h2 style="margin-left: 6%;">This is heading 2</h2>
-            <p style="margin-left: 6%;"> This is some other text.</p>
-            <hr style="margin-left: 6%;">
+            <h1 class="indent-2">This is heading 1</h1>
+            <p class="indent-2">This is some text.</p>
+            <hr class="indent-2">
+            <h2 class="indent-2">This is heading 2</h2>
+            <p class="indent-2"> This is some other text.</p>
+            <hr class="indent-2">
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             Note that the <code>&lt;hr&gt;</code> tag is an empty tag, which means that it has no end tag.
         </p>
         <br/>
-        <h4 style="margin-left: 3%;">The <code>&lt;br&gt;</code> tag</h4>
-        <p style="margin-left: 3%;">
+        <h4 class="indent-1">The <code>&lt;br&gt;</code> tag</h4>
+        <p class="indent-1">
             The HTML <code>&lt;br&gt;</code> elements defines a line break. <br/>
             Use <code>&lt;br&gt;</code> if you want a <b>line break</b> without starting a new paragraph.
             For example the following code: <br/>
             <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">p</span>&gt;</span>This is<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span>a paragraph<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span>with line breaks.<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">p</span>&gt;</span></div></li></ol></pre>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             will produce: 
-            <p style="margin-left: 6%;">This is<br>a paragraph<br>with line breaks.</p>
+            <p class="indent-2">This is<br>a paragraph<br>with line breaks.</p>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             Note that the <code>&lt;br&gt;</code> tag is an empty tag, which means that it has no end tag.
         </p>
         <br/>
-        <h4 style="margin-left: 3%;">The <code>&lt;pre&gt;</code> tag</h4>
-        <p style="margin-left: 3%;">
+        <h4 class="indent-1">The <code>&lt;pre&gt;</code> tag</h4>
+        <p class="indent-1">
             The <code>&lt;pre&gt;</code> elements defines preformatted text: this means that the text inside a <code>&lt;pre&gt;</code> tag is
             displayed in a fixed-width font and it preserves both spaces and line breaks.
             For example the following code: <br/>
             <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">pre</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  My Bonnie lies over the ocean.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  My Bonnie lies over the sea.</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  My Bonnie lies over the ocean.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Oh, bring back my Bonnie to me.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">pre</span>&gt;</span></div></li></ol></pre>
         </p>
-        <p style="margin-left: 3%;">
+        <p class="indent-1">
             will produce:
             <pre>
                 My Bonnie lies over the ocean.
