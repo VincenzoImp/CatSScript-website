@@ -183,6 +183,83 @@ x <span style="color: #666666">=</span> <span style="color: #40a070">6</span>;
               </table>
         </p>
         <br/>
+        <h4 class="indent-2">Assignment Opeartors</h4>
+        <p class="indent-3">
+            Here's a list of all assignment operators supported by JavaScript <br/>
+            <table style="width:100%;">
+                <tr style="border: 1px solid black;">
+                  <td style="border: 1px solid black;">Operator</td>
+                  <td style="border: 1px solid black;">Example</td>
+                  <td style="border: 1px solid black;">Same As</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">=</td>
+                    <td style="border: 1px solid black;">x = y</td>
+                    <td style="border: 1px solid black;">x = y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">+=</td>
+                    <td style="border: 1px solid black;">x += y</td>
+                    <td style="border: 1px solid black;">x = x + y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">-=</td>
+                    <td style="border: 1px solid black;">x -= y</td>
+                    <td style="border: 1px solid black;">x = x - y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">*=</td>
+                    <td style="border: 1px solid black;">x *= y</td>
+                    <td style="border: 1px solid black;">x = x * y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">/=</td>
+                    <td style="border: 1px solid black;">x /= y</td>
+                    <td style="border: 1px solid black;">x = x / y</thd>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">%=</td>
+                    <td style="border: 1px solid black;">x %= y</td>
+                    <td style="border: 1px solid black;">x = x % y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&lt;&lt;=</td>
+                    <td style="border: 1px solid black;">x &lt;&lt;= y</td>
+                    <td style="border: 1px solid black;">x = x &lt;&lt;= y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&gt;&gt;=</td>
+                    <td style="border: 1px solid black;">x &gt;&gt;= y</td>
+                    <td style="border: 1px solid black;">x = x &gt;&gt;= y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&gt;&gt;&gt;=</td>
+                    <td style="border: 1px solid black;">x &gt;&gt;&gt;= y</td>
+                    <td style="border: 1px solid black;">x = x &gt;&gt;&gt;= y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">&=</td>
+                    <td style="border: 1px solid black;">x &= y</td>
+                    <td style="border: 1px solid black;">x = x & y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">^=</td>
+                    <td style="border: 1px solid black;">x ^= y</td>
+                    <td style="border: 1px solid black;">x = x ^ y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">|=</td>
+                    <td style="border: 1px solid black;">x |= y</td>
+                    <td style="border: 1px solid black;">x = x | y</td>
+                </tr>
+                <tr style="border: 1px solid black;">
+                    <td style="border: 1px solid black;">**=</td>
+                    <td style="border: 1px solid black;">x **= y</td>
+                    <td style="border: 1px solid black;">x = x ** y</td>
+                </tr>
+              </table>
+        </p>
+        <br/>
         <h4 class="indent-2">Type Opeartors</h4>
         <p class="indent-3">
             Here's a list of all type operators supported by JavaScript <br/>
@@ -213,6 +290,40 @@ x <span style="color: #666666">=</span> <span style="color: #40a070">6</span>;
            JavaScript <b>ignores multiple spaces</b>.
         </p>
         <br/>
+        <h3>Conditions and For Loop</h3>
+        <p class="indent-1">
+            JavaScript, as any other programming language, use the <b>conditional statements</b>. <br/>
+            Here's all the conditional statement used in Javascript:
+            <ul>
+                <li>
+                    <code>if</code> <br/>
+                    Use <code>if(<i>condition1</i>)</code> to specify a block of code to be executed, if a special condition is true
+                </li>
+                <li>
+                    <code>else</code> <br/>
+                    Use <code>else</code> to specify a block of code to be executed, if the same condition is false
+                </li>
+                <li>
+                    <code>else if(<i>condition2</i>)</code>
+                    Use <code>else if</code> to specify a new condition to test, if the first condition is false
+                </li>
+                <li>
+                    <code>switch</code>
+                    Use <code>switch</code> to specify many alternative blocks of code to be executed
+                </li>
+            </ul>
+            <br/>
+            To loop through all the items of an object you can use the <code>for</code> loop which has the following syntax:
+        </p>
+        <pre class="javascript" style="font-family:monospace; border: 1px solid black"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">for</span> <span style="color: #009900;">&#40;</span>statement <span style="color: #CC0000;">1</span><span style="color: #339933;">;</span> statement <span style="color: #CC0000;">2</span><span style="color: #339933;">;</span> statement <span style="color: #CC0000;">3</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #006600; font-style: italic;">// code block to be executed</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
+        <p class="indent-1">
+            <b>statement 1</b> is executed one time before the execution of the code block. <br/>
+            Normally you will use statement 1 to initialize the variable used in the loop. <br/>
+            <b>statement 2</b> defines the condition for executing the code block; <br/>
+            Often statement 2 is used to evaluate the condition of the initial variable. <br/>
+            <b>statement 3</b> is executed every time after the code block has been executed. <br/>
+            Often statement 3 increments the value of the initial variable.
+        </p>
     </body>
 </html>
 

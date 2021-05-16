@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description"content="">
+        <meta name="keywords" content="">
+
+        <title>Objects</title>
+        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+
+
+        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+    </head>
+    <body>
+        <h1>JavaScript Objects</h1>
+        <p class="indent-1">
+            Objects are variables that can <b>contain many values</b>. <br/>
+            The values are written as <b>name:values</b> pairs (where eache pair is separated by a colon from the others). <br/>
+            For example:
+        </p>
+        <pre class="javascript" style="font-family:monospace; border: 1px solid black"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> person <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span>name<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Mario&quot;</span><span style="color: #339933;">,</span> surname<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Rossi&quot;</span><span style="color: #339933;">,</span> age<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;32&quot;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span></div></li></ol></pre>
+        <p class="indent-1">
+            The code above assigns many values (Mario, Rossi, 32) to a variable named person. <br/>
+            <br/>
+            JavaScript objects are containers for <b>named values</b> called <b>properties</b> or <b>methods</b>.
+        </p>
+        <br/>
+        <h3>Object Definition</h3>
+        <p class="indent-1">
+            You define and create a JavaScript object with an object literal like
+        </p>
+        <pre class="javascript" style="font-family:monospace; border: 1px solid black"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> person <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span>name<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Mario&quot;</span><span style="color: #339933;">,</span> surname<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Rossi&quot;</span><span style="color: #339933;">,</span> age<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;32&quot;</span><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span></div></li></ol></pre>
+        <p class="indent-1">
+            Space and line breaks are not important, so you can span multiple lines to make your code more readable. <br/>
+            So this
+        </p>
+        <pre class="javascript" style="font-family:monospace; border: 1px solid black"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> person <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    name<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Mario&quot;</span><span style="color: #339933;">,</span> </div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    surname<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;Rossi&quot;</span><span style="color: #339933;">,</span> </div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    age<span style="color: #339933;">:</span><span style="color: #3366CC;">&quot;32&quot;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span></div></li></ol></pre>
+        <p class="indent-1">
+            has the same meaning of the same code written on one line.
+        </p>
+        <br/>
+        <h3>Object Properties and Accessing Object Properties</h3>
+        <p class="indent-1">
+            The <b>name:values</b> pairs in JavaScript objects are called <b>properties</b>. <br/>
+            <br/>
+            You can access object properties in two ways: <br/>
+            <code><i>objectName.propertyName</i></code> <br/>
+            or <br/>
+            <code><i>objectName["propertyName"]</i></code>
+        </p>
+        <br/>
+        <h3>Object Methods and Accessing to Object Methods</h3>
+        <p class="indent-1">
+            Objects can also have <b>methods</b>: methods are <b>actions</b> that can be <b>performed on objects</b>. <br/>
+            Methods are stored in properties as <b>function definitions</b>. <br/>
+            For example:
+        </p>
+        <pre class="javascript" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> person <span style="color: #339933;">=</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  name<span style="color: #339933;">:</span> <span style="color: #3366CC;">&quot;Mario&quot;</span><span style="color: #339933;">,</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  surname <span style="color: #339933;">:</span> <span style="color: #3366CC;">&quot;Rossi&quot;</span><span style="color: #339933;">,</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  fullName <span style="color: #339933;">:</span> <span style="color: #000066; font-weight: bold;">function</span><span style="color: #009900;">&#40;</span><span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #000066; font-weight: bold;">return</span> <span style="color: #000066; font-weight: bold;">this</span>.<span style="color: #660066;">name</span> <span style="color: #339933;">+</span> <span style="color: #3366CC;">&quot; &quot;</span> <span style="color: #339933;">+</span> <span style="color: #000066; font-weight: bold;">this</span>.<span style="color: #660066;">surname</span><span style="color: #339933;">;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&#125;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span><span style="color: #339933;">;</span></div></li></ol></pre>
+        <p class="indent-1">
+            Note that in the code above, the keyword <code>this</code> is used. <br/>
+            In a function definition, <code>this</code> refers to the "owner" of the function. <br/>
+            <br/>
+            You can access an object method with the following syntax: <br/>
+            <code><i>objectName.methodName()</i></code> <br/>
+            <br/>
+            Note that if you access a method <b>without the ()</b> parentheses, it will return the <b>function definition</b>
+        </p>
+    </body>
+</html>
+
