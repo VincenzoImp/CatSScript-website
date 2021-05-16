@@ -61,11 +61,96 @@
     <!-- End Navbar/Header -->
 
     <div class="space"></div>
-    <div id="play-area"></div>
-    <a id="confirm-btn" class="play-link btn">Confirm</a>
-    <a id="back-btn" class="btn" href="../../index.html">Back lobby</a>
 
+    <div class="d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-items-center">
+                <div class="d-flex justify-content-center">
+                    <!-- Info Box -->
+                    <div id="info_box" class="card margin-card">
+                        <div class="card-body">
+                            <h3 class="card-title" style="text-align: center;">Some Rules of this Quiz</h3>
+                            <hr/>
+                            <div class="card-text">
+                                1. You will have only <span>15 seconds</span> per each question. <br/>
+                                2. Once you select your answer, it can't be undone. <br/>
+                                3. You can't select any option once time goes off. <br/>
+                                4. You can't exit from the Quiz while you're playing. <br/>
+                                5. You'll get points on the basis of your correct answers.
+                            </div>
+                            <hr/>
+                            <div class="d-flex justify-content-end">
+                                <button id="exit" class="btn btn-primary me-1">Exit Quiz</button>
+                                <button id="continue" class="btn btn-primary ms-1">Continue</button>
+                            </div>
+                        </div>
+                    </div>
 
+        
+                    <!-- Quiz Box -->
+                    <div id="quiz_box" class="card margin-card">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-8">
+                                    <h3 class="card-title">Test your CSS capacities</h3>
+                                </div>
+                                <div class="col-4">
+                                    <div class="timer">
+                                        <div class="time_left_txt">Time Left</div>
+                                        <div class="timer_sec">15</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div id="time_line" class="time_line"></div>
+                            </div>
+                            <div class="row">
+                                <div class="card-text que_text my-3">
+                                    <!-- Here I've inserted question from JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <section>
+                            <div class="option_list">
+                                <!-- Here I've inserted options from JavaScript -->
+                            </div>
+                        </section>
+                
+                        <!-- footer of Quiz Box -->
+                        <footer>
+                            <div class="total_que">
+                                <!-- Here I've inserted Question Count Number from JavaScript -->
+                            </div>
+                            <button class="next_btn">Next Que</button>
+                        </footer>
+                    </div>
+
+                </div>
+            </div>
+            
+        
+            
+            
+        
+            
+        
+            <!-- Result Box -->
+            <div class="result_box">
+                <div class="icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <div class="complete_text">You've completed the Quiz!</div>
+                <div class="score_text">
+                    <!-- Here I've inserted Score Result from JavaScript -->
+                </div>
+                <div class="buttons">
+                    <button id="restart" class="restart">Replay Quiz</button>
+                    <button class="quit">Quit Quiz</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <!-- ======= Footer ======= -->
     <div id="footer">
         <div class="background">
@@ -83,5 +168,11 @@
 
     <script src="../../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>
+
+    <!-- Inside this JavaScript file I've inserted Questions and Options only -->
+    <script src="js/questions.js"></script>
+
+    <!-- Inside this JavaScript file I've coded all Quiz Codes -->
+    <script src="js/script.js"></script>
     </body>
 </html>
