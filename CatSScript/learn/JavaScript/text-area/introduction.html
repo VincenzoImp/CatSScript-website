@@ -1,80 +1,60 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
 
-        <title>Introduction and first steps</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+<h1>Introduction and first steps</h1>
+<br/>
+<h3>What is JavaScript?</h3>
+<p class="indent-1">
+    JavaScript is the <span>programming language of the web</span>. <br/>
+    It is used to program the <span>behavior</span> of web pages
+</p>
+<br/>
+<h3>JavaScript Functions and Events</h3>
+<p class="indent-1">
+    A JavaScript script is made of <span>function</span>. <br/>
+    A <code>function</code> is a block of JavaScript code, that can be executed when "called" for: most of the JavaScript Functions
+    are <span>event handler</span> so they are called when an <span>event</span> (like the click of a user on a button) occurs.
+</p>
+<br/>
+<h3>How to add JavaScript scripts</h3>
+<p class="indent-1">
+    In an HTML document, JavaScript code is inserted between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags. <br/>
+    If you want to link an external script you can use the following syntax: 
+    <code>&lt;script src="<i>script_file_url</i>"&gt;&lt;/script&gt;</code> <br/>
+    <br/>
+    Scripts can be placed in the <code>&lt;body&gt;</code>, or in the <code>&lt;head&gt;</code> section of an HTML page, or in both. <br/>
+    Usually placing scripts at the bottom of the <code>&lt;body&gt;</code> element improves the display speed, because script interpretation slows down the display;
+    placing them at the end of the body section also helps them to work correctly because their interpretation is done after the whole web page has been charged. 
+</p>
+<br/>
+<h3>JavaScript Display Possibilities</h3>
+<p class="indent-1">
+    JavaScript can "display" data in different ways:
+    <ul>
+        <li>
+            Writing into an HTML element, using <code>innerHTML</code> <br/>
+            To access an HTML element, JavaScript can use the <code>document.getElementById(id)</code> method. <br/>
+            The <code>id</code> attribute defines the HTML element. The <code>innerHTML</code> property defines the HTML content.
+        </li>
+        <li>
+            Writing into the HTML output using <code>document.write()</code>
+        </li>
+        <li>
+            Writing into an alert box, using <code>window.alert()</code> <br/>
+            This method is used to create an alert box to display data. <br/>
+            Note that you can skip the <code>window</code> keyword.
+        </li>
+    </ul>
+</p>
+<br/>
+<h3>JavaScript Statements</h3>
+<p class="indent-1">
+    JavaScript statements are composed of <span>Values</span>, <span>Operators</span>, <span>Expressions</span>, <span>Keywords</span> and <span>Comments</span>. <br/>
+    <br/>
+    The statements are executed, one by one, in the same order as they are written. <br/>
+    <span>Semicolons</span> separate JavaScript statements, this means that you must add a semicolon at the end of each executable statement. <br/>
+    When separated by semicolons, multiple statements on one line are allowed. <br/>
+    <br/>
+    JavaScript <span>ignores multiple spaces</span>.
+</p>
 
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
 
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>Introduction and first steps</h1>
-        <br/>
-        <h3>What is JavaScript?</h3>
-        <p class="indent-1">
-            JavaScript is the <b>programming language of the web</b>. <br/>
-            It is used to program the <b>behavior</b> of web pages
-        </p>
-        <br/>
-        <h3>JavaScript Functions and Events</h3>
-        <p class="indent-1">
-            A JavaScript script is made of <b>function</b>. <br/>
-            A <code>function</code> is a block of JavaScript code, that can be executed when "called" for: most of the JavaScript Functions
-            are <b>event handler</b> so they are called when an <b>event</b> (like the click of a user on a button) occurs.
-        </p>
-        <br/>
-        <h3>How to add JavaScript scripts</h3>
-        <p class="indent-1">
-            In an HTML document, JavaScript code is inserted between <code>&lt;script&gt;</code> and <code>&lt;/script&gt;</code> tags. <br/>
-            If you want to link an external script you can use the following syntax: 
-            <code>&lt;script src="<i>script_file_url</i>"&gt;&lt;/script&gt;</code> <br/>
-            <br/>
-            Scripts can be placed in the <code>&lt;body&gt;</code>, or in the <code>&lt;head&gt;</code> section of an HTML page, or in both. <br/>
-            Usually placing scripts at the bottom of the <code>&lt;body&gt;</code> element improves the display speed, because script interpretation slows down the display;
-            placing them at the end of the body section also helps them to work correctly because their interpretation is done after the whole web page has been charged. 
-        </p>
-        <br/>
-        <h3>JavaScript Display Possibilities</h3>
-        <p class="indent-1">
-            JavaScript can "display" data in different ways:
-            <ul>
-                <li>
-                    Writing into an HTML element, using <code>innerHTML</code> <br/>
-                    To access an HTML element, JavaScript can use the <code>document.getElementById(id)</code> method. <br/>
-                    The <code>id</code> attribute defines the HTML element. The <code>innerHTML</code> property defines the HTML content.
-                </li>
-                <li>
-                    Writing into the HTML output using <code>document.write()</code>
-                </li>
-                <li>
-                    Writing into an alert box, using <code>window.alert()</code> <br/>
-                    This method is used to create an alert box to display data. <br/>
-                    Note that you can skip the <code>window</code> keyword.
-                </li>
-            </ul>
-        </p>
-        <br/>
-        <h3>JavaScript Statements</h3>
-        <p class="indent-1">
-           JavaScript statements are composed of <b>Values</b>, <b>Operators</b>, <b>Expressions</b>, <b>Keywords</b> and <b>Comments</b>. <br/>
-           <br/>
-           The statements are executed, one by one, in the same order as they are written. <br/>
-           <b>Semicolons</b> separate JavaScript statements, this means that you must add a semicolon at the end of each executable statement. <br/>
-           When separated by semicolons, multiple statements on one line are allowed. <br/>
-           <br/>
-           JavaScript <b>ignores multiple spaces</b>.
-        </p>
-        <br/>
-    </body>
-</html>
 

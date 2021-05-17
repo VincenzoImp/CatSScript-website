@@ -1,267 +1,246 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
-
-        <title>HTML Forms</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>HTML Forms</h1>
-        <p>
-            An HTML form is used to <b>collect user input</b>. The user input is most often sent to a server for processing. <br/>
-        </p>
-        <h3>The <code>&lt;form&gt;</code> Element</h3>
-        <p class="indent-1">
-            The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input. <br/>
-            The syntax for the element is the following: <br/>
-        </p>
-        <p class="indent-2"> 
-            <code>&lt;form action="<i>action to do</i>" method="<i>POST or GET</i>" name="<i>form name</i>" onsubmit="return <i>validityFunction()</i>"&gt;</code><br/>
-            <i class="indent-1">form elements</i><br/>
-            <code>&lt;/form&gt;</code>
-        </p>
-        <p class="indent-1">
-            The <code>&lt;form&gt;</code> element is a container for different types of <b>input elements</b>, such as:
-            text fields, checkboxes, radio buttons, submit buttons, etc.
-        </p>
-        <h3>HTML Form Elements</h3>
-        <p class="indent-1">
-            These are some of the form elements that the HTML <code>&lt;form&gt;</code> element can contain: <br/>
-        </p>
-        <ul class="indent-1">
-            <li><code>&lt;input&gt;</code></li>
-            <li><code>&lt;select&gt;</code></li>
-            <li><code>&lt;textarea&gt;</code></li>
-            <li><code>&lt;datalist&gt;</code></li>
-        </ul>
-        <h4 class="indent-2">The <code>&lt;input&gt;</code> Element</h4>
-        <p class="indent-2">
-            One of the most used form element is the <code>&lt;input&gt;</code> element. <br/>
-            The <code>&lt;input&gt;</code> element can be displayed in several ways, depending on the <code>type</code> attribute. <br/>
-            <br/>
-            These are some of the different values of the <code>type</code> attribute (the <b>default value</b> of the <code>type</code>
-            attribute is <b>"text"</b>:<br/>
-        </p>
-        <ul class="indent-2">
-            <li>
-                <code>&lt;input type="text"&gt;</code>: <br/>
-                This type of input defines a <b>single-line text input field</b>. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    First name:<br/>
-                    <input type="text" id="fname" name="fname"><br/>
-                    Last name:<br/>
-                    <input type="text" id="lname" name="lname">
-                  </form>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="password"&gt;</code>
-                This type of input defines a <b>password field</b>, this means that if you write something into this type of
-                field in a form, everything will be masked by asterisks or circles. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Username:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;username&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;username&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Password:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;password&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;pwd&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;pwd&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    Username:<br/>
-                    <input type="text" id="username" name="username"><br/>
-                    Password:<br/>
-                    <input type="password" id="pwd" name="pwd">
-                </form>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="submit"&gt;</code>
-                This type of input defines a <b>submit button</b> form data to a <b>form-handler</b>. <br/>
-                The form-handler is typically a server page with a script for processing input data. <br/>
-                The form-handler is specified in the form's <code>&lt;action&gt;</code> attribute. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Mario&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Rossi&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;submit&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Submit&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form action="">
-                    First name:<br/>
-                    <input type="text" id="fname" name="fname" value="Mario"><br/>
-                    Last name:<br/>
-                    <input type="text" id="lname" name="lname" value="Rossi"><br/><br/>
-                    <input type="submit" value="Submit">
-                </form>
-                <br/>
-                Note that in the following example only the submit button is shown, this means that no action is linked to the form. <br/>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="reset"&gt;</code> <br/>
-                This type of input defines a <b>reset button</b> that will reset all form values to their default values: <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Mario&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Rossi&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;submit&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Submit&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;reset&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Reset&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form action="">
-                    First name:<br/>
-                    <input type="text" id="fname" name="fname" value="Mario"><br/>
-                    Last name:<br/>
-                    <input type="text" id="lname" name="lname" value="Rossi"><br/><br/>
-                    <input type="submit" value="Submit">
-                    <input type="reset" value="Reset">
-                </form>
-                <br/>
-                If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="radio"&gt;</code> <br/>
-                This type of input defines a <b>radio button</b>. <br/>
-                Radio buttons let a user select <b>only one</b> of a limited number of choices. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;male&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;male&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Male<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;female&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;female&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Female<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;other&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;other&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Other</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    <input type="radio" id="male" name="gender" value="male">
-                    Male<br>
-                    <input type="radio" id="female" name="gender" value="female">
-                    Female<br>
-                    <input type="radio" id="other" name="gender" value="other">
-                    Other
-                </form>
-                <br/>
-                Note that the <code>checked</code> attribute specfifies that an input field should be <b>pre-selected</b> when the page loads.
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="checkbox"&gt;</code> <br/>
-                This type of input defines a <b>checkbox</b>. <br/>
-                Checkboxes let a user select <b>zero or more</b> options of a limited number of choices. <br/>
-                For example if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle1&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle1&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Bike&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  I have a bike<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle2&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle2&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Car&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">   I have a car<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle3&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle3&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Boat&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">   I have a boat</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
-                    I have a bike<br/>
-                    <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
-                     I have a car<br/>
-                    <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
-                     I have a boat
-                </form>
-                <br/>
-                Note that the <code>checked</code> attribute specfifies that an input field should be <b>pre-selected</b> when the page loads.
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="date"&gt;</code> <br/>
-                This type of input is used for fields that should contain a <b>date</b>. <br/>
-                A date picker can show up in the input field. <br/>
-                For example if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Birthday:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;date&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;birthday&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;birthday&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    Birthday:
-                    <input type="date" id="birthday" name="birthday">
-                </form>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="email"&gt;</code> <br/> 
-                This type of input is used for fields that should contain an <b>e-mail addess</b>. <br/>
-                This type of input provides a <b>static validation</b> for the e-mail address. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Enter your email:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    Enter your email:
-                    <input type="email" id="email" name="email">
-                </form>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="file"&gt;</code> <br/>
-                This type of input defines a <b>file-select field</b> and a <b>"Browse" button</b> for file uploads. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Select a file:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;file&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;myfile&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;myfile&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    Select a file:
-                    <input type="file" id="myfile" name="myfile">
-                </form>
-                <br/>
-            </li>
-            <li>
-                <code>&lt;input type="number"&gt;</code> <br/>
-                This type of input defines a <b>numeric</b> input field. <br/>
-                You can also set restriction on what numbers are accepted with <code>min</code> and/or <code>max</code> attributes. <br/>
-                For example, if you have the following HTML code: <br/>
-                <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Quantity (between 1 and 5):</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;number&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;quantity&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;quantity&quot;</span> <span style="color: #000066;">min</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;1&quot;</span> <span style="color: #000066;">max</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;5&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-                You will actually see this in the browser:
-                <form>
-                    Quantity (between 1 and 5):
-                    <input type="number" id="quantity" name="quantity" min="1" max="5">
-                </form>
-            </li>
-        </ul>
-        <br/>
-        <h4 class="indent-2">The <code>&lt;select&gt;</code> Element</h4>
-        <p class="indent-2">
-            The <code>&lt;select&gt;</code> element defines a <b>drop-down list</b>. <br/>
-            The <code>&lt;option&gt;</code> elements defines an <b>option</b> that can be selected. <br/>
-            By default the <b>first item</b> in the drop-down list is selected; to define a pre-selected option, add the <code>selected</code> attribute to the option. <br/>
-            For example, the following HTML code: <br/>
-        </p>
-        <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">Choose a car:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">select</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;volvo&quot;</span> selected&gt;</span>Volvo<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;saab&quot;</span>&gt;</span>Saab<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fiat&quot;</span>&gt;</span>Fiat<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;audi&quot;</span>&gt;</span>Audi<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">select</span>&gt;</span></div></li></ol></pre>
-        <p class="indent-2">
-            will produce: <br/>
-            Choose a car:
-            <select id="cars" name="cars">
-            <option value="volvo" selected>Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="fiat">Fiat</option>
-            <option value="audi">Audi</option>
-            </select>
-        </p>
-        <br/>
-        <h4 class="indent-2">The <code>&lt;textarea&gt;</code> Element</h4>
-        <p class="indent-2">
-            The <code>&lt;textarea&gt;</code> element defines a <b>multi-line</b> input field. <br/>
-            The <code>rows</code> attribute specifies the <b>visible numbers of lines</b> in a text area. <br/>
-            The <code>cols</code> attribute specifies the visible width of a text-area. <br/>
-            For example this HTML code: <br/>
-        </p>
-        <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">textarea</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;message&quot;</span> <span style="color: #000066;">rows</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;10&quot;</span> <span style="color: #000066;">cols</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;30&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">The cat was playing in the garden.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">textarea</span>&gt;</span></div></li></ol></pre>
-        <p class="indent-2">
-            will produce this: <br/>
-            <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
-        </p>
-        <br/>
-        <h4 class="indent-2">The <code>&lt;datalist&gt;</code> Element</h4>
-        <p class="indent-2">
-            The <code>&lt;datalist&gt;</code> element specifies a <b>list of pre-defined options</b> for an <code>&lt;input&gt;</code> element. <br/>
-            Users will see a drop-down list of the pre-defined options as they input data. <br/>
-            The <code>list</code> attribute of the <code>&lt;input&gt;</code> element, must refer to the <code>id</code> attribute of the <code>&lt;datalist&gt;</code> element. <br/>
-            For example, this HTML code: <br/>
-        </p>
-        <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> list<span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">datalist</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Internet Explorer&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Firefox&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Chrome&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Opera&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Safari&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">datalist</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
-        <p class="indent-2">
-            will produce this: <br/>
-            <form action="" class="indent-2">
-                <input list="browsers">
-                <datalist id="browsers">
-                  <option value="Internet Explorer">
-                  <option value="Firefox">
-                  <option value="Chrome">
-                  <option value="Opera">
-                  <option value="Safari">
-                </datalist>
+<h1>HTML Forms</h1>
+<p>
+    An HTML form is used to <span>collect user input</span>. The user input is most often sent to a server for processing. <br/>
+</p>
+<h3>The <code>&lt;form&gt;</code> Element</h3>
+<p class="indent-1">
+    The HTML <code>&lt;form&gt;</code> element is used to create an HTML form for user input. <br/>
+    The syntax for the element is the following: <br/>
+</p>
+<p class="indent-2"> 
+    <code>&lt;form action="<i>action to do</i>" method="<i>POST or GET</i>" name="<i>form name</i>" onsubmit="return <i>validityFunction()</i>"&gt;</code><br/>
+    <i class="indent-1">form elements</i><br/>
+    <code>&lt;/form&gt;</code>
+</p>
+<p class="indent-1">
+    The <code>&lt;form&gt;</code> element is a container for different types of <span>input elements</span>, such as:
+    text fields, checkboxes, radio buttons, submit buttons, etc.
+</p>
+<h3>HTML Form Elements</h3>
+<p class="indent-1">
+    These are some of the form elements that the HTML <code>&lt;form&gt;</code> element can contain: <br/>
+</p>
+<ul class="indent-1">
+    <li><code>&lt;input&gt;</code></li>
+    <li><code>&lt;select&gt;</code></li>
+    <li><code>&lt;textarea&gt;</code></li>
+    <li><code>&lt;datalist&gt;</code></li>
+</ul>
+<h4 class="indent-2">The <code>&lt;input&gt;</code> Element</h4>
+<p class="indent-2">
+    One of the most used form element is the <code>&lt;input&gt;</code> element. <br/>
+    The <code>&lt;input&gt;</code> element can be displayed in several ways, depending on the <code>type</code> attribute. <br/>
+    <br/>
+    These are some of the different values of the <code>type</code> attribute (the <span>default value</span> of the <code>type</code>
+    attribute is <span>"text"</span>:<br/>
+</p>
+<ul class="indent-2">
+    <li>
+        <code>&lt;input type="text"&gt;</code>: <br/>
+        This type of input defines a <span>single-line text input field</span>. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            First name:<br/>
+            <input type="text" id="fname" name="fname"><br/>
+            Last name:<br/>
+            <input type="text" id="lname" name="lname">
             </form>
-        </p>
-    </body>
-</html>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="password"&gt;</code>
+        This type of input defines a <span>password field</span>, this means that if you write something into this type of
+        field in a form, everything will be masked by asterisks or circles. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Username:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;username&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;username&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Password:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;password&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;pwd&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;pwd&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            Username:<br/>
+            <input type="text" id="username" name="username"><br/>
+            Password:<br/>
+            <input type="password" id="pwd" name="pwd">
+        </form>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="submit"&gt;</code>
+        This type of input defines a <span>submit button</span> form data to a <span>form-handler</span>. <br/>
+        The form-handler is typically a server page with a script for processing input data. <br/>
+        The form-handler is specified in the form's <code>&lt;action&gt;</code> attribute. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Mario&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Rossi&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;submit&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Submit&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form action="">
+            First name:<br/>
+            <input type="text" id="fname" name="fname" value="Mario"><br/>
+            Last name:<br/>
+            <input type="text" id="lname" name="lname" value="Rossi"><br/><br/>
+            <input type="submit" value="Submit">
+        </form>
+        <br/>
+        Note that in the following example only the submit button is shown, this means that no action is linked to the form. <br/>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="reset"&gt;</code> <br/>
+        This type of input defines a <span>reset button</span> that will reset all form values to their default values: <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  First name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Mario&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Last name:<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;text&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;lname&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Rossi&quot;</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;submit&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Submit&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;reset&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Reset&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form action="">
+            First name:<br/>
+            <input type="text" id="fname" name="fname" value="Mario"><br/>
+            Last name:<br/>
+            <input type="text" id="lname" name="lname" value="Rossi"><br/><br/>
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>
+        <br/>
+        If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="radio"&gt;</code> <br/>
+        This type of input defines a <span>radio button</span>. <br/>
+        Radio buttons let a user select <span>only one</span> of a limited number of choices. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;male&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;male&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Male<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;female&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;female&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Female<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;radio&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;other&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;gender&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;other&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Other</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            <input type="radio" id="male" name="gender" value="male">
+            Male<br>
+            <input type="radio" id="female" name="gender" value="female">
+            Female<br>
+            <input type="radio" id="other" name="gender" value="other">
+            Other
+        </form>
+        <br/>
+        Note that the <code>checked</code> attribute specfifies that an input field should be <span>pre-selected</span> when the page loads.
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="checkbox"&gt;</code> <br/>
+        This type of input defines a <span>checkbox</span>. <br/>
+        Checkboxes let a user select <span>zero or more</span> options of a limited number of choices. <br/>
+        For example if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle1&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle1&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Bike&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  I have a bike<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle2&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle2&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Car&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">   I have a car<span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">br</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;checkbox&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle3&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;vehicle3&quot;</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Boat&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">   I have a boat</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            I have a bike<br/>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+                I have a car<br/>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+                I have a boat
+        </form>
+        <br/>
+        Note that the <code>checked</code> attribute specfifies that an input field should be <span>pre-selected</span> when the page loads.
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="date"&gt;</code> <br/>
+        This type of input is used for fields that should contain a <span>date</span>. <br/>
+        A date picker can show up in the input field. <br/>
+        For example if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Birthday:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;date&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;birthday&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;birthday&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            Birthday:
+            <input type="date" id="birthday" name="birthday">
+        </form>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="email"&gt;</code> <br/> 
+        This type of input is used for fields that should contain an <span>e-mail addess</span>. <br/>
+        This type of input provides a <span>static validation</span> for the e-mail address. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Enter your email:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;email&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            Enter your email:
+            <input type="email" id="email" name="email">
+        </form>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="file"&gt;</code> <br/>
+        This type of input defines a <span>file-select field</span> and a <span>"Browse" button</span> for file uploads. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Select a file:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;file&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;myfile&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;myfile&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            Select a file:
+            <input type="file" id="myfile" name="myfile">
+        </form>
+        <br/>
+    </li>
+    <li>
+        <code>&lt;input type="number"&gt;</code> <br/>
+        This type of input defines a <span>numeric</span> input field. <br/>
+        You can also set restriction on what numbers are accepted with <code>min</code> and/or <code>max</code> attributes. <br/>
+        For example, if you have the following HTML code: <br/>
+        <pre class="html5" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  Quantity (between 1 and 5):</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> <span style="color: #000066;">type</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;number&quot;</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;quantity&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;quantity&quot;</span> <span style="color: #000066;">min</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;1&quot;</span> <span style="color: #000066;">max</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;5&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+        You will actually see this in the browser:
+        <form>
+            Quantity (between 1 and 5):
+            <input type="number" id="quantity" name="quantity" min="1" max="5">
+        </form>
+    </li>
+</ul>
+<br/>
+<h4 class="indent-2">The <code>&lt;select&gt;</code> Element</h4>
+<p class="indent-2">
+    The <code>&lt;select&gt;</code> element defines a <span>drop-down list</span>. <br/>
+    The <code>&lt;option&gt;</code> elements defines an <span>option</span> that can be selected. <br/>
+    By default the <span>first item</span> in the drop-down list is selected; to define a pre-selected option, add the <code>selected</code> attribute to the option. <br/>
+    For example, the following HTML code: <br/>
+</p>
+<pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">Choose a car:</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">select</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;cars&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;volvo&quot;</span> selected&gt;</span>Volvo<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;saab&quot;</span>&gt;</span>Saab<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;fiat&quot;</span>&gt;</span>Fiat<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;audi&quot;</span>&gt;</span>Audi<span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">option</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">select</span>&gt;</span></div></li></ol></pre>
+<p class="indent-2">
+    will produce: <br/>
+    Choose a car:
+    <select id="cars" name="cars">
+    <option value="volvo" selected>Volvo</option>
+    <option value="saab">Saab</option>
+    <option value="fiat">Fiat</option>
+    <option value="audi">Audi</option>
+    </select>
+</p>
+<br/>
+<h4 class="indent-2">The <code>&lt;textarea&gt;</code> Element</h4>
+<p class="indent-2">
+    The <code>&lt;textarea&gt;</code> element defines a <span>multi-line</span> input field. <br/>
+    The <code>rows</code> attribute specifies the <span>visible numbers of lines</span> in a text area. <br/>
+    The <code>cols</code> attribute specifies the visible width of a text-area. <br/>
+    For example this HTML code: <br/>
+</p>
+<pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">textarea</span> <span style="color: #000066;">name</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;message&quot;</span> <span style="color: #000066;">rows</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;10&quot;</span> <span style="color: #000066;">cols</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;30&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">The cat was playing in the garden.</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">textarea</span>&gt;</span></div></li></ol></pre>
+<p class="indent-2">
+    will produce this: <br/>
+    <textarea name="message" rows="10" cols="30">The cat was playing in the garden.</textarea>
+</p>
+<br/>
+<h4 class="indent-2">The <code>&lt;datalist&gt;</code> Element</h4>
+<p class="indent-2">
+    The <code>&lt;datalist&gt;</code> element specifies a <span>list of pre-defined options</span> for an <code>&lt;input&gt;</code> element. <br/>
+    Users will see a drop-down list of the pre-defined options as they input data. <br/>
+    The <code>list</code> attribute of the <code>&lt;input&gt;</code> element, must refer to the <code>id</code> attribute of the <code>&lt;datalist&gt;</code> element. <br/>
+    For example, this HTML code: <br/>
+</p>
+<pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 6%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">form</span> <span style="color: #000066;">action</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">input</span> list<span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">datalist</span> <span style="color: #000066;">id</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;browsers&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Internet Explorer&quot;</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Firefox&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Chrome&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Opera&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">option</span> <span style="color: #000066;">value</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;Safari&quot;</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">datalist</span>&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">form</span>&gt;</span></div></li></ol></pre>
+<p class="indent-2">
+    will produce this: <br/>
+    <form action="" class="indent-2">
+        <input list="browsers">
+        <datalist id="browsers">
+            <option value="Internet Explorer">
+            <option value="Firefox">
+            <option value="Chrome">
+            <option value="Opera">
+            <option value="Safari">
+        </datalist>
+    </form>
+</p>

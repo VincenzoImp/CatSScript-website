@@ -1,78 +1,57 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
-
-        <title>Functions</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>Functions</h1>
-        <p class="indent-1">
-            A JavaScript <b>function</b> is a blcok of code designed to <b>perform a particular task</b>. <br/>
-            A JavaScript function is executed when "something" invokes it (calls it).
-            Here's an example of a Javascript function.
-        </p>
-        <!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">function</span> myFunction(p1, p2) {
-  <span style="color: #007020; font-weight: bold">return</span> p1 <span style="color: #666666">*</span> p2;   <span style="color: #60a0b0; font-style: italic">// The function returns the product of p1 and p2</span>
+<h1>Functions</h1>
+<p class="indent-1">
+    A JavaScript <span>function</span> is a blcok of code designed to <span>perform a particular task</span>. <br/>
+    A JavaScript function is executed when "something" invokes it (calls it).
+    Here's an example of a Javascript function.
+</p>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #007020; font-weight: bold">function</span> myFunction(p1, p2) {
+<span style="color: #007020; font-weight: bold">return</span> p1 <span style="color: #666666">*</span> p2;   <span style="color: #60a0b0; font-style: italic">// The function returns the product of p1 and p2</span>
 }
 </pre></div>
-        <br/>
-        <h3>JavaScript Function Syntax</h3>
-        <p class="indent-1">
-            A JavaScript function is defined with the <code>function</code> keyword, followed by a <b>name</b>, followed by parentheses <b>()</b>. <br/>
-            <br/>
-            Function names can contain letters, digits, underscores and dollar signs. <br/>
-            <br/>
-            The parentheses may include parameter names separated by commas. <br/>
-            <br/>
-            The code to be executed by the function is placed inside curly brackets <b>{}</b>. <br/>
-            <br/>
-            Here's the definition of a generic JavaScript function:
-        </p>
-        <div class="indent-3"><code>function <i>name</i>(<i>parameter1, parameter2, parameter3</i>){<br/>//<i> code to be executed</i><br/>}</code></div>
-        <p class="indent-">
-            Function <b>parameters</b> are listed inside the parentheses () in the function definition; function
-            <b>arguments</b> are the <b>values</b> recieved by the function when it is invoked. <br/>
-            <br/>
-            Note that inside the function the arguments behave as <b>local variables</b>. <br/>
-            Also note that Variables declared within a JavaScript function become <b>local</b> to the function: this means that local variables can only
-            be accessed from within the function; <br/>
-            Since local variables are only recognized inside their functions, <b>variables with the same name can be used in deifferent functions</b>:
-            local variables are created when a function starts and deleted when the function is completed.
-        </p>
-        <br/>
-        <h3>Function Invocation</h3>
-        <p class="indent-1">
-            The code inside the function will execute when "something" <b>invokes</b> (calls) the function:
-            <ul>
-                <li>When an evennt occurs (like when a user clicks a button</li>
-                <li>When it is invoked (called) from JavaScript code</li>
-                <li>Automatically (self invoked)</li>
-            </ul>
-        </p>
-        <br/>
-        <h3>Function Return</h3>
-        <p class="indent-1">
-            When JavaScript reaches a <code>return</code> statement, the function will stop executing. <br/>
-            Function often compute a <b>return value</b>.
-            For example:
-        </p>
-        <pre class="javascript" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> x <span style="color: #339933;">=</span> myFunction<span style="color: #009900;">&#40;</span><span style="color: #CC0000;">4</span><span style="color: #339933;">,</span> <span style="color: #CC0000;">3</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>   <span style="color: #006600; font-style: italic;">// Function is called, return value will end up in x</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">function</span> myFunction<span style="color: #009900;">&#40;</span>a<span style="color: #339933;">,</span> b<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #000066; font-weight: bold;">return</span> a <span style="color: #339933;">*</span> b<span style="color: #339933;">;</span>             <span style="color: #006600; font-style: italic;">// Function returns the product of a and b</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
-        <p class="indent-1">
-            So in the code above the result in <code>x</code> will be 12.
-        </p>
-    </body>
-</html>
+<br/>
+<h3>JavaScript Function Syntax</h3>
+<p class="indent-1">
+    A JavaScript function is defined with the <code>function</code> keyword, followed by a <span>name</span>, followed by parentheses <span>()</span>. <br/>
+    <br/>
+    Function names can contain letters, digits, underscores and dollar signs. <br/>
+    <br/>
+    The parentheses may include parameter names separated by commas. <br/>
+    <br/>
+    The code to be executed by the function is placed inside curly brackets <span>{}</span>. <br/>
+    <br/>
+    Here's the definition of a generic JavaScript function:
+</p>
+<div class="indent-3"><code>function <i>name</i>(<i>parameter1, parameter2, parameter3</i>){<br/>//<i> code to be executed</i><br/>}</code></div>
+<p class="indent-">
+    Function <span>parameters</span> are listed inside the parentheses () in the function definition; function
+    <span>arguments</span> are the <span>values</span> recieved by the function when it is invoked. <br/>
+    <br/>
+    Note that inside the function the arguments behave as <span>local variables</span>. <br/>
+    Also note that Variables declared within a JavaScript function become <span>local</span> to the function: this means that local variables can only
+    be accessed from within the function; <br/>
+    Since local variables are only recognized inside their functions, <span>variables with the same name can be used in deifferent functions</span>:
+    local variables are created when a function starts and deleted when the function is completed.
+</p>
+<br/>
+<h3>Function Invocation</h3>
+<p class="indent-1">
+    The code inside the function will execute when "something" <span>invokes</span> (calls) the function:
+    <ul>
+        <li>When an evennt occurs (like when a user clicks a button</li>
+        <li>When it is invoked (called) from JavaScript code</li>
+        <li>Automatically (self invoked)</li>
+    </ul>
+</p>
+<br/>
+<h3>Function Return</h3>
+<p class="indent-1">
+    When JavaScript reaches a <code>return</code> statement, the function will stop executing. <br/>
+    Function often compute a <span>return value</span>.
+    For example:
+</p>
+<pre class="javascript" style="font-family:monospace; border: 1px solid black;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">var</span> x <span style="color: #339933;">=</span> myFunction<span style="color: #009900;">&#40;</span><span style="color: #CC0000;">4</span><span style="color: #339933;">,</span> <span style="color: #CC0000;">3</span><span style="color: #009900;">&#41;</span><span style="color: #339933;">;</span>   <span style="color: #006600; font-style: italic;">// Function is called, return value will end up in x</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">&nbsp;</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #000066; font-weight: bold;">function</span> myFunction<span style="color: #009900;">&#40;</span>a<span style="color: #339933;">,</span> b<span style="color: #009900;">&#41;</span> <span style="color: #009900;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">  <span style="color: #000066; font-weight: bold;">return</span> a <span style="color: #339933;">*</span> b<span style="color: #339933;">;</span>             <span style="color: #006600; font-style: italic;">// Function returns the product of a and b</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&#125;</span></div></li></ol></pre>
+<p class="indent-1">
+    So in the code above the result in <code>x</code> will be 12.
+</p>
+
 

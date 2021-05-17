@@ -1,101 +1,79 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
 
-        <title>Introduction and first steps</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+<h1>Introduction and first steps</h1>
+<br/>
+<h3>What is HTML?</h3>
+<p class="indent-1">
+    HTML stands for <span>Hyper Text Markup Language</span>, it's the standard markup language for creating Web pages and describes the structure
+    of a Web page. <br/>
+    HTML consists of a series of <span>elements</span> that tell the browser how to display the content.
+</p>
+<h3>What is a HTML element?</h3>
+<p class="indent-1">
+    An HTML element is defined by a <span>start tag</span>, <span>some content</span> and an <span>end tag</span>: <br/>
+    <code style="margin-left: 6%;">&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code> <br>
+    Some HTML element have <span>no content</span>: these elements are called <span>empty elements</span> and they do <span>not</span> have the end tag! <br/>
+    <br/>
+    HTML elements <span>can be nested</span>: this means that elements can cointain other elements (in fact, all HTML docuemnts consists of nested elements). <br/>
+    <br/>
+    All HTML elements can have <span>attributes</span> that provide additional information about HTML elements; attributes are <span>always</span> specified
+    in the <span>start tag</span> and usually come in <span>name/value</span> pairs like: <span>name="value"</span>. <br/>
+    <br/>
+    Every HTML element has a <span>default display value</span>, depending on what type of element it is; there are two display values: <span>block</span> and <span>inline</span>.
+    <br/>
+    <span>Block-level</span> elements <span>always start on a new line</span> and <span>always take up the full width</span> available. <br/>
+    A block-level element has a top and a bottom margin and can contain an inline element. <br/>
+    <span>Inline</span> elements <span>do not start on a new line</span> and <span>only take take up as much width as necessary</span>. <br/>
+    An inline element does not have any margin and cannot contain a block-level element
+</p>
+<br/>
+<br/>
+<h3>HTML page structure</h3>
+<p class="indent-1">
+    Below is a visualization of a web page: <br>
+    <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd;"><code>&lt;html&gt;</code>
+        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px"><code>&lt;head&gt;</code>
+        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;title&gt;</code>Page title<code>&lt;/title&gt;</code>
+        </div>
+        <code>&lt;/head&gt;</code>
+        </div>
+        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd"><code>&lt;body&gt;</code>
+        <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
+        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;h1&gt;</code>This is a heading<code>&lt;/h1&gt;</code></div>
+        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is a paragraph.<code>&lt;/p&gt;</code></div>
+        <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is another paragraph.<code>&lt;/p&gt;</code></div>
+        </div>
+        <code>&lt;/body&gt;</code>
+        </div>
+        <code>&lt;/html&gt;</code>
+        </div>
+    </div>
+</p>
+<p class="indent-1">
+    The content inside the <code>&lt;body&gt;</code> section will be displayed in a browser, the content inside the <code>&lt;title&gt;</code> element will be shown
+    in the browser's title bar or in the page's tab.
+</p>
+<br/>
+<br/>
+<h3>HTML Basics</h3>
+<h5 class="indent-1">HTML Documents</h5>
+<p class="indent-1">
+    Here's an example of the structure of a web page: <br>
+    <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #00bbdd;">&lt;!DOCTYPE html&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li></ol></pre>
+    <br/>
+</p>
+<p class="indent-1">
+    All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code> <br/>
+    The document type declaration represents the docuemtn type and helps the browser to display it correctly; it must appear <span>only once</span>
+    at the top of the page, before any HTML tags. <br/>
+    The <code>&lt;!DOCTYPE html&gt;</code> declaration is not case sensitive. <br/>
+    <br/>
+    The document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code> <br/>
+    <br/>
+    The part of the document between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> is invisible and contains information and 
+    metadata. <br/>
+    <br/>
+    As said before, the visible part of the document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>. <br/>
+    <br/>
+</p>
 
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>Introduction and first steps</h1>
-        <br/>
-        <h3>What is HTML?</h3>
-        <p class="indent-1">
-            HTML stands for <b>Hyper Text Markup Language</b>, it's the standard markup language for creating Web pages and describes the structure
-            of a Web page. <br/>
-            HTML consists of a series of <b>elements</b> that tell the browser how to display the content.
-        </p>
-        <h3>What is a HTML element?</h3>
-        <p class="indent-1">
-            An HTML element is defined by a <b>start tag</b>, <b>some content</b> and an <b>end tag</b>: <br/>
-            <code style="margin-left: 6%;">&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code> <br>
-            Some HTML element have <b>no content</b>: these elements are called <b>empty elements</b> and they do <b>not</b> have the end tag! <br/>
-            <br/>
-            HTML elements <b>can be nested</b>: this means that elements can cointain other elements (in fact, all HTML docuemnts consists of nested elements). <br/>
-            <br/>
-            All HTML elements can have <b>attributes</b> that provide additional information about HTML elements; attributes are <b>always</b> specified
-            in the <b>start tag</b> and usually come in <b>name/value</b> pairs like: <b>name="value"</b>. <br/>
-            <br/>
-            Every HTML element has a <b>default display value</b>, depending on what type of element it is; there are two display values: <b>block</b> and <b>inline</b>.
-            <br/>
-            <b>Block-level</b> elements <b>always start on a new line</b> and <b>always take up the full width</b> available. <br/>
-            A block-level element has a top and a bottom margin and can contain an inline element. <br/>
-            <b>Inline</b> elements <b>do not start on a new line</b> and <b>only take take up as much width as necessary</b>. <br/>
-            An inline element does not have any margin and cannot contain a block-level element
-        </p>
-        <br/>
-        <br/>
-        <h3>HTML page structure</h3>
-        <p class="indent-1">
-            Below is a visualization of a web page: <br>
-            <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd;"><code>&lt;html&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px"><code>&lt;head&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;title&gt;</code>Page title<code>&lt;/title&gt;</code>
-                </div>
-                <code>&lt;/head&gt;</code>
-                </div>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd"><code>&lt;body&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;h1&gt;</code>This is a heading<code>&lt;/h1&gt;</code></div>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is a paragraph.<code>&lt;/p&gt;</code></div>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is another paragraph.<code>&lt;/p&gt;</code></div>
-                </div>
-                <code>&lt;/body&gt;</code>
-                </div>
-                <code>&lt;/html&gt;</code>
-                </div>
-            </div>
-        </p>
-        <p class="indent-1">
-            The content inside the <code>&lt;body&gt;</code> section will be displayed in a browser, the content inside the <code>&lt;title&gt;</code> element will be shown
-            in the browser's title bar or in the page's tab.
-        </p>
-        <br/>
-        <br/>
-        <h3>HTML Basics</h3>
-        <h5 class="indent-1">HTML Documents</h5>
-        <p class="indent-1">
-            Here's an example of the structure of a web page: <br>
-            <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #00bbdd;">&lt;!DOCTYPE html&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li></ol></pre>
-            <br/>
-        </p>
-        <p class="indent-1">
-            All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code> <br/>
-            The document type declaration represents the docuemtn type and helps the browser to display it correctly; it must appear <b>only once</b>
-            at the top of the page, before any HTML tags. <br/>
-            The <code>&lt;!DOCTYPE html&gt;</code> declaration is not case sensitive. <br/>
-            <br/>
-            The document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code> <br/>
-            <br/>
-            The part of the document between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> is invisible and contains information and 
-            metadata. <br/>
-            <br/>
-            As said before, the visible part of the document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>. <br/>
-            <br/>
-            
-
-        </p>
-    </body>
-</html>
 

@@ -1,72 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
+<h1>JavaScript Arrays</h1>
+<p class="indent-1">
+    JavaScript arrays are used to <span>store multiple values</span> in a single variable.
+</p>
+<br/>
+<h3>What is an Array?</h3>
+<p class="indent-1">
+    An array is a special variable which can <span>hold more than one value</span> at a time. <br/>
+    Arrays are used to loop through a list of items because an array can hold many values under a single name and you can
+    access the values by referring to an <span>index number</span>.
+</p>
+<br/>
+<h3>Creating an Array</h3>
+<p class="indent-1">
+    Using an array literal is the easiest way to create a JavaScript Array. <br/>
+    The syntax is the following: <br/>
+    <code>var <i>array_name</i> = [<i>item1</i>, <i>item2</i>, ...];</code> <br/>
+    Spaces and line breaks are not important so you can span a declaration on multiple lines to make your code more readable. <br/>
+    <br/>
+    You can also use the keyword <code>new</code> to create an Array, for example: <br/>
+    <code>var person = new Array("Mario", "Luigi", "Anna")</code>
+</p>
+<br/>
+<h3>Accessing the Elements of an Array</h3>
+<p class="indent-1">
+    You can access an array element by referring to the <span>index number</span>. <br/>
+    The syntax is the following: <br/>
+    <code>var varName = arrayName[<i>i</i>]</code> <br/>
+    Note that array indexes start with <span>0</span> <br/>
+    <br/>
+    To <span>change</span> an array element you can use <span>assignement</span>; the syntax is the following: <br/>
+    <code>arrayName[<i>i</i>] = <i>newValue</i></code>
+</p>
+<br/>
+<h3>Array Properties and Methods</h3>
+<p class="indent-1">
+    There are some bulit-in methods that are very useful to manipulate arrays. <br/>
+    The most important are:
+    <ul>
+        <li>
+            <code>arrayName.length()</code> <br/>
+            This method returns the value of the <code>length</code> property which tells you how many elements are into an array
+        </li>
+        <li>
+            <code>arrayName.sort()</code> <br/>
+            This method sorts the element of the array
+        </li>
+    </ul>
+</p>
 
-        <title>Arrays</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>JavaScript Arrays</h1>
-        <p class="indent-1">
-            JavaScript arrays are used to <b>store multiple values</b> in a single variable.
-        </p>
-        <br/>
-        <h3>What is an Array?</h3>
-        <p class="indent-1">
-            An array is a special variable which can <b>hold more than one value</b> at a time. <br/>
-            Arrays are used to loop through a list of items because an array can hold many values under a single name and you can
-            access the values by referring to an <b>index number</b>.
-        </p>
-        <br/>
-        <h3>Creating an Array</h3>
-        <p class="indent-1">
-            Using an array literal is the easiest way to create a JavaScript Array. <br/>
-            The syntax is the following: <br/>
-            <code>var <i>array_name</i> = [<i>item1</i>, <i>item2</i>, ...];</code> <br/>
-            Spaces and line breaks are not important so you can span a declaration on multiple lines to make your code more readable. <br/>
-            <br/>
-            You can also use the keyword <code>new</code> to create an Array, for example: <br/>
-            <code>var person = new Array("Mario", "Luigi", "Anna")</code>
-        </p>
-        <br/>
-        <h3>Accessing the Elements of an Array</h3>
-        <p class="indent-1">
-            You can access an array element by referring to the <b>index number</b>. <br/>
-            The syntax is the following: <br/>
-            <code>var varName = arrayName[<i>i</i>]</code> <br/>
-            Note that array indexes start with <b>0</b> <br/>
-            <br/>
-            To <b>change</b> an array element you can use <b>assignement</b>; the syntax is the following: <br/>
-            <code>arrayName[<i>i</i>] = <i>newValue</i></code>
-        </p>
-        <br/>
-        <h3>Array Properties and Methods</h3>
-        <p class="indent-1">
-            There are some bulit-in methods that are very useful to manipulate arrays. <br/>
-            The most important are:
-            <ul>
-                <li>
-                    <code>arrayName.length()</code> <br/>
-                    This method returns the value of the <code>length</code> property which tells you how many elements are into an array
-                </li>
-                <li>
-                    <code>arrayName.sort()</code> <br/>
-                    This method sorts the element of the array
-                </li>
-            </ul>
-        </p>
-    </body>
-</html>
 
