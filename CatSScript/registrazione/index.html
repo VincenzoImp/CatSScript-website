@@ -60,22 +60,22 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="myLeftCtn">
-                        <form action="" method="POST" class="myForm text-center" name="registr" onsubmit="return validateRegistration()">
+                        <form action="php/signup-form.php" method="POST" class="myForm text-center" name="registr" onsubmit="return validateRegistration()">
                             <header>Create new account</header>
                             <div class="form-control">
                                 <i class="fas fa-cat"></i>
-                                <input type="text" id="username" placeholder="Username" class="myInput">
+                                <input name="username" type="text" id="username" placeholder="Username" class="myInput">
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-envelope"></i>
-                                <input class="myInput" type="email" id="email" placeholder="Email">
+                                <input name="email" class="myInput" type="email" id="email" placeholder="Email">
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-lock"></i>
-                                <input class="myInput" type="password" id="password" placeholder="Password">
+                                <input name="password"class="myInput" type="password" id="password" placeholder="Password">
                             </div>
                             <br/>
-                            <input type="submit" value="CREATE ACCOUNT" class="butt">
+                            <input name="registration-button" type="submit" value="CREATE ACCOUNT" class="butt">
                             <br/>
                             <br/>
                             <button class="butt"><a href="../login/index.html">I already have an account</a></button>
