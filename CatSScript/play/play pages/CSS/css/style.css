@@ -97,16 +97,38 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 # Quiz
 --------------------------------------------------------------*/
 
-.margin-card{
+#info_box{
   margin-top: 22vh;
   margin-bottom: 22vh;
+  border-radius: 20px;
+  background:rgba(225, 225, 225, 0.75);
+  border: 2px solid white;
+}
+
+#info_box span {
+  font-weight: bold;
 }
 
 #quiz_box{
   display: none;
+  width: 100vw;
+  border-radius: 20px;
+  background:rgba(225, 225, 225, 0.75);
+  border: 2px solid white;
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
-.result_box{
+.timer {
+    text-align: center;
+}
+
+.seconds {
+  background:#84c5fe;
+  border-radius: 50%;
+}
+
+.result_box{ /*to check*/
     position: absolute;
     top: 50%;
     left: 50%;
@@ -116,94 +138,37 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 .info_box.activeInfo,
-.quiz_box.activeQuiz,
-.result_box.activeResult{
+.activeQuiz,
+.result_box.activeResult{ /*to check*/
     opacity: 1;
     z-index: 5;
     pointer-events: auto;
     transform: translate(-50%, -50%) scale(1);
 }
 
-
-.quiz_box{
-    width: 550px;
-    background: #fff;
-    border-radius: 5px;
-    transform: translate(-50%, -50%) scale(0.9);
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-
-.quiz_box header{
-    position: relative;
-    z-index: 2;
-    height: 70px;
-    padding: 0 30px;
-    background: #fff;
-    border-radius: 5px 5px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0px 3px 5px 1px rgba(0,0,0,0.1);
-}
-
-.timer{
-    color: #004085;
-    background: #cce5ff;
-    border: 1px solid #b8daff;
-    height: 45px;
-    padding: 0 8px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 145px;
-}
-
-.timer .time_left_txt{
-    font-weight: 400;
-    font-size: 17px;
-    user-select: none;
-}
-
-.timer .timer_sec{
-    font-size: 18px;
-    font-weight: 500;
-    height: 30px;
-    width: 45px;
-    color: #fff;
-    border-radius: 5px;
-    line-height: 30px;
-    text-align: center;
-    background: #343a40;
-    border: 1px solid #343a40;
-    user-select: none;
-}
-
-.time_line{
+.time_line{ /*to check*/
     bottom: 0px;
     left: 0px;
     height: 3px;
     background: #007bff;
 }
 
-section{
+section{ /*to check*/
     padding: 25px 30px 20px 30px;
     background: #fff;
 }
 
-section .que_text{
+section .que_text{ /*to check*/
     font-size: 25px;
     font-weight: 600;
 }
 
-section .option_list{
+section .option_list{ /*to check*/
     padding: 20px 0px;
     display: block;   
 }
 
-section .option_list .option{
+section .option_list .option{ /*to check*/
     background: aliceblue;
     border: 1px solid #84c5fe;
     border-radius: 5px;
@@ -217,33 +182,33 @@ section .option_list .option{
     justify-content: space-between;
 }
 
-section .option_list .option:last-child{
+section .option_list .option:last-child{ /*to check*/
     margin-bottom: 0px;
 }
 
-section .option_list .option:hover{
+section .option_list .option:hover{ /*to check*/
     color: #004085;
     background: #cce5ff;
     border: 1px solid #b8daff;
 }
 
-section .option_list .option.correct{
+section .option_list .option.correct{ /*to check*/
     color: #155724;
     background: #d4edda;
     border: 1px solid #c3e6cb;
 }
 
-section .option_list .option.incorrect{
+section .option_list .option.incorrect{ /*to check*/
     color: #721c24;
     background: #f8d7da;
     border: 1px solid #f5c6cb;
 }
 
-section .option_list .option.disabled{
+section .option_list .option.disabled{ /*to check*/
     pointer-events: none;
 }
 
-section .option_list .option .icon{
+section .option_list .option .icon{ /*to check*/
     height: 26px;
     width: 26px;
     border: 2px solid transparent;
@@ -254,19 +219,19 @@ section .option_list .option .icon{
     transition: all 0.3s ease;
     line-height: 24px;
 }
-.option_list .option .icon.tick{
+.option_list .option .icon.tick{ /*to check*/
     color: #23903c;
     border-color: #23903c;
     background: #d4edda;
 }
 
-.option_list .option .icon.cross{
+.option_list .option .icon.cross{ /*to check*/
     color: #a42834;
     background: #f8d7da;
     border-color: #a42834;
 }
 
-footer{
+footer{ /*to check*/
     height: 60px;
     padding: 0 30px;
     display: flex;
@@ -275,21 +240,21 @@ footer{
     border-top: 1px solid lightgrey;
 }
 
-footer .total_que span{
+footer .total_que span{ /*to check*/
     display: flex;
     user-select: none;
 }
 
-footer .total_que span p{
+footer .total_que span p{ /*to check*/
     font-weight: 500;
     padding: 0 5px;
 }
 
-footer .total_que span p:first-child{
+footer .total_que span p:first-child{ /*to check*/
     padding-left: 0px;
 }
 
-footer button{
+footer button{ /*to check*/
     height: 40px;
     padding: 0 13px;
     font-size: 18px;
@@ -308,11 +273,11 @@ footer button{
     transition: all 0.3s ease;
 }
 
-footer button:hover{
+footer button:hover{ /*to check*/
     background: #0263ca;
 }
 
-footer button.show{
+footer button.show{ /*to check*/
     opacity: 1;
     pointer-events: auto;
     transform: scale(1);

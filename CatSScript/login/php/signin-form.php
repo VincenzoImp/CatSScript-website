@@ -11,7 +11,7 @@
         $q2 = "select * from users where username = $1";
         $result1 = pg_query_params($dbconn, $q1, array($username_email));
         $result2 = pg_query_params($dbconn, $q2, array($username_email));
-        if ($line1=pg_fetch_array($result1, null, PGSQL_ASSOC) or $line2=pg_fetch_array($result2, null, PGSQL_ASSOC)) {
+        if (!$line1=pg_fetch_array($result1, null, PGSQL_ASSOC) and !$line2=pg_fetch_array($result2, null, PGSQL_ASSOC)) {
             //se nel database non c'e' ne' un email e ne' un username come il dato $username_email inserito
             echo(
                 "<script>
@@ -24,10 +24,9 @@
             $password = md5($_POST["password"]);
             $q3 = "select * from users where password = $1 and (username = $2 or email = $2)";
             $result3 = pg_query_params($dbconn, $q3, array($password, $username_email));
-            if (!$line3=pg_fetch_array($result1, null, PGSQL_ASSOC)) {
+            if ($line3=pg_fetch_array($result3, null, PGSQL_ASSOC)) {
                 //se c'e' la password (nel rigo dell'utente selezionato) combacia con quella inserita
                 header("Location: ../../index.html");
-                $_SESSION['username'] = $result3["username"];
             }
             else {
                 //se c'e' la password (nel rigo dell'utente selezionato) NON combacia con quella inserita
