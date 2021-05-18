@@ -4,6 +4,7 @@ let questions = [
     numb: 1,
     question: "What does HTML stand for?____",
     answer: "Hyper Text Markup Language",
+    img: "biscotti.svg",
     options: [
       "Hyper Text Preprocessor",
       "Hyper Text Markup Language",
@@ -15,6 +16,7 @@ let questions = [
     numb: 1,
     question: "What does CSS stand for?",
     answer: "Cascading Style Sheet",
+    img: "bwaddormentato.svg",
     options: [
       "Common Style Sheet",
       "Colorful Style Sheet",
@@ -26,6 +28,7 @@ let questions = [
     numb: 2,
     question: "What does PHP stand for?___",
     answer: "Hypertext Preprocessor",
+    img: "ciambella.svg",
     options: [
       "Hypertext Preprocessor",
       "Hypertext Programming",
@@ -37,6 +40,7 @@ let questions = [
     numb: 2,
     question: "What does SQL stand for?",
     answer: "Structured Query Language",
+    img: "fiocco.svg",
     options: [
       "Stylish Question Language",
       "Stylesheet Query Language",
@@ -48,6 +52,7 @@ let questions = [
     numb: 3,
     question: "What does XML stand for?___",
     answer: "eXtensible Markup Language",
+    img: "foca.svg",
     options: [
       "eXtensible Markup Language",
       "eXecutable Multiple Language",
@@ -59,6 +64,7 @@ let questions = [
     numb: 3,
     question: "What does HTML stand for?",
     answer: "Hyper Text Markup Language",
+    img: "fornaio.svg",
     options: [
       "Hyper Text Preprocessor",
       "Hyper Text Markup Language",
@@ -70,6 +76,7 @@ let questions = [
     numb: 4,
     question: "What does CSS stand for?___",
     answer: "Cascading Style Sheet",
+    img: "gelato.svg",
     options: [
       "Common Style Sheet",
       "Colorful Style Sheet",
@@ -81,6 +88,7 @@ let questions = [
     numb: 4,
     question: "What does PHP stand for?",
     answer: "Hypertext Preprocessor",
+    img: "heen_chad_tipo_lo_sticker_di_lorenzo.svg",
     options: [
       "Hypertext Preprocessor",
       "Hypertext Programming",
@@ -92,6 +100,7 @@ let questions = [
     numb: 5,
     question: "What does SQL stand for?___",
     answer: "Structured Query Language",
+    img: "indizio.svg",
     options: [
       "Stylish Question Language",
       "Stylesheet Query Language",
@@ -103,6 +112,7 @@ let questions = [
     numb: 5,
     question: "What does XML stand for?",
     answer: "eXtensible Markup Language",
+    img: "monocolo.svg",
     options: [
       "eXtensible Markup Language",
       "eXecutable Multiple Language",

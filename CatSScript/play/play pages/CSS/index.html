@@ -66,6 +66,8 @@
         <div class="container">
             <div class="row justify-items-center">
                 <div class="d-flex justify-content-center">
+
+
                     <!-- Info Box -->
                     <div id="info_box" class="card">
                         <div class="card-body">
@@ -96,8 +98,8 @@
                             </div>
                             <div id="time_line" class="mx-3 time_line"></div>
                             <div class="row">
-                                <div class="col-6">
-                                    <h4 id="que_text" class="card-text mx-3 mt-3 mb-4">
+                                <div class="col-lg-6 d-flex flex-column justify-content-center">
+                                    <h4 id="que_text" class="card-text mx-3 my-4">
                                         <!-- Here I've inserted question from JavaScript -->
                                     </h4>
                                     <section class="mx-3">
@@ -106,44 +108,41 @@
                                         </div>
                                     </section>
                                 </div>
-                                <div id="que_img" class="col-6 center">
+                                <div id="que_img" class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
                                     <!-- Here I've inserted image from JavaScript -->
                                 </div>
                             </div>
                             <!-- footer of Quiz Box -->
-                            <footer class="mb-3 mt-4">
-                                <div id="total_que" class="total_que">
+                            <footer class="mb-3 mt-4 d-flex justify-content-between align-items-center">
+                                <span id="total_que" class="ms-3">
                                     <!-- Here I've inserted Question Count Number from JavaScript -->
-                                </div>
-                                <button id="next_btn" class="next_btn">Next Que</button>
+                                </span>
+                                <span class="me-3">
+                                    <button id="next_btn" class="btn btn-primary">Next Que</button>
+                                </span>
                             </footer>
                         </div>
-                            
-                
-                        
                     </div>
 
-                </div>
-            </div>
-            
-        
-            
-            
-        
-            
-        
-            <!-- Result Box -->
-            <div class="result_box">
-                <div class="icon">
-                    <i class="fas fa-crown"></i>
-                </div>
-                <div class="complete_text">You've completed the Quiz!</div>
-                <div class="score_text">
-                    <!-- Here I've inserted Score Result from JavaScript -->
-                </div>
-                <div class="buttons">
-                    <button id="restart" class="restart">Replay Quiz</button>
-                    <button class="quit">Quit Quiz</button>
+
+                    <!-- Result Box -->
+                    <div id="result_box" class="card margin-card">
+                        <div class="card-body">
+                            <div id="img_result" class="d-flex justify-content-center align-items-center">
+                                <!-- Here I've inserted Image Result from JavaScript -->
+                            </div>
+                            <h2 class="card-title d-flex justify-content-center align-items-center">You've completed the Quiz!</h2>
+                            <div id="score_text" class="card-text my-4 d-flex justify-content-center align-items-center">
+                                <!-- Here I've inserted Score Result from JavaScript -->
+                            </div>
+                            <div class=" d-flex justify-content-end">
+                                <button id="restart" class="btn btn-primary me-1">Replay Quiz</button>
+                                <button id="quit" class="btn btn-primary ms-1">Quit Quiz</button>
+                            </div>
+                        </div>
+                    </div>
+                        
+
                 </div>
             </div>
         </div>
