@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-top: 22vh;
   margin-bottom: 22vh;
   border-radius: 20px;
-  background:rgba(225, 225, 225, 0.75);
+  background:rgba(225, 225, 225, 0.5);
   border: 2px solid white;
 }
 
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   display: none;
   width: 100vw;
   border-radius: 20px;
-  background:rgba(225, 225, 225, 0.75);
+  background:rgba(225, 225, 225, 0.5);
   border: 2px solid white;
   margin-top: 10vh;
   margin-bottom: 10vh;
@@ -123,10 +123,42 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     text-align: center;
 }
 
+.timer span {
+  font-weight: bold;
+}
+
 .seconds {
-  background:#84c5fe;
+  background: white;
   border-radius: 50%;
 }
+
+.time_line{
+  bottom: 0px;
+  left: 0px;
+  height: 3px;
+  background: #9505dd;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .result_box{ /*to check*/
     position: absolute;
@@ -146,27 +178,9 @@ h1, h2, h3, h4, h5, h6, .font-primary {
     transform: translate(-50%, -50%) scale(1);
 }
 
-.time_line{ /*to check*/
-    bottom: 0px;
-    left: 0px;
-    height: 3px;
-    background: #007bff;
-}
 
-section{ /*to check*/
-    padding: 25px 30px 20px 30px;
-    background: #fff;
-}
 
-section .que_text{ /*to check*/
-    font-size: 25px;
-    font-weight: 600;
-}
 
-section .option_list{ /*to check*/
-    padding: 20px 0px;
-    display: block;   
-}
 
 section .option_list .option{ /*to check*/
     background: aliceblue;
@@ -237,7 +251,6 @@ footer{ /*to check*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-top: 1px solid lightgrey;
 }
 
 footer .total_que span{ /*to check*/

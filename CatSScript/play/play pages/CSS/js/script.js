@@ -5,10 +5,10 @@ const continue_btn = document.querySelector("#continue");
 const restart_btn = document.querySelector("#restart");
 const quiz_box = document.querySelector("#quiz_box");
 const result_box = document.querySelector(".result_box");
-const option_list = document.querySelector(".option_list");
+const option_list = document.querySelector("#option_list");
 const time_line = document.querySelector("#time_line");
-const timeText = document.querySelector(".timer .time_left_txt");
-const timeCount = document.querySelector(".timer .timer_sec");
+const timeText = document.querySelector("#time_text");
+const timeCount = document.querySelector("#timer");
 
 
 
@@ -60,11 +60,11 @@ restart_quiz.onclick = ()=>{
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
-    window.location.reload(); //reload the current window
+    window.location.assign("../../index.html"); //reload the current window
 }
 
-const next_btn = document.querySelector("footer .next_btn");
-const bottom_ques_counter = document.querySelector("footer .total_que");
+const next_btn = document.querySelector("#next_btn");
+const bottom_ques_counter = document.querySelector("#total_que");
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{
@@ -88,7 +88,7 @@ next_btn.onclick = ()=>{
 
 // getting questions and options from array
 function showQuetions(index){
-    const que_text = document.querySelector(".que_text");
+    const que_text = document.querySelector("#que_text");
 
     //creating a new span and div tag for question and option and passing the value using array index
     const x = Math.round(Math.random());

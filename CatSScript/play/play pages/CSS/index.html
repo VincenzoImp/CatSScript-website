@@ -91,31 +91,36 @@
                     <div id="quiz_box" class="card margin-card">
                         <div class="card-body">
                             <div class="timer mb-3 mt-1">
-                                <span class="card-title">Time left</span>
-                                <span class="card-title seconds px-2 py-2">15</span>
+                                <span id="time_text" class="card-title">Time left</span>
+                                <span id="timer" class="card-title seconds px-2 py-2">15</span>
                             </div>
+                            <div id="time_line" class="mx-3 time_line"></div>
                             <div class="row">
-                                <div id="time_line" class="time_line"></div>
-                            </div>
-                            <div class="row">
-                                <div class="card-text que_text my-3">
-                                    <!-- Here I've inserted question from JavaScript -->
+                                <div class="col-6">
+                                    <h4 id="que_text" class="card-text mx-3 mt-3 mb-4">
+                                        <!-- Here I've inserted question from JavaScript -->
+                                    </h4>
+                                    <section class="mx-3">
+                                        <div id="option_list" class="option_list">
+                                            <!-- Here I've inserted options from JavaScript -->
+                                        </div>
+                                    </section>
+                                </div>
+                                <div id="que_img" class="col-6 center">
+                                    <!-- Here I've inserted image from JavaScript -->
                                 </div>
                             </div>
+                            <!-- footer of Quiz Box -->
+                            <footer class="mb-3 mt-4">
+                                <div id="total_que" class="total_que">
+                                    <!-- Here I've inserted Question Count Number from JavaScript -->
+                                </div>
+                                <button id="next_btn" class="next_btn">Next Que</button>
+                            </footer>
                         </div>
-                        <section>
-                            <div class="option_list">
-                                <!-- Here I've inserted options from JavaScript -->
-                            </div>
-                        </section>
+                            
                 
-                        <!-- footer of Quiz Box -->
-                        <footer>
-                            <div class="total_que">
-                                <!-- Here I've inserted Question Count Number from JavaScript -->
-                            </div>
-                            <button class="next_btn">Next Que</button>
-                        </footer>
+                        
                     </div>
 
                 </div>
