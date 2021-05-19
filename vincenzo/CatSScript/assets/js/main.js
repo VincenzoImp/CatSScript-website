@@ -31,10 +31,7 @@
 
 
 
-
-
-
 /* NAVBAR */
 $(document).ready(function(){
-  $('#navbar').load("../../../" + navbarType);
+  $('#navbar').load(navbarType);
 });

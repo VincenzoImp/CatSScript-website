@@ -1,9 +1,10 @@
 <?php
+    session_start();
     $dbconn = 
         pg_connect("host=localhost port=5432 dbname=CatSScript user=postgres password=root")
         or die("Could not connect: ". pg_last_error());
     if(!(isset($_POST["login-button"]))){
-        header("Location: ../index.html");
+        header("Location: ../index.php");
     }
     else {
         $username_email = $_POST["username-email"];
@@ -15,7 +16,7 @@
             //se nel database non c'e' ne' un email e ne' un username come il dato $username_email inserito
             echo(
                 "<script>
-                    window.location.href='../index.html';
+                    window.location.href='../index.php';
                     alert('Sorry you are not registered yet');
                 </script>"
             );
@@ -26,13 +27,14 @@
             $result3 = pg_query_params($dbconn, $q3, array($password, $username_email));
             if ($line3=pg_fetch_array($result3, null, PGSQL_ASSOC)) {
                 //se c'e' la password (nel rigo dell'utente selezionato) combacia con quella inserita
-                header("Location: ../../index.html");
+                $_SESSION['username'] = 'prova';
+                header("Location: ../../index.php");
             }
             else {
                 //se c'e' la password (nel rigo dell'utente selezionato) NON combacia con quella inserita
                 echo(
                     "<script>
-                        window.location.href='../index.html';
+                        window.location.href='../index.php';
                         alert('Sorry incorrect password');
                     </script>"
                 );

@@ -1,5 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start(); 
+if (isset($_SESSION['username'])) {
+  header("Location: ../index.php");
+}
+else {
+  echo("<script>var navbarType = 'outsession_navbar.html';</script>");
+}
+?>
+
 <head>
     <title>Sign-up</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +16,8 @@
     <link rel="stylesheet" href="css/style.css">
 
     <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
@@ -15,46 +25,7 @@
 </head>
 
 <body>
-      <!-- ======= Navbar/Header ======= -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
-    <div class="container">
-      <a href="../index.html" class="navbar-brand-custom">CatSScript</a>
-
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item btn">
-            <a href="../index.html#hero" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="../index.html#play" class="nav-link">Play</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="../index.html#learn" class="nav-link">Learn</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="../index.html#about-us" class="nav-link">About us</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="nav-link signup" href="index.html">Sign up</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="nav-link signin" href="../login/index.html">Sign in</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+  <div id="navbar"></div>
     <div class="container-custom">
         <div class="myCard">
             <div class="row">
@@ -78,7 +49,7 @@
                             <input name="registration-button" type="submit" value="CREATE ACCOUNT" class="butt">
                             <br/>
                             <br/>
-                            <button class="butt"><a href="../login/index.html">I already have an account</a></button>
+                            <button class="butt"><a href="../login/index.php">I already have an account</a></button>
                         </form>
                     </div>
                 </div>
@@ -95,4 +66,3 @@
     <script src="js/main.js" type="text/javascript" lang="javascript"></script>
 
 </body>
-</html>

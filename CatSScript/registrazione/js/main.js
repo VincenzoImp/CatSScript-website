@@ -38,3 +38,9 @@ function ValidatePassword(){
     alert("Insert a valid password; a valid password must have at least one uppercase character, one lowercase character, one special character and one number digit.");
     return false;
 }
+
+
+/* NAVBAR */
+$(document).ready(function(){
+    $('#navbar').load(navbarType);
+  });

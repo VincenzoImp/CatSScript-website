@@ -1,15 +1,12 @@
 <?php
 session_start(); 
 if (isset($_SESSION['username'])) {
-  echo("<script>var navbarType = 'outsession_navbar.html';</script>");
+  echo("<script>var navbarType = 'insession_navbar.html';</script>");
 }
 else {
   echo("<script>var navbarType = 'outsession_navbar.html';</script>");
 }
 ?>
-
-
-
 
 
 <head>
@@ -29,11 +26,11 @@ else {
 
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
- 
+  
 </head>
 
 <body>
- 
+  
   <div id="navbar"></div>
 
   <div class="space"></div>
@@ -153,4 +150,5 @@ else {
 
   <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript" lang="javascript"></script>
   <script src="assets/js/main.js" type="text/JavaScript" lang="javascript"></script>
-</body>
+</body>  
+

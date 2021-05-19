@@ -83,3 +83,8 @@ $(document).ready(function(){
 
 
 
+
+/* NAVBAR */
+$(document).ready(function(){
+  $('#navbar').load(navbarType);
+});

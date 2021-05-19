@@ -1,5 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+session_start(); 
+if (isset($_SESSION['username'])) {
+  echo("<script>var navbarType = 'insession_navbar.html';</script>");
+}
+else {
+  echo("<script>var navbarType = 'outsession_navbar.html';</script>");
+}
+?>
+
+<script>
+  function logout(){
+    <?php
+      unset($_SESSION['username']);
+    ?>
+    window.location.reload();
+  }
+</script>
+
 
 <head>
   <meta charset="utf-8">
@@ -14,55 +31,18 @@
   <link href="assets/css/style.css" rel="stylesheet" type="text/css">
 
   <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
 
   
+  
 </head>
 
 <body>
-  <!-- ======= Navbar/Header ======= -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
-    <div class="container">
-      <a href="index.html" class="navbar-brand-custom">CatSScript</a>
-
-      <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-      >
-      <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item btn">
-            <a href="#hero" class="nav-link active">Home</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="#play" class="nav-link">Play</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="#learn" class="nav-link">Learn</a>
-          </li>
-          <li class="nav-item btn">
-            <a href="#about-us" class="nav-link">About us</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="nav-link signup" href="registrazione/index.html">Sign up</a>
-          </li>
-          <li class="nav-item btn">
-            <a class="nav-link signin" href="login/index.html">Sign in</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <!-- End Navbar/Header -->
+  
+  <div id="navbar"></div>
 
   <div class="space"></div>
   
@@ -90,7 +70,7 @@
           <h1>Play with cats</h1>
           <!--h4>Enjoy tuttecose guarda che ti diverti a giocare a questo giochino intanto controlli che hai imparato cose (per impararla vai alla sezione sotto) e pensa ci sono anche i gatti. Cioè un gatto perché qualcuno ha deciso che ci sarebbe stato il monopolio di pusheen.</h4-->
           <br/>
-          <a class="btn btn-primary" href="play/index.html">Play</a>
+          <a class="btn btn-primary" href="play/index.php">Play</a>
         </div>
         <div class="col-lg-6 order-1 order-lg-1 play-img">
           <img src="assets/img/play-img.svg" class="img-fluid">
@@ -110,7 +90,7 @@
             <div class="card-body">
               <h5 class="card-title">HTML</h5>
               <p class="card-text">HTML è il linguaggio di markup coi tag che serve a scrive le pagine web.</p>
-              <a href="learn/html/index.html" class="btn btn-primary-custom">Learn HTML !!</a>
+              <a href="learn/html/index.php" class="btn btn-primary-custom">Learn HTML !!</a>
             </div>
           </div>
         </div>
@@ -120,7 +100,7 @@
             <div class="card-body">
               <h5 class="card-title">CSS</h5>
               <p class="card-text">Pensa che CSS serve a fa diventa tutto rosa quindi sicuro va imparato.</p>
-              <a href="learn/CSS/index.html" class="btn btn-primary-custom">Learn CSS !!</a>
+              <a href="learn/CSS/index.php" class="btn btn-primary-custom">Learn CSS !!</a>
             </div>
           </div>
         </div>
@@ -130,7 +110,7 @@
             <div class="card-body">
               <h5 class="card-title">JavaScript</h5>
               <p class="card-text">JavaScript serve sicuro a scrive script che ti permettono di fare più o meno tuttecose.</p>
-              <a href="learn/JavaScript/index.html" class="btn btn-primary-custom">Learn JavaScript !!</a>
+              <a href="learn/JavaScript/index.php" class="btn btn-primary-custom">Learn JavaScript !!</a>
             </div>
           </div>
         </div>
@@ -181,5 +161,5 @@
 
   <script src="assets/bootstrap/js/bootstrap.min.js" type="text/javascript" lang="javascript"></script>
   <script src="assets/js/main.js" type="text/JavaScript" lang="javascript"></script>
-</body>
-</html>
+</body>  
+

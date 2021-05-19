@@ -1,64 +1,42 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
+<?php
+session_start(); 
+if (isset($_SESSION['username'])) {
+  echo("<script>var navbarType = 'insession_navbar.html';</script>");
+}
+else {
+  header("Location: ../index.php");
+}
+?>
 
-        <title>Learn HTML</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
+<script>
+  function logout(){
+    <?php
+      unset($_SESSION['username']);
+    ?>
+    window.location.reload();
+  }
+</script>
 
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"content="">
+    <meta name="keywords" content="">
 
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>Play JavaScript</title>
+    <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
-    </head>
+    <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
-    <body>
-    <!-- ======= Navbar/Header ======= -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top navbar-shadow">
-        <div class="container">
-            <a href="../../../index.html" class="navbar-brand-custom">CatSScript</a>
-            <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-            >
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto">
-                <li class="nav-item btn">
-                    <a href="../../../index.html#hero" class="nav-link active">Home</a>
-                </li>
-                <li class="nav-item btn">
-                    <a href="../../../index.html#play" class="nav-link">Play</a>
-                </li>
-                <li class="nav-item btn">
-                    <a href="../../../index.html#learn" class="nav-link">Learn</a>
-                </li>
-                <li class="nav-item btn">
-                    <a href="../../../index.html#about-us" class="nav-link">About us</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link signup" href="../../../registrazione/index.html">Sign up</a>
-                </li>
-                <li class="nav-item btn">
-                    <a class="nav-link signin" href="../../../login/index.html">Sign in</a>
-                </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- End Navbar/Header -->
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="navbar"></div>
 
     <div class="space"></div>
 
@@ -147,7 +125,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- ======= Footer ======= -->
     <div id="footer">
         <div class="background">
@@ -171,5 +149,4 @@
 
     <!-- Inside this JavaScript file I've coded all Quiz Codes -->
     <script src="js/script.js"></script>
-    </body>
-</html>
+</body>

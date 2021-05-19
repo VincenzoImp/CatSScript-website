@@ -27,3 +27,9 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+
+/* NAVBAR */
+$(document).ready(function(){
+  $('#navbar').load(navbarType);
+});
