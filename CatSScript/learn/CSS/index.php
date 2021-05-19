@@ -8,14 +8,14 @@ else {
 }
 ?>
 
-<script>
+<!--script>
   function logout(){
-    <?php
+    <!?php
       unset($_SESSION['username']);
     ?>
     window.location.reload();
   }
-</script>
+</script-->
 
 <head>
     <meta charset="utf-8">
