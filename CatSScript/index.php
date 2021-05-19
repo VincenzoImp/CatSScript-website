@@ -8,16 +8,6 @@ else {
 }
 ?>
 
-<!--script>
-  function logout(){
-    <!?php
-      unset($_SESSION['username']);
-    ?>
-    window.location.reload();
-  }
-</script-->
-
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +22,7 @@ else {
 
   <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+
 
   <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
