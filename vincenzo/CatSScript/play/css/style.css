@@ -65,6 +65,13 @@ body {
 
 
 
+
+
+
+
+
+
+
 .img-card {
   width: auto;
   height: 300px;
@@ -83,7 +90,20 @@ body {
   transform: scale(1.075);
 }
 
+.btn-play {
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
+  border-radius: 50em;
+}
 
+.btn-play:hover {
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
+}
+
+.radius {
+  border-radius: 20px;
+}
 
 
 /*--------------------------------------------------------------

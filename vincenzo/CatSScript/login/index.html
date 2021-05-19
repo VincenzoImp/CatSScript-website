@@ -69,18 +69,18 @@
                 </div>
                 <div class="col-lg-6 order-1 order-lg-2">
                     <div class="myRightCtn">
-                        <form action="../index.html" method="POST" class="myForm text-center" name="login" onsubmit="return validateLogin()">
+                        <form action="php/signin-form.php" method="POST" class="myForm text-center" name="login" onsubmit="return validateLogin()">
                             <header>Sign in into your account</header>
                             <div class="form-control">
                                 <i class="fas fa-cat"></i>
-                                <input type="text" id="username" placeholder="Username or Email" class="myInput">
+                                <input name="username-email" type="text" id="username" placeholder="Username or Email" class="myInput">
                             </div>
                             <div class="form-control">
                                 <i class="fas fa-lock"></i>
-                                <input type="password" id="password" placeholder="Password" class="myInput">
+                                <input name="password" type="password" id="password" placeholder="Password" class="myInput">
                             </div>
                             <br/>
-                            <input type="submit" value="LOG IN" class="butt">
+                            <input name="login-button" type="submit" value="LOG IN" class="butt">
                             <br/>
                             <br/>
                             <button class="butt"><a href="../registrazione/index.html">I don't have an account</a></button>

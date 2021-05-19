@@ -1,0 +1,41 @@
+<h1>CSS Pseudo-class Selectors</h1>
+<h3>What are Pseudo-classes?</h3>
+<p class="indent-1">
+    A <span>pseudo-class</span> is used to define a <span>special state</span> of an element.<br/>
+    For example, it can be used to:
+    <ul>
+        <li>Style an element when a user <span>mouses over it</span></li>
+        <li>Style <span>visited</span> and <span>unvisited</span> links differently</li>
+        <li>Style an element when it gets <span>focus</span></li>
+    </ul>
+    The syntax of pseudo-classes is the following:
+</p>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #062873; font-weight: bold">selector</span><span style="color: #555555; font-weight: bold">:pseudo-class</span> {
+property<span style="color: #666666">:</span> value;
+}
+</pre></div>
+<br/>
+<h3>Anchor Pseudo-classes</h3>
+<p class="indent-1">
+    Links can be displayed in different ways, so you can use the following pseudo-classes in your stylesheet to
+    display them in a different way for every different situation:
+    <ul>
+        <li>
+            <code>link</code>: with this pseudo-class you will decide how an <span>unvisited link</span> is displayed
+        </li>
+        <li>
+            <code>visited</code>: with this pseudo-class you will decide how a <span>visited link</span> is displayed
+        </li>
+        <li>
+            <code>hover</code>: with this pseudo-class you will decide how a link is displayed when a user <span>mouses over</span> it
+        </li>
+        <li>
+            <code>active</code>: with this pseudo-class you will decide how a <span>selected link</span> is displayed
+        </li>
+    </ul>
+    Note that <code>a:hover</code> <span>must come after</span> <code>a:link</code> and <code>a:visited</code>
+    in the CSS definition in order to be effective. <br/>
+    Also note that <code>a:active</code> <span>must come after</span> <code>a:hover</code> in the CSS definition in order
+    to be effective. <br/>
+    In the end note that pseudo-class names are <span>not</span> case-sensitive.
+</p>

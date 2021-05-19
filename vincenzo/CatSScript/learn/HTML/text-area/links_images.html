@@ -1,98 +1,78 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
 
-        <title>Links and images</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>Links and images</h1>
-        <br/>
-        <h3>HTML Links - Hyperlinks</h3>
-        <p style="margin-left: 3%;">
-            HTML links are <b>hyperlinks</b>: you can click on a link and jump to another document. <br/>
-            A link <b>does not have</b> to be text: a link can be an image or any other HTML element. <br/>
-            <br/>
-            The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax: <br/>
-            <code style="margin-left: 6%;">&lt;a href="url"&gt;<i>link text</i>&lt;/a&gt;</code>
-        </p>
-        <p style="margin-left: 3%;">
-            The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute,
-            which indicates the <b>link's destination</b> <br/>
-            <br/>
-            The <i>link text</i> is the part that will be visible to the reader; clicking on the link text, will send the 
-            reader to the specified URL address. <br/>
-            <br/>
-            For example if you want to create a link to CatSScript you should use the following tag: <br/>
-            <code style="margin-left: 6%;">&lt;a href="../index.html&gt;Visit CatSScript!&lt;/a&gt;</code>  
-        </p>
-        <p style="margin-left: 3%;">
-            By default, links will appear as follows in all browsers: <br/>
-            <ul style="margin-left: 6%;">
-                <li>An unvisited link is underlined and blue</li>
-                <li>A visited link is underlined and purple</li>
-                <li>An active link is underlined and red</li>
-            </ul>
-        </p>
-        <p style="margin-left: 3%;">
-            Of course this default visualization can be customized through CSS.
-        </p>
-        <br/>
-        <br/>
-        <h3>Absolute URLs and Relative URLs</h3>
-        <p style="margin-left: 3%;">
-            You can use <b>absolute URL</b> or <b>relative URL</b> in the <code>href</code> attribute. <br/>
-            You must use an <b>absolute URL</b>,  a full web address, if you want to link a Web page. </br>
-            You must use a <b>relative URL</b>, an address without the "https://www", if you want to link a page within the same website. <br/>
-            Note that you can link also a <b>different section of the same page</b> just using <code>&lt;a href="#idSection&gt;</code>
-        </p>
-        <br/>
-        <br/>
-        <h3>HTML Images</h3>
-        <p style="margin-left: 3%;">
-            The <code>&lt;img&gt;</code> tag is used to embed an image in a web page. <br/>
-            Images are not really inserted into a web page but are <b>linked</b> to web pages: the <code>&lt;img&gt;</code> tag creates a holding
-            space for the referenced image. <br/>
-            <br/>
-            The <code>&lt;img&gt;</code> tag is empty, it contains attributesd only and doea not have a closing tag. <br/>
-            <br/>
-            The <code>&lt;img&gt;</code> tag has two required attributes:
-            <ul style="margin-left: 6%">
-                <li>
-                    src - Specifies the path to the image                   
-                </li>
-                <li>
-                    alt - Specifies an alternate text for the image
-                </li>
-            </ul>
-        </p>
-        <p style="margin-left: 3%;">
-            The syntax of the <code>&lt;img&gt;</code> tag is: <br/>
-            <code style="margin-left: 6%;">&lt;img src="<i>url</i>" alt="<i>alternatetext</i>"&gt;</code>
-        </p>
-        <br/>
-        <h4 style="margin-left: 3%;">The <code>src</code> Attribute</h4>
-        <p style="margin-left: 3%">
-            The required <code>src</code> attribute specifies the path (URL) to the image
-        </p>
-        <h4 style="margin-left: 3%;">The <code>alt</code> Attribute</h4>
-        <p style="margin-left: 3%">
-            The required <code>alt</code> attribute provides an alternate text for an image, if the user for some
-            reason cannot view it. <br/>
-            The value of the <code>alt</code> attribute should describe the image. <br/>
-            Note that the <code>alt</code> attribute is also used by screen readers, programs that reads the HTML code, and
-            allows the user to "listen" to the content. Screen reader are useful for people who are visually impaired or learning disabled.
-        </p>
-    </body>
-</html>
+<h1>Links and images</h1>
+<br/>
+<h3>HTML Links - Hyperlinks</h3>
+<p class="indent-1">
+    HTML links are <span>hyperlinks</span>: you can click on a link and jump to another document. <br/>
+    A link <span>does not have</span> to be text: a link can be an image or any other HTML element. <br/>
+    <br/>
+    The HTML <code>&lt;a&gt;</code> tag defines a hyperlink. It has the following syntax: <br/>
+    <code class="indent-2">&lt;a href="url"&gt;<i>link text</i>&lt;/a&gt;</code>
+</p>
+<p class="indent-1">
+    The most important attribute of the <code>&lt;a&gt;</code> element is the <code>href</code> attribute,
+    which indicates the <span>link's destination</span> <br/>
+    <br/>
+    The <i>link text</i> is the part that will be visible to the reader; clicking on the link text, will send the 
+    reader to the specified URL address. <br/>
+    <br/>
+    For example if you want to create a link to CatSScript you should use the following tag: <br/>
+    <code class="indent-2">&lt;a href="../index.html&gt;Visit CatSScript!&lt;/a&gt;</code>  
+</p>
+<p class="indent-1">
+    By default, links will appear as follows in all browsers: <br/>
+    <ul class="indent-2">
+        <li>An unvisited link is underlined and blue</li>
+        <li>A visited link is underlined and purple</li>
+        <li>An active link is underlined and red</li>
+    </ul>
+</p>
+<p class="indent-1">
+    Of course this default visualization can be customized through CSS.
+</p>
+<br/>
+<br/>
+<h3>Absolute URLs and Relative URLs</h3>
+<p class="indent-1">
+    You can use <span>absolute URL</span> or <span>relative URL</span> in the <code>href</code> attribute. <br/>
+    You must use an <span>absolute URL</span>,  a full web address, if you want to link a Web page. </br>
+    You must use a <span>relative URL</span>, an address without the "https://www", if you want to link a page within the same website. <br/>
+    Note that you can link also a <span>different section of the same page</span> just using <code>&lt;a href="#idSection&gt;</code>
+</p>
+<br/>
+<br/>
+<h3>HTML Images</h3>
+<p class="indent-1">
+    The <code>&lt;img&gt;</code> tag is used to embed an image in a web page. <br/>
+    Images are not really inserted into a web page but are <span>linked</span> to web pages: the <code>&lt;img&gt;</code> tag creates a holding
+    space for the referenced image. <br/>
+    <br/>
+    The <code>&lt;img&gt;</code> tag is empty, it contains attributesd only and doea not have a closing tag. <br/>
+    <br/>
+    The <code>&lt;img&gt;</code> tag has two required attributes:
+    <ul class="indent-2">
+        <li>
+            src - Specifies the path to the image                   
+        </li>
+        <li>
+            alt - Specifies an alternate text for the image
+        </li>
+    </ul>
+</p>
+<p class="indent-1">
+    The syntax of the <code>&lt;img&gt;</code> tag is: <br/>
+    <code class="indent-2">&lt;img src="<i>url</i>" alt="<i>alternatetext</i>"&gt;</code>
+</p>
+<br/>
+<h4 class="indent-1">The <code>src</code> Attribute</h4>
+<p class="indent-1">
+    The required <code>src</code> attribute specifies the path (URL) to the image
+</p>
+<h4 class="indent-1">The <code>alt</code> Attribute</h4>
+<p class="indent-1">
+    The required <code>alt</code> attribute provides an alternate text for an image, if the user for some
+    reason cannot view it. <br/>
+    The value of the <code>alt</code> attribute should describe the image. <br/>
+    Note that the <code>alt</code> attribute is also used by screen readers, programs that reads the HTML code, and
+    allows the user to "listen" to the content. Screen reader are useful for people who are visually impaired or learning disabled.
+</p>

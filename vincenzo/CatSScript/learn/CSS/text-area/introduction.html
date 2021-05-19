@@ -1,101 +1,77 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description"content="">
-        <meta name="keywords" content="">
-
-        <title>Introduction and first steps</title>
-        <link rel="stylesheet" href="../../../assets/bootstrap/css/bootstrap.min.css">
-        <link rel="stylesheet" href="css/style.css">
-
-        <script src="https://kit.fontawesome.com/a1b5315d4a.js" crossorigin="anonymous"></script>
-
-
-        <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Quicksand&display=swap" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
-
-    </head>
-    <body>
-        <h1>Introduction and first steps</h1>
-        <br/>
-        <h3>What is HTML?</h3>
-        <p style="margin-left:3%">
-            HTML stands for <b>Hyper Text Markup Language</b>, it's the standard markup language for creating Web pages and describes the structure
-            of a Web page. <br/>
-            HTML consists of a series of <b>elements</b> that tell the browser how to display the content.
-        </p>
-        <h3>What is a HTML element?</h3>
-        <p style="margin-left:3%">
-            An HTML element is defined by a <b>start tag</b>, <b>some content</b> and an <b>end tag</b>: <br/>
-            <code style="margin-left: 6%;">&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code> <br>
-            Some HTML element have <b>no content</b>: these elements are called <b>empty elements</b> and they do <b>not</b> have the end tag! <br/>
-            <br/>
-            HTML elements <b>can be nested</b>: this means that elements can cointain other elements (in fact, all HTML docuemnts consists of nested elements). <br/>
-            <br/>
-            All HTML elements can have <b>attributes</b> that provide additional information about HTML elements; attributes are <b>always</b> specified
-            in the <b>start tag</b> and usually come in <b>name/value</b> pairs like: <b>name="value"</b>. <br/>
-            <br/>
-            Every HTML element has a <b>default display value</b>, depending on what type of element it is; there are two display values: <b>block</b> and <b>inline</b>.
-            <br/>
-            <b>Block-level</b> elements <b>always start on a new line</b> and <b>always take up the full width</b> available. <br/>
-            A block-level element has a top and a bottom margin and can contain an inline element. <br/>
-            <b>Inline</b> elements <b>do not start on a new line</b> and <b>only take take up as much width as necessary</b>. <br/>
-            An inline element does not have any margin and cannot contain a block-level element
-        </p>
-        <br/>
-        <br/>
-        <h3>HTML page structure</h3>
-        <p style="margin-left:3%">
-            Below is a visualization of a web page: <br>
-            <div style="width:99%;border:1px solid grey;padding:3px;margin:0;background-color:#ddd;"><code>&lt;html&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px"><code>&lt;head&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;title&gt;</code>Page title<code>&lt;/title&gt;</code>
-                </div>
-                <code>&lt;/head&gt;</code>
-                </div>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#ddd"><code>&lt;body&gt;</code>
-                <div style="width:90%;border:1px solid grey;padding:3px;margin:20px;background-color:#fff">
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;h1&gt;</code>This is a heading<code>&lt;/h1&gt;</code></div>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is a paragraph.<code>&lt;/p&gt;</code></div>
-                <div style="width:90%;border:1px solid grey;padding:5px;margin:20px"><code>&lt;p&gt;</code>This is another paragraph.<code>&lt;/p&gt;</code></div>
-                </div>
-                <code>&lt;/body&gt;</code>
-                </div>
-                <code>&lt;/html&gt;</code>
-                </div>
-            </div>
-        </p>
-        <p style="margin-left: 3%;">
-            The content inside the <code>&lt;body&gt;</code> section will be displayed in a browser, the content inside the <code>&lt;title&gt;</code> element will be shown
-            in the browser's title bar or in the page's tab.
-        </p>
-        <br/>
-        <br/>
-        <h3>HTML Basics</h3>
-        <h5 style="margin-left: 3%;">HTML Documents</h5>
-        <p style="margin-left: 3%;">
-            Here's an example of the structure of a web page: <br>
-            <pre class="html5" style="font-family:monospace; border: 1px solid black; margin-left: 3%;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #00bbdd;">&lt;!DOCTYPE html&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">head</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">        ...</div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">body</span>&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">html</span>&gt;</span></div></li></ol></pre>
-            <br/>
-        </p>
-        <p style="margin-left: 3%;">
-            All HTML documents must start with a document type declaration: <code>&lt;!DOCTYPE html&gt;</code> <br/>
-            The document type declaration represents the docuemtn type and helps the browser to display it correctly; it must appear <b>only once</b>
-            at the top of the page, before any HTML tags. <br/>
-            The <code>&lt;!DOCTYPE html&gt;</code> declaration is not case sensitive. <br/>
-            <br/>
-            The document itself begins with <code>&lt;html&gt;</code> and ends with <code>&lt;/html&gt;</code> <br/>
-            <br/>
-            The part of the document between <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> is invisible and contains information and 
-            metadata. <br/>
-            <br/>
-            As said before, the visible part of the document is between <code>&lt;body&gt;</code> and <code>&lt;/body&gt;</code>. <br/>
-            <br/>
-            
-
-        </p>
-    </body>
-</html>
+<h1>Introduction and first steps</h1>
+<br/>
+<h3>What is CSS?</h3>
+<p class="indent-1">
+    CSS is the language used to <span>style</span> an HTML document. <br/>
+    CSS describes <span>how the HTML elements should be displayed</span>. <br/>
+    <br/>
+    CSS stands for <span>Cascading Style Sheets</span>. <br/>
+    The same HTML page can use multiple CSS style sheets. <br/>
+    <br/>
+    CSS was created to describe the content of a web page, to <span>format</span> a web page. <br/>
+    <br/>
+    Style sheets are a collection of <span>CSS rules</span>.
+</p>
+<h3>What is a CSS Rule?</h3>
+<p class="indent-1">
+    A CSS rule consists of a <span>selector</span> and a <span>declaration block</span>. <br/>
+    The <span>selector</span> points to the <span>HTML element</span> you want to style, while
+    the <span>declaration block</span> contains <span>one or more declarations</span> separated by semicolons. <br/>
+    Each <span>declaration</span> includes a <span>CSS property name</span> and a <span>value</span>, separated by a colon (note that
+    for all those values that need an unit you <span>must not</span> add a space between the value and the unit). <br/>
+    Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces. <br/>
+    For example, if you want to write <code>&lt;p&gt;</code> elements center-aligned with a red text color, you should
+    write the following CSS rule:
+</p>
+<!-- HTML generated using hilite.me --><div style="background: #f0f0f0; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;"><pre style="margin: 0; line-height: 125%"><span style="color: #062873; font-weight: bold">p</span> {
+<span style="color: #007020; font-weight: bold">color</span><span style="color: #666666">:</span> <span style="color: #007020">red</span>;
+<span style="color: #007020; font-weight: bold">text-align</span><span style="color: #666666">:</span> <span style="color: #007020; font-weight: bold">center</span>;
+}
+</pre></div>
+<p class="indent-1">
+    In this example we have that:
+    <ul>
+        <li>
+            <code>p</code> is a <span>CSS selector</span> and it points to the <code>&lt;p&gt;</code> elements in the HTML document;
+        </li>
+        <li>
+            <code>color</code> is a <span>property</span>, and <code>red</code> is the <span>property value</span>;
+        </li>
+        <li>
+            <code>text-align</code> is a <span>property</span>, and <code>center</code> is the <span>property value</span>.
+        </li>
+    </ul>
+</p>
+<br/>
+<h3>How to add CSS</h3>
+<p class="indent-1">
+    There are <span>three ways</span> to insert a style sheet in a HTML document:
+    <ul>
+        <li>
+            <span>External CSS</span> <br/>
+            To use an external style sheet you must reference the external style sheet file inside the <code>&lt;link&gt;</code> element
+            inside the <span>head section</span>. <br/>
+            An external style sheet must be saved with a <span>.css</span> extension and should not contain any HTML tags.
+        </li>
+        <li>
+            <span>Internal CSS</span> <br/>
+            An internal style sheet may be used if one single HTML page has a unique style. <br/>
+            The internal style sheet is defined inside the <code>&lt;style&gt;</code> element, inside the head section.
+        </li>
+        <li>
+            <span>Inline CSS</span> <br/>
+            An inline style may be used to apply a unique style for a single element. <br/>
+            To use inline styles, add the <code>style</code> attribute to the relevant element. The <code>style</code>
+            attribute can contain any CSS property.
+        </li>
+    </ul>
+    Note that id some properties have been defined for the same selector in different style sheets, the value
+    from the <span>last read style sheet</span> will be used. <br/>
+    Also note that all the styles in a page follow this hierarchy (number one has the highest priority):
+    <ol>
+        <li>Inline style (inside an HTML element)</li>
+        <li>External and internal style sheets (in the head section)</li>
+        <li>Browser default</li>
+    </ol>
+</p>
 
