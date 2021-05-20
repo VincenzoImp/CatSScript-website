@@ -52,8 +52,8 @@ else {
                             </div>
                             <hr/>
                             <div class="d-flex justify-content-end">
-                                <button id="exit" class="btn btn-primary me-1">Exit Quiz</button>
-                                <button id="continue" class="btn btn-primary ms-1">Continue</button>
+                                <button id="exit" class="btn my-btn radius me-1">Exit Quiz</button>
+                                <button id="continue" class="btn my-btn radius ms-1">Continue</button>
                             </div>
                         </div>
                     </div>
@@ -88,7 +88,7 @@ else {
                                     <!-- Here I've inserted Question Count Number from JavaScript -->
                                 </span>
                                 <span class="me-3">
-                                    <button id="next_btn" class="btn btn-primary">Next Que</button>
+                                    <button id="next_btn" class="btn my-btn radius">Next Que</button>
                                 </span>
                             </footer>
                         </div>
@@ -106,8 +106,8 @@ else {
                                 <!-- Here I've inserted Score Result from JavaScript -->
                             </div>
                             <div class=" d-flex justify-content-end">
-                                <button id="restart" class="btn btn-primary me-1">Replay Quiz</button>
-                                <button id="quit" class="btn btn-primary ms-1">Quit Quiz</button>
+                                <button id="restart" class="btn my-btn radius me-1">Replay Quiz</button>
+                                <button id="quit" class="btn my-btn radius ms-1">Quit Quiz</button>
                             </div>
                         </div>
                     </div>
@@ -131,7 +131,6 @@ else {
     <button id="btn-back-to-top" type="button" class="btn btn-light btn-floating btn-lg">
         <i class="fas fa-arrow-up"></i>
     </button>
-
 
     <script src="../../../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js"></script>

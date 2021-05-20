@@ -34,7 +34,7 @@ else {
         <div class="row">
             <div class="col-lg-4">
                 <div class="make-me-sticky">
-                    <nav class="sidebar card py-2 mb-4">
+                    <nav class="sidebar card py-2 mb-4 radius">
                         <ul class="nav flex-column" id="nav_accordion">
                             <li class="nav-item">
                                 <a class="nav-link learn-link" id="introduction"> Introduction and first steps </a>
@@ -57,7 +57,7 @@ else {
                 </div>
             </div>
             <div class="col-lg-8">
-                <div id="text-area">
+                <div id="text-area" class="radius">
                 </div>
             </div>
         </div>

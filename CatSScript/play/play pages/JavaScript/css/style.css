@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: linear-gradient(45deg, #f56fd8, #9505dd);
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -50,28 +51,29 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color:#d85ac3ee;
   font-family: 'Comfortaa', cursive;
   font-family: 'Quicksand', sans-serif;
+  
 }
 
 .navbar-light .nav-item .signin{
-  background: #f56fd8;
-  color: #fff;
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signin:hover {
-  color: #fff;
-  background: #f54dd1;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
 }
 
 .navbar-light .nav-item .signup{
-  background: #ad5e98;
-  color: #fff;
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signup:hover {
-  color: #fff;
-  background: #aa719b;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
 }
 
 .navbar-shadow{
@@ -215,4 +217,48 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background:rgba(225, 225, 225, 0.5);
   border: 2px solid white;
   display: none;
+}
+
+
+
+
+
+
+
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: linear-gradient(45deg, #c69aec, #9ef8d1);
+}
+
+
+
+
+
+
+
+.radius {
+  border-radius: 20px;
+}
+
+.my-btn {
+  color: black;
+  border: 2px solid white;
+  background: linear-gradient(45deg, #cca7ec, #a277c7);
+}
+
+.my-btn:hover {
+  background: linear-gradient(45deg, #83669c, #7b51a0);
+  color: white;
 }

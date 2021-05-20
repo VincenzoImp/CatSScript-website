@@ -33,35 +33,35 @@ else {
     <div class="container">
       <div class="row">
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card transition about-us-position mx-3 my-5 card-background radius">
+          <div id="html" class="card transition about-us-position mx-3 my-5 card-background radius">
             <img src="../assets/img/pusheen_gamer.svg" class="img-card">
             <div class="d-flex flex-column align-items-center">
               <br/>
               <h3 class="card-title">Play HTML</h3>
               <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/html/index.php" class="btn btn-play mb-4">Let's go !!</a>
+              <a href="play pages/html/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card transition about-us-position mx-3 my-5 card-background radius">
+          <div id="css" class="card transition about-us-position mx-3 my-5 card-background radius">
             <div class="d-flex flex-column align-items-center order-lg-1 order-2">
               <br/>
               <h3 class="card-title">Play CSS</h3>
               <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/CSS/index.php" class="btn btn-play mb-4">Let's go !!</a>
+              <a href="play pages/CSS/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
             </div>
             <img src="../assets/img/ancielo_arcobaleno.svg" class="order-lg-2 order-1 img-card">
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card transition about-us-position mx-3 my-5 card-background radius">
+          <div id="javascript" class="card transition about-us-position mx-3 my-5 card-background radius">
             <img src="../assets/img/pusheen_mermaid.svg" class="img-card">
             <div class="d-flex flex-column align-items-center">
               <br/>
               <h3 class="card-title">Play JavaScript</h3>
               <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/JavaScript/index.php" class="btn btn-play mb-4">Let's go !!</a>
+              <a href="play pages/JavaScript/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
             </div>
           </div>
         </div>
@@ -81,7 +81,9 @@ else {
   </div>
   <!-- End Footer -->
 
-
+  <button id="btn-back-to-top" type="button" class="btn btn-light btn-floating btn-lg">
+    <i class="fas fa-arrow-up"></i>
+  </button>
 
   <script src="../assets/bootstrap/js/bootstrap.min.js" type="text/javascript" lang="javascript"></script>
   <script src="js/main.js" type="text/JavaScript" lang="javascript"></script>  

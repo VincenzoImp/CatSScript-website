@@ -28,14 +28,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-top: 15vh;
 }
 
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  border-radius: 100%;
-  background: linear-gradient(45deg, #f56fd8, #9505dd);
-}
 
 /*--------------------------------------------------------------
 # Navigation Menu
@@ -137,17 +129,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 
-/*--------------------------------------------------------------
-# Back to top button
---------------------------------------------------------------*/
-#btn-back-to-top {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  display: none;
-  border-radius: 100%;
-  background: linear-gradient(45deg, #c69aec, #9ef8d1);
-}
 
 
 
@@ -182,4 +163,26 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 p span{
   font-weight: bold;
+}
+
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: linear-gradient(45deg, #c69aec, #9ef8d1);
+}
+
+
+.radius {
+  border-radius: 20px;
 }
