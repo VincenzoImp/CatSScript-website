@@ -1,6 +1,0 @@
-- cambiare la favicon con una di un gatto -> fatto per prova nell'index di FlexStart
-- cambiare la apple-touch-icon con una di un gatto (anche la stessa favicon ma più grande) -> fatto per prova nell'index di FlexStart
-- creare una cartella in img con tutti i pusheen -> fatto
-n.b.
-non è necessario ridimensionare le immagini per le favicon perché ci pensa da solo il
-browser
