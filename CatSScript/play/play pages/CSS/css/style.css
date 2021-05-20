@@ -251,3 +251,15 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: linear-gradient(45deg, #83669c, #7b51a0);
   color: white;
 }
+
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #9ef8d1;
+     color: #000;
+     }
+
+audio{
+  border-radius: 50px;
+  border: 2px solid white;
+}

@@ -12,6 +12,7 @@ const que_img = document.querySelector("#que_img");
 const option_list = document.querySelector("#option_list");
 const bottom_ques_counter = document.querySelector("#total_que");
 const next_btn = document.querySelector("#next_btn");
+const music_tag = document.querySelector('#music');
 
 const result_box = document.querySelector("#result_box");
 const restart_quiz = document.querySelector("#restart");
@@ -48,6 +49,7 @@ continue_btn.onclick = ()=>{
     queCounter(que_numb); //passing 1 parameter to queCounter
     startTimer(timer_duration); //calling startTimer function
     startTimerLine(0); //calling startTimerLine function
+    music_tag.setAttribute("src", "../../audio/suspense.mp3");
 }
 
 // if restartQuiz button clicked
@@ -143,18 +145,21 @@ function showResult(){
         img_result.innerHTML = imgTag;
         let scoreTag = '<span>and congrats! 🎉, You got <b>'+ userScore +'</b> out of <b>'+ questions.length/step +'</b></span>';
         scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+        music_tag.setAttribute("src", "../../audio/1stPlace.mp3");
     }
     else if(userScore > 1){ // if user scored more than 1
         let imgTag = "<img class='img-resize' src='../../../assets/img/play/F4.svg'></img>";
         img_result.innerHTML = imgTag;
         let scoreTag = '<span>and nice 😎, You got <b>'+ userScore +'</b> out of <b>'+ questions.length/step +'</b></span>';
         scoreText.innerHTML = scoreTag;
+        music_tag.setAttribute("src", "../../audio/2ndPlace.mp3");
     }
     else{ // if user scored less than 1
         let imgTag = "<img class='img-resize' src='../../../assets/img/play/molto_triste.svg'></img>";
         img_result.innerHTML = imgTag;
         let scoreTag = '<span>and sorry 😐, You got only <b>'+ userScore +'</b> out of <b>'+ questions.length/step +'</b></span>';
         scoreText.innerHTML = scoreTag;
+        music_tag.setAttribute("src", "../../audio/3rdPlace.mp3");
     }
 }
 

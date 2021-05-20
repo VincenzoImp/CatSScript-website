@@ -112,11 +112,21 @@ else {
                             </div>
                         </div>
                     </div>
+
+
+                </div>
+            </div>
+            <div class="row justify-items-center">
+                <div class="d-flex justify-content-center">
+                    <div class="my-4 text-center card bg-transparent border-0">
+                         <audio controls autoplay loop type="audio/mpeg" id="music"></audio>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
+            
+
     <!-- ======= Footer ======= -->
     <div id="footer">
         <div class="background">

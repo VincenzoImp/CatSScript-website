@@ -70,16 +70,21 @@ else {
   </div>
   <br/>
 
+  <div class="container py-4 text-center">
+      <audio controls autoplay loop src="audio/lobby_music.mp3" type="audio/mpeg"></audio>
+  </div>
 
   <!-- ======= Footer ======= -->
   <div id="footer">
     <div class="background">
-      <div class="container py-4" style="text-align: center;">
+      <div class="container py-4 text-center">
         Made with <i class="fas fa-heart"></i> by <i class="fas fa-cat"></i>s
       </div>
     </div>
   </div>
   <!-- End Footer -->
+
+  
 
   <button id="btn-back-to-top" type="button" class="btn btn-light btn-floating btn-lg">
     <i class="fas fa-arrow-up"></i>

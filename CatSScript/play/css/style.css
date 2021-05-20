@@ -162,3 +162,18 @@ body {
   padding-bottom: 13px;
   background: linear-gradient(45deg, #c69aec, #9ef8d1);
 }
+
+
+
+
+
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #9ef8d1;
+     color: #000;
+     }
+
+audio{
+  border-radius: 50px;
+  border: 2px solid white;
+}
