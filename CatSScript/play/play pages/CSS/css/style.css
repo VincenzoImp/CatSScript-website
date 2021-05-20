@@ -41,6 +41,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: linear-gradient(45deg, #f56fd8, #9505dd);
 }
 
+
 /*--------------------------------------------------------------
 # Navigation Menu
 --------------------------------------------------------------*/
@@ -50,28 +51,29 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   color:#d85ac3ee;
   font-family: 'Comfortaa', cursive;
   font-family: 'Quicksand', sans-serif;
+  
 }
 
 .navbar-light .nav-item .signin{
-  background: #f56fd8;
-  color: #fff;
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signin:hover {
-  color: #fff;
-  background: #f54dd1;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
 }
 
 .navbar-light .nav-item .signup{
-  background: #ad5e98;
-  color: #fff;
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
   border-radius: 50em;
 }
 
 .navbar-light .nav-item .signup:hover {
-  color: #fff;
-  background: #aa719b;
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
 }
 
 .navbar-shadow{
@@ -174,7 +176,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   pointer-events: none;
 }
 
-.icon{ /*to check*/
+.icon{
   height: 24px;
   width: 24px;
   border: 2px solid transparent;
@@ -185,13 +187,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   transition: all 0.3s ease;
   line-height: 24px;
 }
-.icon.tick{ /*to check*/
+.icon.tick{ 
   color: #23903c;
   border-color: #23903c;
   background: #d4edda;
 }
 
-.icon.cross{ /*to check*/
+.icon.cross{
   color: #a42834;
   background: #f8d7da;
   border-color: #a42834;

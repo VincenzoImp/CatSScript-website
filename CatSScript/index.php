@@ -61,7 +61,7 @@ else {
           <h1>Play with cats</h1>
           <!--h4>Enjoy tuttecose guarda che ti diverti a giocare a questo giochino intanto controlli che hai imparato cose (per impararla vai alla sezione sotto) e pensa ci sono anche i gatti. Cioè un gatto perché qualcuno ha deciso che ci sarebbe stato il monopolio di pusheen.</h4-->
           <br/>
-          <a class="btn btn-primary" href="play/index.php">Play</a>
+          <a class="btn my-btn py-3 radius bold" href="play/index.php">PLAY GAME</a>
         </div>
         <div class="col-lg-6 order-1 order-lg-1 play-img">
           <img src="assets/img/play-img.svg" class="img-fluid">
@@ -76,32 +76,32 @@ else {
     <div class="container">
       <div class="row">
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card">
-              <img src="assets/img/placeholder/Rf324613e5cee25a11f56bf5f8a4d9f7d.jfif" class="card-img-top img-card" alt="">
-            <div class="card-body">
-              <h5 class="card-title">HTML</h5>
+          <div class="card mx-4 my-4">
+              <img src="assets/img/" class="card-img-top img-card" alt="">
+            <div class="card-body text-center">
+              <h3 class="card-title">HTML</h3>
               <p class="card-text">HTML è il linguaggio di markup coi tag che serve a scrive le pagine web.</p>
-              <a href="learn/html/index.php" class="btn btn-primary-custom">Learn HTML !!</a>
+              <a href="learn/html/index.php" class="btn my-btn radius">Learn HTML !!</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card">
-            <img src="assets/img/placeholder/exemple-code-css.png" class="card-img-top img-card" alt="">
-            <div class="card-body">
-              <h5 class="card-title">CSS</h5>
+          <div class="card mx-4 my-4">
+            <img src="assets/img/" class="card-img-top img-card" alt="">
+            <div class="card-body text-center">
+              <h3 class="card-title">CSS</h3>
               <p class="card-text">Pensa che CSS serve a fa diventa tutto rosa quindi sicuro va imparato.</p>
-              <a href="learn/CSS/index.php" class="btn btn-primary-custom">Learn CSS !!</a>
+              <a href="learn/CSS/index.php" class="btn my-btn radius">Learn CSS !!</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
-          <div class="card">
-            <img src="assets/img/placeholder/code-javascript-e1563276216875.jpg" class="card-img-top img-card" alt="">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
+          <div class="card mx-4 my-4">
+            <img src="assets/img/" class="card-img-top img-card" alt="">
+            <div class="card-body text-center">
+              <h3 class="card-title">JavaScript</h3>
               <p class="card-text">JavaScript serve sicuro a scrive script che ti permettono di fare più o meno tuttecose.</p>
-              <a href="learn/JavaScript/index.php" class="btn btn-primary-custom">Learn JavaScript !!</a>
+              <a href="learn/JavaScript/index.php" class="btn my-btn radius">Learn JavaScript !!</a>
             </div>
           </div>
         </div>

@@ -27,40 +27,60 @@ else {
 </head>
 
 <body>
-  <div id="navbar"></div>
+    <div id="navbar"></div>
 
-    <div class="container-custom">
-        <div class="myCard">
-            <div class="row">
-                <div class="col-lg-6 order-2 order-lg-1">
-                    <div class="myLeftCtn d-flex justify-content-center align-items-center">
-                        <img src="../assets/img/pusheen/F4.png">
-                    </div>
-                </div>
-                <div class="col-lg-6 order-1 order-lg-2">
-                    <div class="myRightCtn">
-                        <form action="php/signin-form.php" method="POST" class="myForm text-center" name="login" onsubmit="return validateLogin()">
-                            <header>Sign in into your account</header>
-                            <div class="form-control">
-                                <i class="fas fa-cat"></i>
-                                <input name="username-email" type="text" id="username" placeholder="Username or Email" class="myInput">
+    <div class="space"></div>
+    
+    <div class="d-flex align-items-center">
+        <div class="container">
+            <div class="d-flex justify-content-center">
+                <div id="login-card" class="card">
+                    <div class="row card-body">
+                        <div class="my-5 col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                            <img src="../assets/img/carino.svg" class="img-resize">
+                        </div>
+                        <div class="col-lg-6 d-flex flex-column justify-content-center align-items-center">
+                            <h3 class="card-title mt-5">Sign in into your account</h3>
+                            <div class="card mb-5 mt-4 background py-4 px-4 radius">
+                                <form action="php/signin-form.php" method="POST" class="text-center" name="login" onsubmit="return validateLogin()">
+                                    <div class="card-body">
+                                        <div class="mb-3 row text-center">
+                                            <i class="fas fa-cat me-3 mb-2"></i>
+                                            <input name="username-email" type="text" id="username" placeholder="Username or Email" class="px-2 py-2 radius">
+                                        </div>
+                                        <div class="mb-3 mt-4 row text-center">
+                                            <i class="fas fa-lock me-3 mb-2"></i>
+                                            <input name="password" type="password" id="password" placeholder="Password" class="px-2 py-2 radius">
+                                        </div>
+                                        <div class="mb-3 mt-5 row">
+                                            <input name="login-button" type="submit" value="LOG IN" class="btn my-btn radius">
+                                        </div>
+                                        <div class="mt-3 row">
+                                            <a class="btn my-btn radius" href="../registrazione/index.php">I don't have an account</a>
+                                        </div>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="form-control">
-                                <i class="fas fa-lock"></i>
-                                <input name="password" type="password" id="password" placeholder="Password" class="myInput">
-                            </div>
-                            <br/>
-                            <input name="login-button" type="submit" value="LOG IN" class="butt">
-                            <br/>
-                            <br/>
-                            <button class="butt"><a href="../registrazione/index.php">I don't have an account</a></button>
-                        </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
+      <!-- ======= Footer ======= -->
+    <div id="footer">
+        <div class="background">
+            <div class="container py-4" style="text-align: center;">
+                Made with <i class="fas fa-heart"></i> by <i class="fas fa-cat"></i>s
+            </div>
+        </div>
+    </div>
+    <!-- End Footer -->
+
+    <button id="btn-back-to-top" type="button" class="btn btn-light btn-floating btn-lg">
+        <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/main.js" type="text/javascript" lang="javascript"></script>

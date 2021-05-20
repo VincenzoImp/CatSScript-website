@@ -37,7 +37,7 @@ const step = 2;
 
 // if exitQuiz button clicked
 exit_btn.onclick = ()=>{
-    location.replace("../../index.html");
+    location.replace("../../index.php");
 }
 
 // if continueQuiz button clicked
@@ -52,12 +52,12 @@ continue_btn.onclick = ()=>{
 
 // if restartQuiz button clicked
 restart_quiz.onclick = ()=>{
-    location.replace("index.html"); //reload the current window
+    location.replace("index.php"); //reload the current window
 }
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
-    location.replace("../../index.html"); //reload the current window
+    location.replace("../../index.php"); //reload the current window
 }
 
 // if Next Que button clicked

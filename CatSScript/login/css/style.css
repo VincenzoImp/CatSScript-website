@@ -1,173 +1,135 @@
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+  font-family: 'Nanum Gothic', sans-serif;
+  color: #212529;
+  background: linear-gradient(#c69aec, #9ef8d1);
+}
+
+a {
+  color: #770e54;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ef4de7e5;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: 'Nanum Gothic', sans-serif;
+}
+
 *{
-    margin:0;
+  margin: 0;
 }
 
-body{
-    background: #fbf3ff;
+.space {
+  height: 9vh;
 }
 
-.myCard{
-    position: relative;
-    background: #fff;
-    height: 100%;
-    border-radius: 25px;
-    box-shadow: 0px 10px 40px -10px rgba(0,0,0,0.7);
+
+.my-btn {
+  color: black;
+  border: 2px solid white;
+  background: linear-gradient(45deg, #cca7ec, #a277c7);
 }
 
-.row{
-    height:100%;
+.my-btn:hover {
+  background: linear-gradient(45deg, #83669c, #7b51a0);
+  color: white;
+
 }
 
-.container-custom{
-    position:absolute;
-    max-width: 800px;
-    height: 500px;
-    margin: auto;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
 
-.myRightCtn{
-    position: relative;
-    background: #fff;
-    border-radius: 25px;
-    height: 100%;
-    padding: 25px;
-    padding-left: 0px;
-}
+/*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
 
-.myRightCtn header{
-    color: blueviolet;
-    font-size: 24px;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
-
-.myForm{
-    position: relative;
-    margin-top: 50px;
-}
-
-.myRightCtn .myInput{
-    width: 230px;
-    border-radius: 25px;
-    padding: 10px;
-    padding-left: 50px;
-    border: none;
-    box-shadow: 0px 10px 49 px -14px rgba(0,0,0,0.7);
-}
-
-.myRightCtn .myInput:focus{
-    outline: none;
-}
-
-.myRightCtn .fas{
-    position: relative;
-    color: #bb36fd;
-    left: 36px;
-}
-
-.myRightCtn .butt{
-    background: linear-gradient(45deg, #bb36fd, #9b00e8);
-    color: #fff;
-    width: 230px;
-    border: none;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0px 10px 41px -11px rgba(0,0,0,0.7);
-}
-
-.myRightCtn .butt:hover{
-    background: linear-gradient(45deg, #c85bff, #b726ff);
-}
-
-.myRightCtn .butt:focus{
-    outline:none;
-}
-
-.myLeftCtn{
-    position: relative;
-    background-image: linear-gradient(45deg, #f046ff, #9b00e8);
-    border-radius: 25px;
-    height: 100%;
-    padding: 25px;
-    color: rgb(192,192,192);
-    font-size: 12px;
-}
-
-.butt_out{
-    background: transparent;
-    color: #fff;
-    width: 120px;
-    border: 2px solid#fff;
-    border-radius: 25px;
-    padding: 10px;
-    box-shadow: 0px 10px 49px -14px rgba(0,0,0,0.7);
-}
-
-.butt_out:hover{
-    border: 2px solid#eecbff;
-}
-
-.butt_out:focus{
-    outline: none;
-}
-
-a, a:hover{
-    text-decoration: none;
-    color: #fff;
-}
+.navbar-brand-custom{
+  font-size: 2.25em;
+  color:#d85ac3ee;
+  font-family: 'Comfortaa', cursive;
+  font-family: 'Quicksand', sans-serif;
   
-  /*--------------------------------------------------------------
-  # Navigation Menu
-  --------------------------------------------------------------*/
-  
-  .navbar-brand-custom{
-    font-size: 2.25em;
-    color:#d85ac3ee;
-    font-family: 'Comfortaa', cursive;
-    font-family: 'Quicksand', sans-serif;
-  }
-  
-  .navbar-light .nav-item .signin{
-    background: #f56fd8;
-    color: #fff;
-    border-radius: 50em;
-  }
-  
-  .navbar-light .nav-item .signin:hover {
-    color: #fff;
-    background: #f54dd1;
-  }
-  
-  .navbar-light .nav-item .signup{
-    background: #ad5e98;
-    color: #fff;
-    border-radius: 50em;
-  }
-  
-  .navbar-light .nav-item .signup:hover {
-    color: #fff;
-    background: #aa719b;
-  }
-  
-  .navbar-shadow{
-    box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
-  }
+}
 
-  nav a, nav a:hover{
-    color: #ef4de7e5;
-    text-decoration: none;
-  }
+.navbar-light .nav-item .signin{
+  background: linear-gradient(45deg, #5fdfa7, #24a06a);
+  color: rgb(0,0,0);
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signin:hover {
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #3cdd97, #0c9e5f);
+}
+
+.navbar-light .nav-item .signup{
+  background: linear-gradient(45deg, #c69aec, #9e4ee4);
+  color: rgb(0,0,0);
+  border-radius: 50em;
+}
+
+.navbar-light .nav-item .signup:hover {
+  color: rgb(0,0,0);
+  background: linear-gradient(45deg, #c6a4e4, #aa67e4);
+}
+
+.navbar-shadow{
+  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.5);
+}
 
 
-  h1, h2, h3, h4, h5, h6, .font-primary {
-    font-family: 'Nanum Gothic', sans-serif;
-  }
-  
-  body {
-    font-family: 'Nanum Gothic', sans-serif;
-    color: #212529;
-  }
-  
+
+
+
+
+
+
+
+#login-card {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+  background:linear-gradient(90deg, #c69aec, #9ef8d1);
+  border-radius: 20px;
+  border: 2px solid white;
+}
+
+.img-resize {
+  width: 40vw;
+  height: 40vh;
+}
+
+.radius {
+  border-radius: 20px;
+}
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+#btn-back-to-top {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  border-radius: 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
+  background: linear-gradient(45deg, #c69aec, #9ef8d1);
+}
+
+
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+#footer{
+  background: linear-gradient(#9ef8d1, #c69aec);
+  border-top: 2px solid white;
+}
+
+.background {
+  background: rgba(255,255,255,0.3);
+}

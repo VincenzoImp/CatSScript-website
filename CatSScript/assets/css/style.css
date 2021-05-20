@@ -29,6 +29,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 9vh;
 }
 
+.radius {
+  border-radius: 50px;
+}
+
+
+
+
 @media (max-width: 768px) {
   h1 {
     font-size: 28px;
@@ -91,11 +98,20 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   background: linear-gradient(#9ef8d1, #c69aec);
 }
 
-#hero, #play, #learn, #about-us{
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+#learn, #play {
+  padding-top: 15vh;
+  padding-bottom: 15vh;
 }
 
+#hero {
+  padding-top: 30vh;
+  padding-bottom: 15vh;
+}
+
+#about-us {
+  padding-top: 15vh;
+  padding-bottom: 30vh;
+}
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -152,6 +168,23 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   }
 }
 
+.bold {
+  font-weight: bold;
+}
+
+
+#play .my-btn {
+  color: black;
+  border: 2px solid white;
+  background: linear-gradient(45deg, #9ef8d1, #6bcca2);
+}
+
+#play .my-btn:hover {
+  background: linear-gradient(45deg, #6dac91, #4a8d70);
+  color: white;
+}
+
+
 /*--------------------------------------------------------------
 # Learn Section
 --------------------------------------------------------------*/
@@ -160,15 +193,22 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   height: 225px;
 }
 
-.btn-primary-custom {
-  color: #fff;
-  background-color: #b10dfd;
-  border-color: #fd0dfd;
+#learn .card {
+  background:rgba(255, 255, 255, 0.3);
+  border: 2px solid white;
+  border-radius: 20px;
 }
-.btn-primary-custom:hover {
-  color: #fff;
-  background-color: #d70bc6;
-  border-color: #c40aca;
+
+#learn .my-btn {
+  color: black;
+  border: 2px solid white;
+  background: linear-gradient(45deg, #cca7ec, #a277c7);
+}
+
+#learn .my-btn:hover {
+  background: linear-gradient(45deg, #83669c, #7b51a0);
+  color: white;
+
 }
 
 /*--------------------------------------------------------------
@@ -217,10 +257,11 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   bottom: 20px;
   right: 20px;
   display: none;
-  border-radius: 100%;
+  border-radius: 50%;
+  padding-top: 13px;
+  padding-bottom: 13px;
   background: linear-gradient(45deg, #c69aec, #9ef8d1);
 }
-
 
 /*--------------------------------------------------------------
 # Footer

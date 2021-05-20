@@ -4,7 +4,7 @@ if (isset($_SESSION['username'])) {
   echo("<script>var navbarType = 'insession_navbar.html';</script>");
 }
 else {
-  header("Location: ../index.php");
+  header("Location: ../../../index.php");
 }
 ?>
 
