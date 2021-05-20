@@ -23,11 +23,11 @@
         }
         else {
             $password = md5($_POST["password"]);
-            $q3 = "select * from users where password = $1 and (username = $2 or email = $2)";
+            $q3 = "select username from users where password = $1 and (username = $2 or email = $2)";
             $result3 = pg_query_params($dbconn, $q3, array($password, $username_email));
             if ($line3=pg_fetch_array($result3, null, PGSQL_ASSOC)) {
                 //se c'e' la password (nel rigo dell'utente selezionato) combacia con quella inserita
-                $_SESSION['username'] = 'prova';
+                $_SESSION['username'] = $line3["username"];
                 header("Location: ../../index.php");
             }
             else {

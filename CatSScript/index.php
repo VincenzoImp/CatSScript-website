@@ -77,30 +77,30 @@ else {
       <div class="row">
         <div class="col-lg-4 d-flex flex-column justify-content-center">
           <div class="card mx-4 my-4">
-              <img src="assets/img/" class="card-img-top img-card" alt="">
+              <img src="assets/img/HTML5-logo.svg" class="card-img-top img-card mt-3" alt="">
             <div class="card-body text-center">
               <h3 class="card-title">HTML</h3>
-              <p class="card-text">HTML è il linguaggio di markup coi tag che serve a scrive le pagine web.</p>
+              <p class="card-text">HTML is the tagged markup language used to write web pages</p>
               <a href="learn/html/index.php" class="btn my-btn radius">Learn HTML !!</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
           <div class="card mx-4 my-4">
-            <img src="assets/img/" class="card-img-top img-card" alt="">
+            <img src="assets/img/CSS3-logo.svg" class="card-img-top img-card mt-3" alt="">
             <div class="card-body text-center">
               <h3 class="card-title">CSS</h3>
-              <p class="card-text">Pensa che CSS serve a fa diventa tutto rosa quindi sicuro va imparato.</p>
+              <p class="card-text">Just think that CSS is used to make everything pink so it must be learned</p>
               <a href="learn/CSS/index.php" class="btn my-btn radius">Learn CSS !!</a>
             </div>
           </div>
         </div>
         <div class="col-lg-4 d-flex flex-column justify-content-center">
           <div class="card mx-4 my-4">
-            <img src="assets/img/" class="card-img-top img-card" alt="">
+            <img src="assets/img/JavaScript-logo.svg" class="card-img-top img-card mt-3" alt="">
             <div class="card-body text-center">
               <h3 class="card-title">JavaScript</h3>
-              <p class="card-text">JavaScript serve sicuro a scrive script che ti permettono di fare più o meno tuttecose.</p>
+              <p class="card-text">JavaScript is great for writing scripts that let you do everything</p>
               <a href="learn/JavaScript/index.php" class="btn my-btn radius">Learn JavaScript !!</a>
             </div>
           </div>
