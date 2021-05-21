@@ -1,16 +1,19 @@
 <?php
-    $dbconn = 
-        pg_connect("host=localhost port=5432 dbname=CatSScript user=postgres password=root")
-        or die("Could not connect: ". pg_last_error());
+    session_start();
     if(!(isset($_POST["registration-button"]))){
         header("Location: ../index.php");
     }
     else {
+        $dbconn = new mysqli("127.0.0.1", "ua4svgemhgc3z", "9hquexyb7imv", "dbpgmp9oe9v6cd");
+        if ($dbconn -> connect_error) {
+            echo "Failed to connect to MySQL: " . $dbconn -> connect_error;
+            exit();
+        }
         $email = $_POST["email"];
         $username = $_POST["username"];
-        $q1 = "select * from users where email = $1 or username = $2";
-        $result = pg_query_params($dbconn, $q1, array($email, $username));
-        if ($line=pg_fetch_array($result, null, PGSQL_ASSOC)) {
+        $q1 = "SELECT * FROM users WHERE email = '$email' or username = '$username'";
+        $result1 = $dbconn -> query($q1);
+        if ($result1 -> num_rows != 0) {
             echo(
                 "<script>
                     window.location.href='../index.php';
@@ -20,9 +23,9 @@
         }
         else {
             $password = md5($_POST["password"]);
-            $q2 = "insert into users values ($1, $2, $3)";
-            $data = pg_query_params($dbconn, $q2, array($username, $email, $password));
-            if ($data) {
+            $q2 = "INSERT INTO users (username, email, password) VALUES ('$username', '$email', '$password')";
+            $result2 = $dbconn -> query($q2);
+            if ($result2) {
                 echo(
                     "<script>
                         window.location.href='../../index.php';
@@ -31,5 +34,6 @@
                 );
             }
         }
+        $dbconn -> close();
     }
 ?>

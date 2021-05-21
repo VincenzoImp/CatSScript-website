@@ -74,10 +74,10 @@ function ValidateEmail(){
 }
 
 function ValidatePassword(){
-    if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,15}$/.test(document.registr.password.value)){
+    if(/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[^a-zA-Z0-9])(?!.*\s).{8,30}$/.test(document.registr.password.value)){
         return true;
     }
-    alert("Insert a valid password; a valid password must have at least one uppercase character, one lowercase character, one special character and one number digit.");
+    alert("Insert a valid password, a valid password must:\n- be long from 8 up to 30 characters\n- have at least a lowercase character\n- have at least an uppercase character\n- have at least a special character\n- have at least a number digit");
     return false;
 }
 

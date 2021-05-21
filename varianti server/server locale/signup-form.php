@@ -23,12 +23,7 @@
             $q2 = "insert into users values ($1, $2, $3)";
             $data = pg_query_params($dbconn, $q2, array($username, $email, $password));
             if ($data) {
-                echo(
-                    "<script>
-                        window.location.href='../../index.php';
-                        alert('Account successfully registered');
-                    </script>"
-                );
+                header("Location: ../../index.php");
             }
         }
     }
