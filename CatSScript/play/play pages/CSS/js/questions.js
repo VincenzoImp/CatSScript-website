@@ -2,136 +2,122 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?____",
-    answer: "Hyper Text Markup Language",
+    question: "What does CSS stand for?",
+    answer: "Cascading Style Sheets",
     img: "biscotti.svg",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "Cascading Style Sheets",
+      "Colorful Style Sheets",
+      "Creative Style Sheets",
+      "Computer Style Sheets"
     ]
   },
     {
     numb: 1,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "What is the correct HTML for referring to an external style sheet?",
+    answer: "link rel='stylesheet' type='type/css' href='mystyle.css'",
     img: "bwaddormentato.svg",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "link rel='stylesheet' type='type/css' href='mystyle.css'",
+      "stylesheetmystyle.css/stylesheet",
+      "style src='mystyle.css'",
+      "None of the above"
     ]
   },
     {
     numb: 2,
-    question: "What does PHP stand for?___",
-    answer: "Hypertext Preprocessor",
+    question: "Which HTML tag is used to define an internal style sheet?",
+    answer: "style",
     img: "ciambella.svg",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "script",
+      "style",
+      "css",
+      "None of the above"
     ]
   },
     {
     numb: 2,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Which selector is used to specify a rule to bind to a particular unique element?",
+    answer: "id",
     img: "fiocco.svg",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "name",
+      "id",
+      "class",
+      "tag"
     ]
   },
     {
     numb: 3,
-    question: "What does XML stand for?___",
-    answer: "eXtensible Markup Language",
+    question: "Which property is used in CSS to change the background color?",
+    answer: "background-color",
     img: "foca.svg",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "bgcolor",
+      "color",
+      "background-color",
+      "back-color"
     ]
   },
   {
     numb: 3,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
+    question: "Which of the following is the CSS property to create a dotted border?",
+    answer: "border-style",
     img: "fornaio.svg",
     options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
+      "border-color",
+      "border decoration",
+      "border-style",
+      "border-line"
     ]
   },
     {
     numb: 4,
-    question: "What does CSS stand for?___",
-    answer: "Cascading Style Sheet",
+    question: "Which CSS property is used to add some margin beween a div border and its inner text?",
+    answer: "padding",
     img: "gelato.svg",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "spacing",
+      "margin",
+      "inner-margin",
+      "padding"
     ]
   },
     {
     numb: 4,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Which of the following CSS rule is used to remove the underline from all hyperlinks?",
+    answer: "a{text-decoration: none;}",
     img: "heen_chad_tipo_lo_sticker_di_lorenzo.svg",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "a{text: no-underline;}",
+      "a{text-style: no-underline;}",
+      "a{text-decoration: no-underline;}",
+      "a{text-decoration: none;}"
     ]
   },
     {
     numb: 5,
-    question: "What does SQL stand for?___",
-    answer: "Structured Query Language",
+    question: "Which of the following property of anchor element indicates that currently has the user's mouse pointer hovering over it?",
+    answer: ":hover",
     img: "indizio.svg",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      ":hover",
+      ":link",
+      ":visited",
+      ":active"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
+    question: "In CSS what does 'color:red' can be called as?",
+    answer: "Declaration",
     img: "monocolo.svg",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "Declaration",
+      "selector",
+      "Rule",
+      "None of the above"
     ]
   }
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
 ];

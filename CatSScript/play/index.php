@@ -38,8 +38,7 @@ else {
             <div class="d-flex flex-column align-items-center">
               <br/>
               <h3 class="card-title">Play HTML</h3>
-              <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/html/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
+              <a href="play pages/html/index.php" class="btn my-btn my-4 radius">Let's go !!</a>
             </div>
           </div>
         </div>
@@ -48,8 +47,7 @@ else {
             <div class="d-flex flex-column align-items-center order-lg-1 order-2">
               <br/>
               <h3 class="card-title">Play CSS</h3>
-              <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/CSS/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
+              <a href="play pages/CSS/index.php" class="btn my-btn my-4 radius">Let's go !!</a>
             </div>
             <img src="../assets/img/ancielo_arcobaleno.svg" class="order-lg-2 order-1 img-card">
           </div>
@@ -60,8 +58,7 @@ else {
             <div class="d-flex flex-column align-items-center">
               <br/>
               <h3 class="card-title">Play JavaScript</h3>
-              <p class="mx-5 card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos tot</p>
-              <a href="play pages/JavaScript/index.php" class="btn my-btn mb-4 radius">Let's go !!</a>
+              <a href="play pages/JavaScript/index.php" class="btn my-btn my-4 radius">Let's go !!</a>
             </div>
           </div>
         </div>

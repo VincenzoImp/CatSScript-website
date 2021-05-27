@@ -118,8 +118,8 @@ else {
           <div class="card about-us-position mx-5 my-5 bg-transparent border-0">
             <img src="assets/img/Lucietti-img.svg" class="circle-img img-card">
             <br/>
-            <h3 style="text-align: center;" class="card-title">Lucietti</h3>
-            <p class="mx-5" style="text-align: center;" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam ratione distinctio voluptate, rem eos in iste quidem dicta aliquam sequi, laboriosam unde autem aperiam nostrum tenetur fuga ut. Quis!</p>
+            <h3 style="text-align: center;" class="card-title">Lucia</h3>
+            <p class="mx-5" style="text-align: center;" class="card-text">Noob Computer Science student at "La Sapienza". Loves noob cats very much.</p>
           </div>
         </div>
         <div class="col-lg-6 d-flex flex-column justify-content-center">
@@ -127,7 +127,7 @@ else {
             <img src="assets/img/Vincenzo-img.svg" class="circle-img img-card">
             <br/>
             <h3 style="text-align: center;" class="card-title">Vincenzo</h3>
-            <p class="mx-5" style="text-align: center;" class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos totam ratione distinctio voluptate, rem eos in iste quidem dicta aliquam sequi, laboriosam unde autem aperiam nostrum tenetur fuga ut. Quis!</p>
+            <p class="mx-5" style="text-align: center;" class="card-text">Excellent Computer Science student at "La Sapienza". Loves excellent cats very much.</p>
           </div>
         </div>
       </div>

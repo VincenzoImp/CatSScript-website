@@ -2,136 +2,122 @@
 let questions = [
     {
     numb: 1,
-    question: "What does HTML stand for?____",
+    question: "What does HTML stand for?",
     answer: "Hyper Text Markup Language",
     img: "gelato_2_.svg",
     options: [
-      "Hyper Text Preprocessor",
       "Hyper Text Markup Language",
+      "Hyper Text Preprocessor",
       "Hyper Text Multiple Language",
       "Hyper Tool Multi Language"
     ]
   },
     {
     numb: 1,
-    question: "What does CSS stand for?",
-    answer: "Cascading Style Sheet",
+    question: "Correct HTML tag for the largest heading is:",
+    answer: "h1",
     img: "motorino.svg",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "h1",
+      "h",
+      "h6",
+      "head"
     ]
   },
     {
     numb: 2,
-    question: "What does PHP stand for?___",
-    answer: "Hypertext Preprocessor",
+    question: "'a' tags are used for",
+    answer: "adding links",
     img: "musicista_2_.svg",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "adding heading",
+      "adding links",
+      "adding text",
+      "adding image"
     ]
   },
     {
     numb: 2,
-    question: "What does SQL stand for?",
-    answer: "Structured Query Language",
+    question: "Which is the correct tag to make a list that lists the items with numbers?",
+    answer: "ol",
     img: "noodles.svg",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "dl",
+      "ol",
+      "ul",
+      "list"
     ]
   },
     {
     numb: 3,
-    question: "What does XML stand for?___",
-    answer: "eXtensible Markup Language",
-    img: "nutella.svg",
+    question: "Which of the following statement is true?",
+    answer: "All of the above",
+    img: "pirottino.svg",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "The 'div' element is a block container",
+      "The 'span' element is an inline container",
+      "All of the above",
+      "None of the above"
     ]
   },
   {
     numb: 3,
-    question: "What does HTML stand for?",
-    answer: "Hyper Text Markup Language",
-    img: "nyancat.svg",
-    options: [
-      "Hyper Text Preprocessor",
-      "Hyper Text Markup Language",
-      "Hyper Text Multiple Language",
-      "Hyper Tool Multi Language"
-    ]
-  },
-    {
-    numb: 4,
-    question: "What does CSS stand for?___",
-    answer: "Cascading Style Sheet",
+    question: "Tick the attribute of form tag",
+    answer: "All of the above",
     img: "pane.svg",
     options: [
-      "Common Style Sheet",
-      "Colorful Style Sheet",
-      "Computer Style Sheet",
-      "Cascading Style Sheet"
+      "action",
+      "method",
+      "All of the above",
+      "None of the above"
     ]
   },
     {
     numb: 4,
-    question: "What does PHP stand for?",
-    answer: "Hypertext Preprocessor",
+    question: "Which is the correct tag to make a list that lists the items with bullets?",
+    answer: "ul",
+    img: "nutella.svg",
+    options: [
+      "dl",
+      "list",
+      "ol",
+      "ul"
+    ]
+  },
+    {
+    numb: 4,
+    question: "Which of the following tag is used to mark a beginning of paragraph?",
+    answer: "p",
     img: "paperelle.svg",
     options: [
-      "Hypertext Preprocessor",
-      "Hypertext Programming",
-      "Hypertext Preprogramming",
-      "Hometext Preprocessor"
+      "td",
+      "br",
+      "tr",
+      "p"
     ]
   },
     {
     numb: 5,
-    question: "What does SQL stand for?___",
-    answer: "Structured Query Language",
+    question: "Main container for 'tr', 'td', 'th' is",
+    answer: "table",
     img: "patrick.svg",
     options: [
-      "Stylish Question Language",
-      "Stylesheet Query Language",
-      "Statement Question Language",
-      "Structured Query Language"
+      "table",
+      "data",
+      "All of the above",
+      "None of the above"
     ]
   },
     {
     numb: 5,
-    question: "What does XML stand for?",
-    answer: "eXtensible Markup Language",
-    img: "pirottino.svg",
+    question: "Which tag is used to create a check box?",
+    answer: "input type='checkbox'",
+    img: "nyancat.svg",
     options: [
-      "eXtensible Markup Language",
-      "eXecutable Multiple Language",
-      "eXTra Multi-Program Language",
-      "eXamine Multiple Language"
+      "input type='checkbox'",
+      "checkbox",
+      "type='checkbox'",
+      "None of the above"
     ]
   }
-  // you can uncomment the below codes and make duplicate as more as you want to add question
-  // but remember you need to give the numb value serialize like 1,2,3,5,6,7,8,9.....
-
-  //   {
-  //   numb: 6,
-  //   question: "Your Question is Here",
-  //   answer: "Correct answer of the question is here",
-  //   options: [
-  //     "Option 1",
-  //     "option 2",
-  //     "option 3",
-  //     "option 4"
-  //   ]
-  // },
 ];

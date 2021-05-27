@@ -21,18 +21,18 @@ const quit_quiz = document.querySelector("#quit");
 const img_result = document.querySelector("#img_result");
 const scoreText = document.querySelector("#score_text");
 
-// creating the new div tags which for icons
+// creating the new div tags for the icons
 let tickIconTag = '<span class="icon tick d-flex align-items-center justify-content-center"><i class="fas fa-check"></i></span>';
 let crossIconTag = '<span class="icon cross d-flex align-items-center justify-content-center"><i class="fas fa-times"></i></span>';
 
 const timer_duration = 15;
 let timeValue = timer_duration;
-let que_real_index;
-let que_numb = 1;
-let userScore = 0; //domande corrette risposte dell'utente
-let counter;
-let counterLine;
-let widthValue = 0;
+let que_real_index; //real index question in questions.js
+let que_numb = 1; //question counter frontend
+let userScore = 0; //user's correct answered questions
+let counter; //counter timer
+let counterLine; //counter time line
+let widthValue = 0; //width time line
 const step = 2;
 
 
@@ -45,10 +45,10 @@ exit_btn.onclick = ()=>{
 continue_btn.onclick = ()=>{
     info_box.style.display = "none"; //hide info box
     quiz_box.style.display = "flex"; //show quiz box
-    showQuetions(que_numb); //calling showQestions function
-    queCounter(que_numb); //passing 1 parameter to queCounter
-    startTimer(timer_duration); //calling startTimer function
-    startTimerLine(0); //calling startTimerLine function
+    showQuetions(que_numb); 
+    queCounter(que_numb); 
+    startTimer(timer_duration); 
+    startTimerLine(0); 
     music_tag.setAttribute("src", "../../audio/suspense.mp3");
 }
 
@@ -59,30 +59,29 @@ restart_quiz.onclick = ()=>{
 
 // if quitQuiz button clicked
 quit_quiz.onclick = ()=>{
-    location.replace("../../index.php"); //reload the current window
+    location.replace("../../index.php"); //go back to lobby
 }
 
 // if Next Que button clicked
 next_btn.onclick = ()=>{
     if(que_numb < questions.length/step){ //if question count is less than total question length
-        que_numb++; //increment the que_numb value
-        timeText.textContent = "Time Left"; //change the timeText to Time Left
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        showQuetions(que_numb); //calling showQestions function
-        queCounter(que_numb); //passing que_numb value to queCounter
-        startTimer(timer_duration); //calling startTimer function
-        startTimerLine(0); //calling startTimerLine function
+        que_numb++; 
+        timeText.textContent = "Time Left"; 
+        clearInterval(counter); 
+        clearInterval(counterLine); 
+        showQuetions(que_numb); 
+        queCounter(que_numb);
+        startTimer(timer_duration); 
+        startTimerLine(0); 
     }else{
-        clearInterval(counter); //clear counter
-        clearInterval(counterLine); //clear counterLine
-        showResult(); //calling showResult function
+        clearInterval(counter); 
+        clearInterval(counterLine); 
+        showResult();
     }
 }
 
 // getting questions and options from array
 function showQuetions(index){
-    //creating a new span and div tag for question and option and passing the value using array index
     const x = Math.round(Math.random());
     que_real_index = (index*2)-2 + x;
     let que_tag = questions[que_real_index].numb + ". " + questions[que_real_index].question;
@@ -92,9 +91,9 @@ function showQuetions(index){
     '<div class="option my-3 px-2 py-2 card-text d-flex justify-content-between align-items-center"><span>'+ questions[que_real_index].options[1] +'</span></div>' +
     '<div class="option my-3 px-2 py-2 card-text d-flex justify-content-between align-items-center"><span>'+ questions[que_real_index].options[2] +'</span></div>' +
     '<div class="option my-3 px-2 py-2 card-text d-flex justify-content-between align-items-center"><span>'+ questions[que_real_index].options[3] +'</span></div>';
-    que_text.innerHTML = que_tag; //adding new span tag inside que_tag
+    que_text.innerHTML = que_tag;
     que_img.innerHTML = img_tag;
-    option_list.innerHTML = option_tag; //adding new div tag inside option_tag
+    option_list.innerHTML = option_tag;
 
     const option = option_list.querySelectorAll(".option");
 
@@ -140,11 +139,10 @@ function showResult(){
     quiz_box.style.display = "none";
     result_box.style.display = "flex";
     if (userScore > 3){ // if user scored more than 3
-        //creating a new span tag and passing the user score number and total question number
         let imgTag = "<img class='img-resize' src='../../../assets/img/play/festa.svg'></img>";
         img_result.innerHTML = imgTag;
         let scoreTag = '<span>and congrats! 🎉, You got <b>'+ userScore +'</b> out of <b>'+ questions.length/step +'</b></span>';
-        scoreText.innerHTML = scoreTag;  //adding new span tag inside score_Text
+        scoreText.innerHTML = scoreTag;
         music_tag.setAttribute("src", "../../audio/1stPlace.mp3");
     }
     else if(userScore > 1){ // if user scored more than 1
@@ -193,16 +191,15 @@ function startTimer(time){
 function startTimerLine(time){
     counterLine = setInterval(timer, 20.45);
     function timer(){
-        time += 1; //upgrading time value with 1
-        time_line.style.width = time/10 + "vw"; //increasing width of time_line with px by time value
-        if(time > 799){ //if time value is greater than 549
-            clearInterval(counterLine); //clear counterLine
+        time += 1; 
+        time_line.style.width = time/10 + "vw"; 
+        if(time > 799){ 
+            clearInterval(counterLine);
         }
     }
 }
 
 function queCounter(index){
-    //creating a new span tag and passing the question number and total question
     let totalQueCounTag = index +' of '+ questions.length/step +' Questions';
-    bottom_ques_counter.innerHTML = totalQueCounTag;  //adding new span tag inside bottom_ques_counter
+    bottom_ques_counter.innerHTML = totalQueCounTag;
 }
