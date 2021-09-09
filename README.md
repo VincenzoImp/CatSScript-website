@@ -1,4 +1,4 @@
-# progetto-ltw
+# CatSScript-website
 
 Project for "languages and technologies for the web" exam
 
