@@ -1,5 +1,8 @@
 # progetto-ltw
 
+Project for "languages and technologies for the web" exam
+
+
 url: http://catsscript.associazioneposidonia.com/
 
 username: Tester
