@@ -3,7 +3,7 @@
 Project for "languages and technologies for the web" exam
 
 
-url: http://catsscript.com
+url: https://catsscript.com
 
 username: Tester
 email: tester@tester.tester
