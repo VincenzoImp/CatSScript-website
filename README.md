@@ -1,6 +1,5 @@
-# CatSScript-website
+# CatSScript Website
 
-## Overview
 CatSScript-website is a web application built using HTML, PHP, JavaScript, and CSS. The website is a part of an exam project showcasing various web technologies.
 
 ## Technologies Used
